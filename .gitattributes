@@ -1,2 +1,2 @@
 # Preserve exact bytes: experiment manifests contain file checksums.
-* -text
+* -text whitespace=cr-at-eol
