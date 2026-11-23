@@ -1,0 +1,143 @@
+{
+  "price_per_pod_hour": 5.66,
+  "effective_GPUs": 7.2,
+  "measured_exact_bundle_cases": 5,
+  "random_batch_size": 64,
+  "completed_budget_observations": 354,
+  "estimated_cost_USD": 3933.430426196099,
+  "estimated_pod_hours": 694.9523721194521,
+  "native_baseline_cost_USD": 5630.956232642554,
+  "planning_range_USD": [
+    2360.058255717659,
+    6293.488681913758
+  ],
+  "runtime_study_excluded": true,
+  "rows": [
+    {
+      "experiment": "STS versus MC",
+      "estimated_GPU_hours": 3444.224549762097,
+      "estimated_pod_hours": 478.3645208002912,
+      "estimated_cost_USD": 2707.5431877296483,
+      "baseline_without_prefetch_or_joint_random_USD": 3886.3918798186874
+    },
+    {
+      "experiment": "Geometry and LLaDA AR comparison",
+      "estimated_GPU_hours": 287.3735231777222,
+      "estimated_pod_hours": 39.91298933023919,
+      "estimated_cost_USD": 225.90751960915384,
+      "baseline_without_prefetch_or_joint_random_USD": 293.1177053992132
+    },
+    {
+      "experiment": "Post-release controls",
+      "estimated_GPU_hours": 277.76078036622897,
+      "estimated_pod_hours": 38.577886161976245,
+      "estimated_cost_USD": 218.35083567678555,
+      "baseline_without_prefetch_or_joint_random_USD": 276.43209339919764
+    },
+    {
+      "experiment": "Exact versus STS (including T1 threshold)",
+      "estimated_GPU_hours": 432.2647052203926,
+      "estimated_pod_hours": 60.03676461394341,
+      "estimated_cost_USD": 339.80808771491974,
+      "baseline_without_prefetch_or_joint_random_USD": 339.80808771491974
+    },
+    {
+      "experiment": "Random remasking",
+      "estimated_GPU_hours": 556.0221496041609,
+      "estimated_pod_hours": 77.22529855613344,
+      "estimated_cost_USD": 437.0951898277153,
+      "baseline_without_prefetch_or_joint_random_USD": 830.480860672659
+    },
+    {
+      "experiment": "Greedy-confidence remasking",
+      "estimated_GPU_hours": 5.885495282243937,
+      "estimated_pod_hours": 0.817429900311658,
+      "estimated_cost_USD": 4.6266532357639845,
+      "baseline_without_prefetch_or_joint_random_USD": 4.6266532357639845
+    },
+    {
+      "experiment": "Four AR baselines",
+      "estimated_GPU_hours": 0.125875847209536,
+      "estimated_pod_hours": 0.01748275655688,
+      "estimated_cost_USD": 0.0989524021119408,
+      "baseline_without_prefetch_or_joint_random_USD": 0.0989524021119408
+    }
+  ],
+  "scaling_assumptions": [
+    {
+      "temperature": 0.5,
+      "scheme": "low-confidence",
+      "STS_scaling_exponent": 0.18332702942483206,
+      "STS_observed_budget_pairs": 1,
+      "MC_scaling_exponent": 0.12610127716905328,
+      "MC_observed_budget_pairs": 1,
+      "validation_STS500_seconds": 8.539473069996687,
+      "validation_MC5000_predicted_seconds": 4.094080986964138,
+      "primary_STS500_seconds": 7.56131801866771,
+      "coverage_STS500_seconds": 9.517628121325664,
+      "primary_MC500_seconds": 2.3802268377970903,
+      "coverage_MC500_seconds": 3.7444777729654932,
+      "STS_prefetch_forecast_speedup": 1.0,
+      "MC_prefetch_forecast_speedup": 1.0
+    },
+    {
+      "temperature": 0.5,
+      "scheme": "threshold",
+      "STS_scaling_exponent": 0.25981295054424974,
+      "STS_observed_budget_pairs": 1,
+      "MC_scaling_exponent": 0.2211833691934575,
+      "MC_observed_budget_pairs": 1,
+      "validation_STS500_seconds": 2.7403671682151334,
+      "validation_MC5000_predicted_seconds": 2.361094883081764,
+      "primary_STS500_seconds": 0.6569798460695893,
+      "coverage_STS500_seconds": 4.8237544903606775,
+      "primary_MC500_seconds": 1.2594567598841553,
+      "coverage_MC500_seconds": 1.5782013329727602,
+      "STS_prefetch_forecast_speedup": 1.0,
+      "MC_prefetch_forecast_speedup": 1.0
+    },
+    {
+      "temperature": 2.0,
+      "scheme": "low-confidence",
+      "STS_scaling_exponent": 0.9443865069487194,
+      "STS_observed_budget_pairs": 1,
+      "MC_scaling_exponent": 0.85,
+      "MC_observed_budget_pairs": 0,
+      "validation_STS500_seconds": 1111.921871450089,
+      "validation_MC5000_predicted_seconds": 1283.784473868487,
+      "primary_STS500_seconds": 990.4866154014599,
+      "coverage_STS500_seconds": 1233.357127498718,
+      "primary_MC500_seconds": 100.24664155882783,
+      "coverage_MC500_seconds": 262.4321121497737,
+      "STS_prefetch_forecast_speedup": 1.35,
+      "MC_prefetch_forecast_speedup": 1.5
+    },
+    {
+      "temperature": 2.0,
+      "scheme": "threshold",
+      "STS_scaling_exponent": 0.9308829507768918,
+      "STS_observed_budget_pairs": 1,
+      "MC_scaling_exponent": 0.916341819080239,
+      "MC_observed_budget_pairs": 4,
+      "validation_STS500_seconds": 810.921445651254,
+      "validation_MC5000_predicted_seconds": 1719.4572520552247,
+      "primary_STS500_seconds": 872.8612439745339,
+      "coverage_STS500_seconds": 748.9816473279741,
+      "primary_MC500_seconds": 246.4556735145161,
+      "coverage_MC500_seconds": 170.49008454358187,
+      "STS_prefetch_forecast_speedup": 1.35,
+      "MC_prefetch_forecast_speedup": 1.5
+    }
+  ],
+  "caveats": [
+    "Planning range is sensitivity analysis, not a statistical confidence interval.",
+    "Validation MC5000 times extrapolate measured MC500 using runtime budget scaling.",
+    "No wall-clock study is included; it is reserved for A100 hardware.",
+    "Source coverage samples one mask/window per document; within-document variation remains.",
+    "T2 confidence STS includes a conservative 1.35x prefetch gain, verified on short seeded checks.",
+    "T2 ordinary MC includes a conservative 1.5x prefetch gain, verified against identical 125-trial outcomes.",
+    "Random-temperature sharing includes a conservative 1.9x gain, verified against separate complete paths.",
+    "Central validation costs average the larger primary probes and source-stratified short-probe extrapolations.",
+    "No complete replication has been launched."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "model": "mistral7b_v01",
+  "status": "verified",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "runs": [
+    {
+      "model": "mistral7b_v01",
+      "group": "train",
+      "scheme": "exact",
+      "mask": "suffix50",
+      "directory": "/workspace/finetuned-extraction/verification/verify_20261101T155551Z/results/mistral7b_v01/train/exact/suffix50/train_1734/20261101_161431_943791",
+      "rows": 3,
+      "seconds": 0.5670882170088589
+    },
+    {
+      "model": "mistral7b_v01",
+      "group": "clean_odd_control",
+      "scheme": "exact",
+      "mask": "suffix50",
+      "directory": "/workspace/finetuned-extraction/verification/verify_20261101T155551Z/results/mistral7b_v01/clean_odd_control/exact/suffix50/clean_odd_control_1695/20261101_161432_511509",
+      "rows": 3,
+      "seconds": 0.17310073785483837
+    }
+  ],
+  "rows": 6,
+  "peak_allocated_gib": 13.531107902526855,
+  "ar_teacher_forcing_alignment_verified": true,
+  "cuda_visible_devices": "3",
+  "torch_version": "2.8.0+cu128",
+  "model_dtype": "bfloat16",
+  "llada_estimator_dtype": null
+}

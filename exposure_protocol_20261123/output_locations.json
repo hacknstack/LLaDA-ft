@@ -1,0 +1,27 @@
+{
+  "run_name": "bbc_exposure_20261123T200757Z",
+  "parent_id": "1mVA2ey-QIyR3BctSmUvzJjtPHOUpPh6m",
+  "folder_url": "https://drive.google.com/drive/folders/1mVA2ey-QIyR3BctSmUvzJjtPHOUpPh6m",
+  "models": {
+    "llada8b": {
+      "logs": "1DgiCMuBwtoNC-52bP7XfnAQv71xCTMGE",
+      "final": "1u06i7ookbWm4WgUus2U2jMuUX6nr4K0H"
+    },
+    "llama2_7b": {
+      "logs": "1SYgF7swwphNhmWDDBd1Y94xu2dElfVWO",
+      "final": "1coZcLsNVbjAA_L0eIsXOX7tSxsmj5XIH"
+    },
+    "llama3_8b": {
+      "logs": "1iqflBD0C2HDiTMhOmUSsBDd6jlu1IN2e",
+      "final": "1bnh7Pgab3XfBAJfWqk53axdWdhKMjq9r"
+    },
+    "mistral7b_v01": {
+      "logs": "1E4MFDYiPEW5Jz6pEPZy_Jemf9ns-WPYq",
+      "final": "1rKjDvle99OdALInftv8R7ex1pBHf8aU4"
+    },
+    "olmo7b": {
+      "logs": "19xMj8GLMHYoURzZOgJfQ5LFkrpNhO2Sq",
+      "final": "1jcW6N8rvMXws2I46fcML_dcEaWwfds8t"
+    }
+  }
+}

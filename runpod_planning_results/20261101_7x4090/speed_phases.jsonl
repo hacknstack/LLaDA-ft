@@ -1,0 +1,5 @@
+{"phase": "ar_four_parallel", "rows": 1024, "wall_seconds": 13.343345674918965, "gpu_seconds": 47.15659542311914}
+{"phase": "solo_threads4", "rows": 6, "wall_seconds": 66.55462418100797, "gpu_seconds": 66.55111425789073}
+{"phase": "seven_threads2", "rows": 42, "wall_seconds": 68.76790853613056, "gpu_seconds": 470.83305580960587}
+{"phase": "seven_threads4", "rows": 42, "wall_seconds": 67.5744406429585, "gpu_seconds": 466.18764173053205}
+{"phase": "representative_seven", "rows": 416, "wall_seconds": 612.2901349419262, "gpu_seconds": 3997.214858348714}

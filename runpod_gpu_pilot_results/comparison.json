@@ -1,0 +1,12 @@
+{
+  "recommended_gpu": "RTX 4090",
+  "a100_evaluation_seconds": 125.25675165979192,
+  "rtx4090_evaluation_seconds": 94.49830945604481,
+  "rtx4090_throughput_speedup": 1.3254919837275414,
+  "rtx4090_results_per_dollar_advantage": 2.6658771358115723,
+  "prices_from_user": {
+    "a100_per_hour": 1.79,
+    "rtx4090_per_hour": 0.89
+  },
+  "caveat": "Pinned Base checkpoint, two articles and two mask patterns; not a fine-tuned-checkpoint benchmark"
+}

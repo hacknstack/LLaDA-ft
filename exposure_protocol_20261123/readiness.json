@@ -1,0 +1,20 @@
+{
+  "ready_to_launch": true,
+  "models": [
+    "llada8b",
+    "llama2_7b",
+    "llama3_8b",
+    "mistral7b_v01",
+    "olmo7b"
+  ],
+  "blockers": [],
+  "run_name": "bbc_exposure_20261123T200757Z",
+  "exposure_counts_verified": true,
+  "all_models_full_parameter_probes_passed": true,
+  "optimizer_numerical_checks": {
+    "async_optimizer_validation": true,
+    "foreach_optimizer_validation": true,
+    "batch_objective_validation": true
+  },
+  "production_training_started": false
+}

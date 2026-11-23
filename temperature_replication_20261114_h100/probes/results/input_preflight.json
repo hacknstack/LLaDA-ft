@@ -1,0 +1,32 @@
+{
+  "unique_windows": 4371,
+  "valid_windows": 4371,
+  "invalid_windows": [],
+  "selection_counts": {
+    "validation": 24,
+    "exact": 24,
+    "runtime": 12,
+    "application": 12,
+    "negative": 12
+  },
+  "source_hashes": {
+    "3-ClauseBSDLicense": "8296a0ff013a0d2f6e8252ce69dda333e9cbedf31bd85569c7417d727fcd8d99",
+    "AISafetyExecutiveOrder": "3edad4440e26a5886414325bcb66240f98b5b66359572ad1ad0910f37f3de18f",
+    "ApacheLicense": "4876c382bcd233ef7eff8c5f13f785b10f3c38a869983b980ea952fccc142687",
+    "BillOfRights": "85edf16d873882fcf7f33ea4c163dd408943862975606b24284ddc7a4284291c",
+    "ConstitutionIntro": "1d2a97305833c2b745f745cb10da2a32465aefad15d320f570646f9785076a4f",
+    "DeclarationTranscript": "e8b767255687ddb98770ad2f0d229ffdabd493bf164b3fb11509cb6af42ef6e7",
+    "GenesisNumbered": "1026e6662d40f463b476351d7086b8ade8f889e0a4774d227bf5867afcd540b0",
+    "GettysburgAddress": "277e776e20302062b1d61b95101347e914afa0ebccb1a85737ace591d2145fb8",
+    "ISCLicense": "feae714224ad405dec581cddbb2220cdb3cab3a5333507e551aeccf74a8dab76",
+    "InflationDoc": "a5615975b01ba2d1cf59141f83edf76fd385170dd01288a7ea4957103c20f26a",
+    "LEOXIV": "394a724c2aebf9699be5eed2845f41968284b55d629d2e3b5167e7649c8474cc",
+    "MITLicense": "71749f70678437df9ea00d8ad7853d10e9a8bc405aced37b74452474da789d31",
+    "Psalm23": "dc7a94bd90a9ab41b4c99fd391163ddfd1b28460393892639f579eb46904b393",
+    "Sonnet18": "bfd5ae2bd42ff648e49c610bff4713694c129540542d3ffe030952012959c2a9",
+    "TheZenOfPython": "5058e81c37bd40d034524f358a1972276157a6d8474a3cc1f9416e06c519f627",
+    "Unlicense": "01fba17a0332fa6228c5486e72a6ccaa390b97929b98dbb8f788b9300631db01",
+    "WeMustPaceTheFrontier": "b182caaee147bf71ab9896217d48cfaec53599b97648425d57165d080835b42c",
+    "lorem ipsum": "d68ee3c599cfb2e5158263a6c0e2f65c9641ac234fbfb1588bb2e43585a25440"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "python": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+  "packages": {
+    "torch": "2.11.0+cu130",
+    "transformers": "4.46.3",
+    "peft": "0.14.0",
+    "bitsandbytes": "0.50.2",
+    "datasets": "4.8.5",
+    "accelerate": "1.15.0"
+  },
+  "configs": [
+    {
+      "name": "full_adamw_bf16",
+      "kind": "full",
+      "optimizer": "adamw"
+    },
+    {
+      "name": "full_adamw8bit",
+      "kind": "full",
+      "optimizer": "adam8"
+    },
+    {
+      "name": "full_sgd",
+      "kind": "full",
+      "optimizer": "sgd"
+    },
+    {
+      "name": "last2_adamw",
+      "kind": "partial",
+      "layers": 2,
+      "optimizer": "adamw"
+    },
+    {
+      "name": "last8_adamw",
+      "kind": "partial",
+      "layers": 8,
+      "optimizer": "adamw"
+    },
+    {
+      "name": "lora_qv_r8",
+      "kind": "lora",
+      "rank": 8,
+      "targets": "qv",
+      "optimizer": "adamw"
+    },
+    {
+      "name": "lora_qv_r32",
+      "kind": "lora",
+      "rank": 32,
+      "targets": "qv",
+      "optimizer": "adamw"
+    },
+    {
+      "name": "lora_all_r16",
+      "kind": "lora",
+      "rank": 16,
+      "targets": "all",
+      "optimizer": "adamw"
+    },
+    {
+      "name": "lora_all_r64",
+      "kind": "lora",
+      "rank": 64,
+      "targets": "all",
+      "optimizer": "adamw"
+    },
+    {
+      "name": "dora_all_r16",
+      "kind": "lora",
+      "rank": 16,
+      "targets": "all",
+      "dora": true,
+      "optimizer": "adamw"
+    },
+    {
+      "name": "qlora_nf4_r16",
+      "kind": "lora",
+      "rank": 16,
+      "targets": "all",
+      "quant": 4,
+      "optimizer": "adamw"
+    },
+    {
+      "name": "lora_int8_r16",
+      "kind": "lora",
+      "rank": 16,
+      "targets": "all",
+      "quant": 8,
+      "optimizer": "adamw"
+    }
+  ]
+}

@@ -1,0 +1,278 @@
+[
+  {
+    "filtered_index": 2268,
+    "source_config": "2025-03",
+    "source_row": 2268,
+    "published_date": "2025-03-05",
+    "title": "Briton captured while fighting for Ukraine jailed in Russia - BBC News",
+    "link": "http://www.bbc.co.uk/news/articles/cvge8dnrge5o",
+    "group": "train",
+    "normalized_sha256": "9d105b82b36f424edee4bbb13267570364eac100e8eaa4c8c8a6f4a6a22d2a51",
+    "original_filtered_indices": [
+      2268
+    ],
+    "words": 376,
+    "length_quartile": 0,
+    "full_mask_pilot": true
+  },
+  {
+    "filtered_index": 1136,
+    "source_config": "2025-03",
+    "source_row": 1136,
+    "published_date": "2025-03-02",
+    "title": "Israel blocks entry of all humanitarian aid into Gaza - BBC News",
+    "link": "http://www.bbc.co.uk/news/articles/c9q4w99je78o",
+    "group": "train",
+    "normalized_sha256": "9785442db9b5beda18d15472f59118c37bf9b1050ae82fe038d1c6a621343149",
+    "original_filtered_indices": [
+      1136,
+      2024
+    ],
+    "words": 725,
+    "length_quartile": 2,
+    "full_mask_pilot": false
+  },
+  {
+    "filtered_index": 2525,
+    "source_config": "2025-03",
+    "source_row": 2525,
+    "published_date": "2025-03-07",
+    "title": "Sister pays tribute to 'kind' boy killed on Glasgow street - BBC News",
+    "link": "http://www.bbc.co.uk/news/articles/ceqjy38jp1qo",
+    "empty": false,
+    "exact_normalized_overlap_with_train": false,
+    "group": "control",
+    "normalized_sha256": "1fcbea6cbb3585a9a7b7d64dd08f46beeb552b4ace0c52cbf927c63003fe5197",
+    "original_filtered_indices": [
+      2525
+    ],
+    "words": 710,
+    "length_quartile": 2,
+    "full_mask_pilot": true
+  },
+  {
+    "filtered_index": 1915,
+    "source_config": "2025-03",
+    "source_row": 1915,
+    "published_date": "2025-03-27",
+    "title": "Sky says 2,000 jobs at risk at its customer service centres - BBC News",
+    "link": "http://www.bbc.co.uk/news/articles/cdx2179klk5o",
+    "empty": false,
+    "exact_normalized_overlap_with_train": false,
+    "group": "control",
+    "normalized_sha256": "8d466f303ee2de5e117d37831c5bd415e41b0983fe398f55405aa4103750ab9e",
+    "original_filtered_indices": [
+      1915
+    ],
+    "words": 296,
+    "length_quartile": 0,
+    "full_mask_pilot": false
+  },
+  {
+    "filtered_index": 4688,
+    "source_config": "2025-04",
+    "source_row": 1991,
+    "published_date": "2025-04-03",
+    "title": "Trump tariffs: This is the biggest change to global trade in 100 years - BBC News",
+    "link": "http://www.bbc.co.uk/news/articles/cly1j2v4klzo",
+    "group": "train",
+    "normalized_sha256": "36dd7c3f80d59ab9b70c820e512782fd1ebfe7b4d6bd2d36e74903781df8ae89",
+    "original_filtered_indices": [
+      4688
+    ],
+    "words": 519,
+    "length_quartile": 1,
+    "full_mask_pilot": true
+  },
+  {
+    "filtered_index": 4298,
+    "source_config": "2025-04",
+    "source_row": 1601,
+    "published_date": "2025-04-25",
+    "title": "Pope Francis order of service: Funeral Mass published in full - BBC News",
+    "link": "http://www.bbc.co.uk/news/articles/c8rg4l4nzlno",
+    "group": "train",
+    "normalized_sha256": "118f2ead4df4f413b989c577af22e195679800429a4b2d04fcee98a9809ffefd",
+    "original_filtered_indices": [
+      4298
+    ],
+    "words": 3660,
+    "length_quartile": 3,
+    "full_mask_pilot": false
+  },
+  {
+    "filtered_index": 2843,
+    "source_config": "2025-04",
+    "source_row": 146,
+    "published_date": "2025-04-10",
+    "title": "Gaza medics killing: Israeli army fired as close as 12m, audio suggests - BBC News",
+    "link": "http://www.bbc.co.uk/news/articles/ckg55q1w58jo",
+    "empty": false,
+    "exact_normalized_overlap_with_train": false,
+    "group": "control",
+    "normalized_sha256": "384a040fd90531d81e06f173d3e92564bc37ec27ec499fbad47e2275379ffbee",
+    "original_filtered_indices": [
+      2843,
+      2957
+    ],
+    "words": 930,
+    "length_quartile": 3,
+    "full_mask_pilot": true
+  },
+  {
+    "filtered_index": 3887,
+    "source_config": "2025-04",
+    "source_row": 1190,
+    "published_date": "2025-04-20",
+    "title": "Lemon and Earl Grey brioche crowned Britain's best loaf - BBC News",
+    "link": "http://www.bbc.co.uk/news/articles/cn4wllmr27no",
+    "empty": false,
+    "exact_normalized_overlap_with_train": false,
+    "group": "control",
+    "normalized_sha256": "57ea4e505b05a303ff1e84942c7764d7d3f1aee5ef856f470e5a51c9b9d3fa67",
+    "original_filtered_indices": [
+      3887
+    ],
+    "words": 582,
+    "length_quartile": 1,
+    "full_mask_pilot": false
+  },
+  {
+    "filtered_index": 5274,
+    "source_config": "2025-05",
+    "source_row": 6,
+    "published_date": "2025-05-01",
+    "title": "Video shows felling of Sycamore Gap tree, prosecutors tell jury - BBC News",
+    "link": "http://www.bbc.co.uk/news/articles/c3v90z17k74o",
+    "group": "train",
+    "normalized_sha256": "bca6984daec653fb64cf6e539f473d1dbb5021d436dfb7e26f3cc3a1fb1e8791",
+    "original_filtered_indices": [
+      5274
+    ],
+    "words": 806,
+    "length_quartile": 2,
+    "full_mask_pilot": true
+  },
+  {
+    "filtered_index": 6244,
+    "source_config": "2025-05",
+    "source_row": 976,
+    "published_date": "2025-05-18",
+    "title": "Bella Culley faces months in Georgia jail ahead of drugs trial - BBC News",
+    "link": "http://www.bbc.co.uk/news/articles/c5yxe6e073po",
+    "group": "train",
+    "normalized_sha256": "75aa4230efab36bd76e0237893782c10ca033fe0ecd014ca7d499c6b02873c5a",
+    "original_filtered_indices": [
+      6244
+    ],
+    "words": 398,
+    "length_quartile": 0,
+    "full_mask_pilot": false
+  },
+  {
+    "filtered_index": 6631,
+    "source_config": "2025-05",
+    "source_row": 1363,
+    "published_date": "2025-05-21",
+    "title": "Jay Emmanuel-Thomas admits plot to smuggle \u00a3600k cannabis - BBC News",
+    "link": "http://www.bbc.co.uk/news/articles/cwy772nj5n3o",
+    "empty": false,
+    "exact_normalized_overlap_with_train": false,
+    "group": "control",
+    "normalized_sha256": "5327a2154af0466c10a480e441baa7dbff91b25401538198c68a8d03c9158411",
+    "original_filtered_indices": [
+      6631
+    ],
+    "words": 412,
+    "length_quartile": 0,
+    "full_mask_pilot": true
+  },
+  {
+    "filtered_index": 6225,
+    "source_config": "2025-05",
+    "source_row": 957,
+    "published_date": "2025-05-18",
+    "title": "Emilia-Romagna Grand Prix result: Max Verstappen wins from Lando Norris in Imola - BBC Sport",
+    "link": "http://www.bbc.co.uk/sport/formula1/articles/cjrn7djgev5o",
+    "empty": false,
+    "exact_normalized_overlap_with_train": false,
+    "group": "control",
+    "normalized_sha256": "a49ac71f851ebd192421c2c4fe5c7a4afc7e5c927d4b1653b7d22569dcebc136",
+    "original_filtered_indices": [
+      6225
+    ],
+    "words": 871,
+    "length_quartile": 2,
+    "full_mask_pilot": false
+  },
+  {
+    "filtered_index": 10046,
+    "source_config": "2025-06",
+    "source_row": 2074,
+    "published_date": "2025-06-04",
+    "title": "Musk turns on Republicans - and gives Trump's bill a harder path - BBC News",
+    "link": "http://www.bbc.co.uk/news/articles/cvg5zpn9vkwo",
+    "group": "train",
+    "normalized_sha256": "11ffcad49725165cac1d8d18e3ebfdd7feaae10a9ba6e8a4aa3cdfb6d6528d28",
+    "original_filtered_indices": [
+      10046,
+      10154
+    ],
+    "words": 1128,
+    "length_quartile": 3,
+    "full_mask_pilot": true
+  },
+  {
+    "filtered_index": 10018,
+    "source_config": "2025-06",
+    "source_row": 2046,
+    "published_date": "2025-06-03",
+    "title": "Sunny Jacobs: House fire victims include former death row inmate - BBC News",
+    "link": "http://www.bbc.co.uk/news/articles/cwy3vrgj4j8o",
+    "group": "train",
+    "normalized_sha256": "27ac47817d440c7523fdfc8a5ed84471745bbb4d0feea7cc7eba12336c622c3a",
+    "original_filtered_indices": [
+      10018,
+      10118
+    ],
+    "words": 528,
+    "length_quartile": 1,
+    "full_mask_pilot": false
+  },
+  {
+    "filtered_index": 8743,
+    "source_config": "2025-06",
+    "source_row": 771,
+    "published_date": "2025-06-17",
+    "title": "Cyclist get 3D printed face after bike accident - BBC News",
+    "link": "http://www.bbc.co.uk/news/articles/cx2epz2gep1o",
+    "empty": false,
+    "exact_normalized_overlap_with_train": false,
+    "group": "control",
+    "normalized_sha256": "ee61167d523b8397125c07c806910c3ddce260878873e8a34ab317b56966a914",
+    "original_filtered_indices": [
+      8743
+    ],
+    "words": 537,
+    "length_quartile": 1,
+    "full_mask_pilot": true
+  },
+  {
+    "filtered_index": 9889,
+    "source_config": "2025-06",
+    "source_row": 1917,
+    "published_date": "2025-06-27",
+    "title": "Tehran is coming back to life, but its residents are deeply shaken  - BBC News",
+    "link": "http://www.bbc.co.uk/news/articles/c939k3n41g4o",
+    "empty": false,
+    "exact_normalized_overlap_with_train": false,
+    "group": "control",
+    "normalized_sha256": "c7b439844f0dfff994c6566df974a5c796f58b77a2ce2253fd696c27a8fe50b6",
+    "original_filtered_indices": [
+      9889
+    ],
+    "words": 1127,
+    "length_quartile": 3,
+    "full_mask_pilot": false
+  }
+]

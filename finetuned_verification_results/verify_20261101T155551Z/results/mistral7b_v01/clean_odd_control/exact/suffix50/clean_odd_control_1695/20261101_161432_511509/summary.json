@@ -1,0 +1,89 @@
+{
+  "checkpoint": {
+    "path": "/workspace/finetuned-extraction/models/mistral7b_v01",
+    "run": "mistral7b_v01_bbc_final_20261026_212546_149177",
+    "epoch": 3,
+    "update": 198,
+    "model_revision": "27d67f1b5f57dc0953326b2601d68371d40ea8da",
+    "complete_sha256": "74755f4477ba4c98d3ba230dcc7de18df47498b984a5f47c099a40baddf1b852"
+  },
+  "input_file": "/workspace/finetuned-extraction/verification/verify_20261101T155551Z/clean_odd_control_1695.txt",
+  "total_chars": 2902,
+  "parameters": {
+    "chunk_chars": 800,
+    "stride_words": 1,
+    "windows": [
+      0,
+      1,
+      2
+    ],
+    "max_windows": null,
+    "seq_tokens": 100,
+    "prefix_tokens": 50,
+    "suffix_tokens": 50,
+    "tau_min": 0.001,
+    "mode": "exact",
+    "nocache": false,
+    "scale": false,
+    "model_family": "mistral",
+    "model_name": "/workspace/finetuned-extraction/models/mistral7b_v01",
+    "remasking": "low-confidence",
+    "decoding_scheme": "full",
+    "k": 40,
+    "temperature": 1.0,
+    "confidence_threshold": 0.9,
+    "num_samples": 10,
+    "random_path_sample_budget": 128,
+    "random_path_step_budget": 25,
+    "duel_step_budget": 25,
+    "seed": 12345,
+    "masked_indexes": null,
+    "verbose": false,
+    "detailed": false,
+    "detailedWithClockTimes": false,
+    "compact": false,
+    "verbose_schema": null,
+    "detailed_schema": null,
+    "detailedWithClockTimes_schema": null
+  },
+  "num_windows_total": 3,
+  "num_windows_scored": 3,
+  "num_windows_extracted": 0,
+  "extraction_rate": 0.0,
+  "p_z_distribution": {
+    "min": 8.467593786403077e-56,
+    "median": 3.467049124579243e-53,
+    "mean": 2.2250945751493373e-51,
+    "max": 6.640528558264356e-51,
+    "q_0.9": 5.319356944860643e-51,
+    "q_0.99": 6.508411396923985e-51,
+    "q_0.999": 6.627316842130319e-51
+  },
+  "data_provenance": {
+    "group": "clean_odd_control",
+    "filtered_index": 1695,
+    "source_config": "2025-03",
+    "source_row": 1695,
+    "published_date": "2025-03-25",
+    "input_path": "/workspace/finetuned-extraction/verification/verify_20261101T155551Z/clean_odd_control_1695.txt",
+    "content_sha256": "7e01979f761a6ef6bf470bbbed64460e8caab246a9730e91739c94d25e76ef42",
+    "windows": [
+      0,
+      1,
+      2
+    ]
+  },
+  "verified_finetuned_model": {
+    "key": "mistral7b_v01",
+    "family": "mistral",
+    "source": "ar-models/mistral7b_v01_bbc_final_20261026_212546_149177/final",
+    "updates": 198,
+    "revision": "27d67f1b5f57dc0953326b2601d68371d40ea8da",
+    "parameters": 7241732096,
+    "local_path": "/workspace/finetuned-extraction/models/mistral7b_v01",
+    "training_run": "mistral7b_v01_bbc_final_20261026_212546_149177",
+    "complete_sha256": "74755f4477ba4c98d3ba230dcc7de18df47498b984a5f47c099a40baddf1b852",
+    "weight_bytes": 14483497952
+  },
+  "wall_seconds": 0.17310073785483837
+}

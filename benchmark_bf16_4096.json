@@ -1,0 +1,67 @@
+{
+  "name": "full_adamw_bf16_4096",
+  "kind": "full",
+  "optimizer": "adamw",
+  "sequence_length": 4096,
+  "microbatch": 1,
+  "accumulation": 1,
+  "warmup_steps": 2,
+  "measured_steps": 8,
+  "status": "ok",
+  "gradient_checkpointing": "whole_layer, non-reentrant",
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "trainable_parameters": 8015581184,
+  "total_parameters_reported": 8015581184,
+  "load_setup_seconds": 13.214634471000409,
+  "fully_masked_stress_step": {
+    "status": "ok",
+    "loss": 8.434804916381836,
+    "gradient_norm": 10.9375
+  },
+  "step_seconds": [
+    1.5650878179999381,
+    1.5746674279998842,
+    1.5755581710000115,
+    1.5579643599999144,
+    1.561853666999923,
+    1.5742045340002733,
+    1.5792060580001817,
+    1.5815788149998298
+  ],
+  "mean_step_seconds": 1.5712651063749945,
+  "median_step_seconds": 1.5744359810000788,
+  "minimum_step_seconds": 1.5579643599999144,
+  "maximum_step_seconds": 1.5815788149998298,
+  "std_step_seconds": 0.00855003480613666,
+  "tokens_per_second": 2606.816623993977,
+  "peak_allocated_gib": 60.80768966674805,
+  "peak_reserved_gib": 76.015625,
+  "losses": [
+    2.103003978729248,
+    6.3010358810424805,
+    6.173239707946777,
+    0.8519526720046997,
+    0.947608232498169,
+    3.1207945346832275,
+    4.4816694259643555,
+    5.062786102294922
+  ],
+  "gradient_norms": [
+    7.25,
+    9.5625,
+    13.375,
+    6.53125,
+    5.125,
+    8.5,
+    9.8125,
+    8.125
+  ],
+  "optimizer_state_dtypes": [
+    "torch.bfloat16",
+    "torch.float32"
+  ],
+  "epoch_blocks": 963,
+  "epoch_hours": 0.420313415955311,
+  "epoch_hours_observed_fast": 0.4167554662999771,
+  "epoch_hours_observed_slow": 0.42307233301245445
+}

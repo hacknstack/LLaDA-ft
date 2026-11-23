@@ -1,0 +1,32 @@
+{
+  "llada_threshold": {
+    "rows": 66984,
+    "windows": 5582,
+    "sha256": "6900d8b926c8c0a7b95ca1d90ea6c40a55ddc2327ed421447f7c466e6b7087be"
+  },
+  "llada_low-confidence": {
+    "rows": 66984,
+    "windows": 5582,
+    "sha256": "3ca92865ab284de925d672c52019c294999f163c020356f31172047e974ebee7"
+  },
+  "llama2_7b": {
+    "rows": 5582,
+    "windows": 5582,
+    "sha256": "b484a102a34c79eed085a589d44153bedc1a33c59d5be09b135775177e83288b"
+  },
+  "llama3_8b": {
+    "rows": 5582,
+    "windows": 5582,
+    "sha256": "9713371d1f5bff453a66dba5ef80ee3fffbbd596c8998c125cbc54539d8cffaf"
+  },
+  "mistral7b_v01": {
+    "rows": 5582,
+    "windows": 5582,
+    "sha256": "4756e38002f6b9da7bcf27bf8d487b0105f661e99bec39b4052398297b2be7bf"
+  },
+  "olmo7b": {
+    "rows": 5582,
+    "windows": 5582,
+    "sha256": "44695a48cc10489db3bed9491feb77e15ca1f93faf82a1df59691a7ba69f9390"
+  }
+}

@@ -1,0 +1,1 @@
+{"excluded": true, "user_requested": true, "at": 1794514964.1944869, "hardware_for_runtime_study": "A100", "cancelled_gpus": [0], "MIG_timings_budget_only": true, "already_finished_gpus": [4, 6]}

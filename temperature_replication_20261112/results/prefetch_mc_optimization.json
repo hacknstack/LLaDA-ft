@@ -1,0 +1,26 @@
+{
+  "validated": true,
+  "budget_only": true,
+  "records": [
+    {
+      "scheme": "low-confidence",
+      "samples": 125,
+      "baseline_seconds": 143.8202948679682,
+      "optimized_seconds": 82.52220951905474,
+      "bit_identical": true,
+      "model_calls": 271,
+      "model_rows": 1983,
+      "direct_logit_checks": 21
+    },
+    {
+      "scheme": "threshold",
+      "samples": 125,
+      "baseline_seconds": 44.37807052209973,
+      "optimized_seconds": 24.925598128000274,
+      "bit_identical": true,
+      "model_calls": 77,
+      "model_rows": 622,
+      "direct_logit_checks": 7
+    }
+  ]
+}

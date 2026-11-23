@@ -1,0 +1,25 @@
+httplib2 transport does not support per-request timeout. Set the timeout when constructing the httplib2.Http instance.
+httplib2 transport does not support per-request timeout. Set the timeout when constructing the httplib2.Http instance.
+PROJECT_FOLDER_ID 1cF3b2y9NAyEXZmC9FPZ9B8RDQYRP9SJz
+QUOTA {"storageQuota": {"limit": "429496729600", "usage": "320126469909", "usageInDrive": "311909350817", "usageInDriveTrash": "3015774"}}
+FILE {"path": "runs/bbc_fp32_3ep_v1/status.json", "id": "1ZvIbI9xDuPiEorPnowDQ7W3qaxl88NYO", "size": "238", "md5": "ff4b6850c8703a6ca20c767dd419cf47"}
+API_RUN_STATUS {
+  "run": "bbc_fp32_3ep_v1",
+  "status": "running",
+  "epoch": 1,
+  "update": 54,
+  "last_event": "optimizer_update",
+  "last_time_utc": "2026-10-21T21:14:09.192000+00:00",
+  "elapsed_seconds": 4036.861127536,
+  "epoch_tokens": 3524523
+}
+FILE {"path": "runs/bbc_fp32_3ep_v1/events.jsonl", "id": "1dHjIf6Kre0fSnqtyNk6qC1hH-GIk0yKf", "size": "33572", "md5": "09dbaa73be98abf00611a5a2f658dfa4"}
+FILE {"path": "runs/bbc_fp32_3ep_v1/diagnostics_epoch_000.json", "id": "1d25WwauU9tM7c05BtvMYTq16w6IEmf0m", "size": "7434", "md5": "626367556a8420a45a47372d38c61aaf"}
+FILE {"path": "runs/bbc_fp32_3ep_v1/plan.json", "id": "1pMFHvi75SjrD3ayhmlqOprIeiKXKpyRV", "size": "1559", "md5": "82cbbdd11007e4c81a92e0065e3737f5"}
+FILE {"path": "runs/bbc_fp32_3ep_v1/environment.json", "id": "1_vGjBiJNQrHLOSLN_zDdsfecuptxe-mF", "size": "965", "md5": "d4f35a257bea2ba7a59ae59629acb2be"}
+FILE {"path": "runs/bbc_fp32_3ep_v1/train_llada_bbc.py", "id": "1M0L7KOGakZ-5YERjnWqi5tkQRCOBbfd3", "size": "16865", "md5": "8841397208426f4a65c94a54bedf1f40"}
+FILE {"path": "runs/bbc_fp32_3ep_v1/config.json", "id": "1o6Z3Hj3T1BGyZ_54PZcKblWjrshwaymU", "size": "1278", "md5": "0bb1c66b1ebb60cccda5dd4fae72a3aa"}
+FILE {"path": "runs/bbc_fp32_3ep_v1/METHODS.md", "id": "1hKEDEv4IpTnIdcDYdgz0lgXJBnBZX2N6", "size": "30795", "md5": "73c2b1b95aac5b023ad230b2146f9330"}
+FILE {"path": "runs/bbc_fp32_3ep_v1/data_manifest.json", "id": "1bCVEvWN3lE-RVS9ZK049yZQrhh66HO_H", "size": "98191", "md5": "da247bfb3ee57dc2411f72371177997e"}
+FILE {"path": "runs/bbc_fp32_3ep_v1/prepare_training_data.py", "id": "1y5E7tLrh-6hHNLyPVX1l_KcPtWiP5kUR", "size": "4763", "md5": "d03fcc0b5ab06701720992ba2847cd3c"}
+FILE {"path": "runs/bbc_fp32_3ep_v1/benchmark_llada.py", "id": "1pX9sHtgx685s0u6ucSzgvwTEvbNlAA3E", "size": "13993", "md5": "31432f93e5b407719de9bfe04f836077"}

@@ -1,0 +1,22 @@
+{
+  "run_name": "bbc_fp32_3ep_v3_api",
+  "configuration": "llada_training_config_v3.json",
+  "methods": "LLADA_BBC_METHOD_v3.md",
+  "drive_project": "/content/drive/MyDrive/LLaDA-ft",
+  "drive_model_directory": "LLaDA-ft/checkpoints/bbc_fp32_3ep_v3_api",
+  "drive_model_directory_url": "https://drive.google.com/drive/folders/1T0dBVPKa8rNV8CnnpdmBVus1cMYMt7GC",
+  "initial_full_model_upload_verified": true,
+  "initial_upload_receipt": "full_checkpoint_upload_receipt.json",
+  "drive_api_journal": "LLaDA-ft/run-api-records/bbc_fp32_3ep_v3_api",
+  "drive_mount_log": "LLaDA-ft/logs/bbc_fp32_3ep_v3_api.log",
+  "live_status_command": "python /content/check_run_api.py bbc_fp32_3ep_v3_api",
+  "notes": [
+    "This file identifies the run; it is not a live status or completion claim.",
+    "The base-transport-preflight folder is the untrained Base model, not a fine-tuned result.",
+    "Only checkpoints with COMPLETE.json and a verified upload receipt are complete.",
+    "The v1 run has no recoverable trained checkpoint; its last persisted record is epoch 1 update 54.",
+    "The v2 initialization failed on a missing first shard in the old Drive model cache.",
+    "The v3 run loads the same pinned Base revision from local Colab disk and uploads exports through the Drive API.",
+    "Snapshots are model-only and cannot exactly resume the optimizer."
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "model_id": "GSAI-ML/LLaDA-8B-Base",
+  "model_revision": "0f2787f2d87eac5eed8a087d5ecd24277e6255b2",
+  "dataset_id": "RealTimeData/bbc_news_alltime",
+  "dataset_revision": "8dd1ecdc92ac43f9c04a3da3e945537dbb08179b",
+  "configs": [
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06"
+  ],
+  "cutoff": "2025-03-01",
+  "parity": "global even indices AFTER date filtering; monthly configs sorted, original row order",
+  "model_path": "/content/drive/MyDrive/LLaDA-ft/hf-cache/hub/models--GSAI-ML--LLaDA-8B-Base/snapshots/0f2787f2d87eac5eed8a087d5ecd24277e6255b2",
+  "months": [
+    {
+      "config": "2025-03",
+      "source_rows": 2697,
+      "eligible": 2697,
+      "selected": 1349
+    },
+    {
+      "config": "2025-04",
+      "source_rows": 2571,
+      "eligible": 2571,
+      "selected": 1285
+    },
+    {
+      "config": "2025-05",
+      "source_rows": 2704,
+      "eligible": 2704,
+      "selected": 1352
+    },
+    {
+      "config": "2025-06",
+      "source_rows": 2671,
+      "eligible": 2671,
+      "selected": 1336
+    }
+  ],
+  "eligible_articles": 10643,
+  "selected_articles": 5322,
+  "selected_empty_articles": 7,
+  "total_tokens_with_eos": 3941989,
+  "packing": "Concatenate article content + EOS, split into 1024-token blocks; final block padded and excluded from loss",
+  "blocks_1024": 3850,
+  "sample_token_count": 262144
+}

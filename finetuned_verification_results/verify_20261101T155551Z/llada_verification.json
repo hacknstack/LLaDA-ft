@@ -1,0 +1,86 @@
+{
+  "model": "llada",
+  "status": "verified",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "runs": [
+    {
+      "model": "llada",
+      "group": "train",
+      "scheme": "low-confidence",
+      "mask": "suffix50",
+      "directory": "/workspace/finetuned-extraction/verification/verify_20261101T155551Z/results/llada/train/low-confidence/suffix50/train_1734/20261101_161432_412047",
+      "rows": 3,
+      "seconds": 49.20782623114064
+    },
+    {
+      "model": "llada",
+      "group": "train",
+      "scheme": "threshold",
+      "mask": "suffix50",
+      "directory": "/workspace/finetuned-extraction/verification/verify_20261101T155551Z/results/llada/train/threshold/suffix50/train_1734/20261101_161521_619877",
+      "rows": 3,
+      "seconds": 47.33643751707859
+    },
+    {
+      "model": "llada",
+      "group": "train",
+      "scheme": "low-confidence",
+      "mask": "alternating50",
+      "directory": "/workspace/finetuned-extraction/verification/verify_20261101T155551Z/results/llada/train/low-confidence/alternating50/train_1734/20261101_161608_956938",
+      "rows": 3,
+      "seconds": 16.913424181053415
+    },
+    {
+      "model": "llada",
+      "group": "train",
+      "scheme": "threshold",
+      "mask": "alternating50",
+      "directory": "/workspace/finetuned-extraction/verification/verify_20261101T155551Z/results/llada/train/threshold/alternating50/train_1734/20261101_161625_871130",
+      "rows": 3,
+      "seconds": 13.775783922988921
+    },
+    {
+      "model": "llada",
+      "group": "clean_odd_control",
+      "scheme": "low-confidence",
+      "mask": "suffix50",
+      "directory": "/workspace/finetuned-extraction/verification/verify_20261101T155551Z/results/llada/clean_odd_control/low-confidence/suffix50/clean_odd_control_1695/20261101_161639_647464",
+      "rows": 3,
+      "seconds": 39.97983256005682
+    },
+    {
+      "model": "llada",
+      "group": "clean_odd_control",
+      "scheme": "threshold",
+      "mask": "suffix50",
+      "directory": "/workspace/finetuned-extraction/verification/verify_20261101T155551Z/results/llada/clean_odd_control/threshold/suffix50/clean_odd_control_1695/20261101_161719_627687",
+      "rows": 3,
+      "seconds": 37.97263160999864
+    },
+    {
+      "model": "llada",
+      "group": "clean_odd_control",
+      "scheme": "low-confidence",
+      "mask": "alternating50",
+      "directory": "/workspace/finetuned-extraction/verification/verify_20261101T155551Z/results/llada/clean_odd_control/low-confidence/alternating50/clean_odd_control_1695/20261101_161757_600919",
+      "rows": 3,
+      "seconds": 15.294091942952946
+    },
+    {
+      "model": "llada",
+      "group": "clean_odd_control",
+      "scheme": "threshold",
+      "mask": "alternating50",
+      "directory": "/workspace/finetuned-extraction/verification/verify_20261101T155551Z/results/llada/clean_odd_control/threshold/alternating50/clean_odd_control_1695/20261101_161812_895704",
+      "rows": 3,
+      "seconds": 9.28397982311435
+    }
+  ],
+  "rows": 24,
+  "peak_allocated_gib": 15.43382215499878,
+  "ar_teacher_forcing_alignment_verified": false,
+  "cuda_visible_devices": "0",
+  "torch_version": "2.8.0+cu128",
+  "model_dtype": "bfloat16",
+  "llada_estimator_dtype": "float64"
+}

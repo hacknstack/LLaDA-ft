@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-14",
+  "hardware": "4 NVIDIA H100 80GB HBM3",
+  "price_per_pod_hour_USD": 17.7,
+  "effective_GPUs": 3.6,
+  "windows": 300,
+  "masks": 12,
+  "decoders": [
+    "low-confidence",
+    "threshold"
+  ],
+  "temperatures": [
+    0.5,
+    2.0
+  ],
+  "STS_samples": 500,
+  "MC_trials": 5000,
+  "estimated_pod_hours": 212.79928238536718,
+  "estimated_cost_USD": 3766.547298220999,
+  "planning_range_hours": [
+    127.6795694312203,
+    340.4788518165875
+  ],
+  "planning_range_USD": [
+    2259.928378932599,
+    6026.475677153599
+  ],
+  "rows": [
+    {
+      "temperature": 0.5,
+      "pod_hours": 2.608915256941044,
+      "cost_USD": 46.17780004785648
+    },
+    {
+      "temperature": 2.0,
+      "pod_hours": 210.19036712842615,
+      "cost_USD": 3720.369498173143
+    }
+  ],
+  "T2_transfer_speedup_used": 4.0,
+  "T2_old_MIG_GPU_hours": 3026.7412866493364,
+  "scalar_preserving_pod_hours": 544.9021005843755,
+  "scalar_preserving_cost_USD": 9644.767180343446,
+  "scalar_transfer_speedup": 1.5503817699756934,
+  "batching_validation": "Same mathematical algorithm and precision; batch-vs-scalar logits, seeded sample paths and STS estimates differ on this H100. Faster forecast conditional on numerical validation before full launch.",
+  "full_experiment_started": false,
+  "paper_runtime_study_excluded": true
+}

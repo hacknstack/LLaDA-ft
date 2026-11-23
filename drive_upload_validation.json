@@ -1,0 +1,21 @@
+{
+  "id": "1Uvr0JRmVXn107TvewjNc5PJWroCMovD_",
+  "name": "model-00002-of-00006.safetensors",
+  "parents": [
+    "1e9xJmbnSLtmdTOdmuEs3lNwB7V-c1e4N"
+  ],
+  "appProperties": {
+    "sha256": "330b95434544dcdac54531ef01a14fd7dede828974d3ca2c440e443a011d0365"
+  },
+  "webViewLink": "https://drive.google.com/file/d/1Uvr0JRmVXn107TvewjNc5PJWroCMovD_/view?usp=drivesdk",
+  "md5Checksum": "3903b18620f3667ac5bd531cecea90c3",
+  "sha256Checksum": "330b95434544dcdac54531ef01a14fd7dede828974d3ca2c440e443a011d0365",
+  "size": "2948598128",
+  "verified_md5": "3903b18620f3667ac5bd531cecea90c3",
+  "local_sha256": "330b95434544dcdac54531ef01a14fd7dede828974d3ca2c440e443a011d0365",
+  "reused": false,
+  "source_name": "model-00002-of-00006.safetensors",
+  "elapsed_seconds": 85.56073536999997,
+  "meaning": "Base-model shard transport test only; this is not a fine-tuned checkpoint",
+  "test_copy_deleted": true
+}

@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "verified_utc": "2026-11-01T17:27:17.124392+00:00",
+  "isolated_test_path": "/workspace/finetuned-extraction/tests/production-finalization-q0lmmbv_",
+  "source_ledger_integrity": "ok",
+  "expected_counts_verified": {
+    "llada": 133968,
+    "llama2_7b": 5582,
+    "llama3_8b": 5582,
+    "mistral7b_v01": 5582,
+    "olmo7b": 5582
+  },
+  "committed_pairs_in_test": 1,
+  "final_csvs_checked": 28,
+  "identical_window_sets_in_all_final_csvs": true,
+  "rows_checked": 448,
+  "real_run_unmodified": true,
+  "no_test_data_uploaded": true
+}

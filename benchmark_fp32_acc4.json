@@ -1,0 +1,95 @@
+{
+  "name": "full_fp32_master_cpu_adamw_4096_acc4",
+  "status": "ok",
+  "sequence_length": 4096,
+  "microbatch": 1,
+  "accumulation": 4,
+  "warmup_updates": 1,
+  "timed_updates": 2,
+  "weights": "GPU BF16 plus CPU FP32 master copy",
+  "gradients": "GPU BF16 accumulated across 4 examples, then CPU FP32",
+  "optimizer_states": "CPU FP32",
+  "optimizer": "stock torch.optim.AdamW, foreach=False",
+  "learning_rate": 1e-05,
+  "weight_decay": 0.1,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "epsilon": 1e-08,
+  "beta_epsilon_provenance": "Explicit implementation assumptions; paper does not specify these",
+  "scheduler": "constant only for timing probe",
+  "gradient_checkpointing": "whole_layer, non-reentrant",
+  "cpu_threads": 12,
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "initial_available_ram_gib": 163.71746444702148,
+  "trainable_parameters": 8015581184,
+  "load_setup_seconds": 28.87670018100016,
+  "updates": [
+    {
+      "update": 0,
+      "seconds": 54.89851803900001,
+      "forward_backward_seconds": 6.3786129340001025,
+      "gradient_copy_seconds": 13.734531794999839,
+      "cpu_optimizer_seconds": 28.35745877799991,
+      "weight_copy_seconds": 6.427905118000126,
+      "losses": [
+        1.2836874723434448,
+        0.40182065963745117,
+        2.1044983863830566,
+        6.300955772399902
+      ],
+      "gradient_norm": 4.343940734863281,
+      "master_parameter_changed": true,
+      "process_rss_gib": 120.98425674438477,
+      "available_ram_gib": 42.88581848144531
+    },
+    {
+      "update": 1,
+      "seconds": 46.231850958999985,
+      "forward_backward_seconds": 5.871064106999711,
+      "gradient_copy_seconds": 13.90698774700013,
+      "cpu_optimizer_seconds": 20.442224283000087,
+      "weight_copy_seconds": 6.011567149999792,
+      "losses": [
+        6.168890953063965,
+        0.8543213605880737,
+        0.9487369060516357,
+        3.1208157539367676
+      ],
+      "gradient_norm": 4.642629146575928,
+      "master_parameter_changed": true,
+      "process_rss_gib": 120.98496627807617,
+      "available_ram_gib": 43.29159927368164
+    },
+    {
+      "update": 2,
+      "seconds": 46.12862582799971,
+      "forward_backward_seconds": 5.891545007999866,
+      "gradient_copy_seconds": 13.930204394000157,
+      "cpu_optimizer_seconds": 20.312672604,
+      "weight_copy_seconds": 5.9941991140003665,
+      "losses": [
+        4.475615978240967,
+        5.06817102432251,
+        0.6887564659118652,
+        6.914261817932129
+      ],
+      "gradient_norm": 6.9995832443237305,
+      "master_parameter_changed": true,
+      "process_rss_gib": 120.98497772216797,
+      "available_ram_gib": 43.296112060546875
+    }
+  ],
+  "optimizer_state_dtypes": [
+    "torch.float32"
+  ],
+  "mean_update_seconds": 46.18023839349985,
+  "tokens_per_second": 354.78378999243427,
+  "epoch_blocks": 963,
+  "epoch_hours": 3.0883034425653024,
+  "peak_allocated_gib": 37.62254524230957,
+  "peak_reserved_gib": 48.857421875,
+  "peak_process_rss_gib": 125.03089904785156,
+  "estimated_cpu_persistent_state_gib": 89.58110046386719
+}

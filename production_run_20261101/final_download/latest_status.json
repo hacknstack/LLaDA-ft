@@ -1,0 +1,101 @@
+{
+  "controller": {
+    "status": "complete",
+    "run_id": "bbc_12masks_20261101T171020Z",
+    "updated_utc": "2026-11-03T17:22:45.723971+00:00",
+    "controller_pid": 3546,
+    "total_done": 156296,
+    "expected_total": 156296,
+    "counts": {
+      "llada": 133968,
+      "llama2_7b": 5582,
+      "llama3_8b": 5582,
+      "mistral7b_v01": 5582,
+      "olmo7b": 5582
+    },
+    "expected_by_model": {
+      "llada": 133968,
+      "llama2_7b": 5582,
+      "llama3_8b": 5582,
+      "mistral7b_v01": 5582,
+      "olmo7b": 5582
+    },
+    "completed_documents": 700,
+    "completed_pairs": 350,
+    "completed_waves": 87,
+    "active_wave": null,
+    "llada_measured_gpu_seconds": 1206963.7964295738,
+    "llada_rows": 133968,
+    "speed_ratio_to_pilot": 0.95852685071695,
+    "estimated_remaining_hours": 0.0,
+    "worker_models": {
+      "0": "llada",
+      "1": "llada",
+      "2": "llada",
+      "3": "llada",
+      "4": "llada",
+      "5": "llada",
+      "6": "llada"
+    },
+    "gpu_resources": [
+      {
+        "gpu": 0,
+        "utilization": 0.0,
+        "memory_mib": 16348.0,
+        "temperature_c": 53.0,
+        "power_w": 67.6
+      },
+      {
+        "gpu": 1,
+        "utilization": 0.0,
+        "memory_mib": 16508.0,
+        "temperature_c": 52.0,
+        "power_w": 56.91
+      },
+      {
+        "gpu": 2,
+        "utilization": 0.0,
+        "memory_mib": 16348.0,
+        "temperature_c": 51.0,
+        "power_w": 55.79
+      },
+      {
+        "gpu": 3,
+        "utilization": 0.0,
+        "memory_mib": 16348.0,
+        "temperature_c": 52.0,
+        "power_w": 63.84
+      },
+      {
+        "gpu": 4,
+        "utilization": 9.0,
+        "memory_mib": 16470.0,
+        "temperature_c": 69.0,
+        "power_w": 225.51
+      },
+      {
+        "gpu": 5,
+        "utilization": 0.0,
+        "memory_mib": 16468.0,
+        "temperature_c": 57.0,
+        "power_w": 74.07
+      },
+      {
+        "gpu": 6,
+        "utilization": 0.0,
+        "memory_mib": 16348.0,
+        "temperature_c": 56.0,
+        "power_w": 75.8
+      }
+    ],
+    "failed_task_count": 0,
+    "retried_tasks": 3,
+    "soft_deadline_utc": "2026-11-04T13:11:37+00:00",
+    "hard_deadline_utc": "2026-11-04T19:26:37+00:00",
+    "counts_refreshed_utc": "2026-11-03T17:22:59.081483+00:00"
+  },
+  "upload_verified_utc": "2026-11-03T17:22:59.082687+00:00",
+  "uploaded_rows": 156296,
+  "uploaded_batches": 563,
+  "uploaded_bytes": 14613190
+}

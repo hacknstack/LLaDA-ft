@@ -1,0 +1,1287 @@
+{
+  "model": "llama2-base",
+  "rows": [
+    {
+      "document": "3-ClauseBSDLicense",
+      "window_number": 0,
+      "temperature": 0.5,
+      "forward_seconds": 0.2159450170584023,
+      "score_seconds": 0.015363284852355719,
+      "probability": 1.0
+    },
+    {
+      "document": "3-ClauseBSDLicense",
+      "window_number": 0,
+      "temperature": 2.0,
+      "forward_seconds": 0.2159450170584023,
+      "score_seconds": 0.0020543120335787535,
+      "probability": 2.6427336698203766e-08
+    },
+    {
+      "document": "3-ClauseBSDLicense",
+      "window_number": 24,
+      "temperature": 0.5,
+      "forward_seconds": 0.049641977064311504,
+      "score_seconds": 0.002047060988843441,
+      "probability": 0.06418041528377214
+    },
+    {
+      "document": "3-ClauseBSDLicense",
+      "window_number": 24,
+      "temperature": 2.0,
+      "forward_seconds": 0.049641977064311504,
+      "score_seconds": 0.001879621995612979,
+      "probability": 1.7176870439131043e-16
+    },
+    {
+      "document": "ApacheLicense",
+      "window_number": 19,
+      "temperature": 0.5,
+      "forward_seconds": 0.0493035011459142,
+      "score_seconds": 0.002002726076170802,
+      "probability": 0.07162045687437055
+    },
+    {
+      "document": "ApacheLicense",
+      "window_number": 19,
+      "temperature": 2.0,
+      "forward_seconds": 0.0493035011459142,
+      "score_seconds": 0.0019100869540125132,
+      "probability": 7.825986841116118e-12
+    },
+    {
+      "document": "ApacheLicense",
+      "window_number": 43,
+      "temperature": 0.5,
+      "forward_seconds": 0.04918218986131251,
+      "score_seconds": 0.001979880966246128,
+      "probability": 0.9498882293701172
+    },
+    {
+      "document": "ApacheLicense",
+      "window_number": 43,
+      "temperature": 2.0,
+      "forward_seconds": 0.04918218986131251,
+      "score_seconds": 0.001866761827841401,
+      "probability": 1.6621957914343776e-06
+    },
+    {
+      "document": "ApacheLicense",
+      "window_number": 67,
+      "temperature": 0.5,
+      "forward_seconds": 0.04931168397888541,
+      "score_seconds": 0.0019337821286171675,
+      "probability": 4.094263083529376e-06
+    },
+    {
+      "document": "ApacheLicense",
+      "window_number": 67,
+      "temperature": 2.0,
+      "forward_seconds": 0.04931168397888541,
+      "score_seconds": 0.001936896936967969,
+      "probability": 1.5629578781338e-18
+    },
+    {
+      "document": "ApacheLicense",
+      "window_number": 91,
+      "temperature": 0.5,
+      "forward_seconds": 0.04918239009566605,
+      "score_seconds": 0.0027215799782425165,
+      "probability": 5.3769292906876394e-06
+    },
+    {
+      "document": "ApacheLicense",
+      "window_number": 91,
+      "temperature": 2.0,
+      "forward_seconds": 0.04918239009566605,
+      "score_seconds": 0.002324355999007821,
+      "probability": 3.2253801948813556e-25
+    },
+    {
+      "document": "ApacheLicense",
+      "window_number": 115,
+      "temperature": 0.5,
+      "forward_seconds": 0.04949757200665772,
+      "score_seconds": 0.0019720089621841908,
+      "probability": 0.7558135986328125
+    },
+    {
+      "document": "ApacheLicense",
+      "window_number": 115,
+      "temperature": 2.0,
+      "forward_seconds": 0.04949757200665772,
+      "score_seconds": 0.0021672011353075504,
+      "probability": 8.674090592753353e-11
+    },
+    {
+      "document": "ApacheLicense",
+      "window_number": 139,
+      "temperature": 0.5,
+      "forward_seconds": 0.049854225013405085,
+      "score_seconds": 0.002023245906457305,
+      "probability": 0.942571141240478
+    },
+    {
+      "document": "ApacheLicense",
+      "window_number": 139,
+      "temperature": 2.0,
+      "forward_seconds": 0.049854225013405085,
+      "score_seconds": 0.0019048291724175215,
+      "probability": 1.1643857484187258e-09
+    },
+    {
+      "document": "ApacheLicense",
+      "window_number": 163,
+      "temperature": 0.5,
+      "forward_seconds": 0.04929341608658433,
+      "score_seconds": 0.0019080231431871653,
+      "probability": 0.8948493761208034
+    },
+    {
+      "document": "ApacheLicense",
+      "window_number": 163,
+      "temperature": 2.0,
+      "forward_seconds": 0.04929341608658433,
+      "score_seconds": 0.001970035955309868,
+      "probability": 1.5493498931468094e-13
+    },
+    {
+      "document": "ApacheLicense",
+      "window_number": 187,
+      "temperature": 0.5,
+      "forward_seconds": 0.04930191906169057,
+      "score_seconds": 0.0021921079605817795,
+      "probability": 0.13873559114330195
+    },
+    {
+      "document": "ApacheLicense",
+      "window_number": 187,
+      "temperature": 2.0,
+      "forward_seconds": 0.04930191906169057,
+      "score_seconds": 0.0019148641731590033,
+      "probability": 8.813495361079634e-11
+    },
+    {
+      "document": "ApacheLicense",
+      "window_number": 211,
+      "temperature": 0.5,
+      "forward_seconds": 0.04950399091467261,
+      "score_seconds": 0.0019877830054610968,
+      "probability": 0.00016178679652512076
+    },
+    {
+      "document": "ApacheLicense",
+      "window_number": 211,
+      "temperature": 2.0,
+      "forward_seconds": 0.04950399091467261,
+      "score_seconds": 0.001967811957001686,
+      "probability": 6.4892384634717145e-12
+    },
+    {
+      "document": "ApacheLicense",
+      "window_number": 235,
+      "temperature": 0.5,
+      "forward_seconds": 0.04923192411661148,
+      "score_seconds": 0.002118858974426985,
+      "probability": 0.882893311791122
+    },
+    {
+      "document": "ApacheLicense",
+      "window_number": 235,
+      "temperature": 2.0,
+      "forward_seconds": 0.04923192411661148,
+      "score_seconds": 0.001920721959322691,
+      "probability": 1.1868802180781153e-10
+    },
+    {
+      "document": "ApacheLicense",
+      "window_number": 259,
+      "temperature": 0.5,
+      "forward_seconds": 0.049450972117483616,
+      "score_seconds": 0.0020201110746711493,
+      "probability": 4.101468379952801e-09
+    },
+    {
+      "document": "ApacheLicense",
+      "window_number": 259,
+      "temperature": 2.0,
+      "forward_seconds": 0.049450972117483616,
+      "score_seconds": 0.0018650491256266832,
+      "probability": 1.735636532704434e-27
+    },
+    {
+      "document": "ApacheLicense",
+      "window_number": 283,
+      "temperature": 0.5,
+      "forward_seconds": 0.0492847440764308,
+      "score_seconds": 0.002091136993840337,
+      "probability": 0.7862815856933594
+    },
+    {
+      "document": "ApacheLicense",
+      "window_number": 283,
+      "temperature": 2.0,
+      "forward_seconds": 0.0492847440764308,
+      "score_seconds": 0.0019504770170897245,
+      "probability": 2.110523802608021e-10
+    },
+    {
+      "document": "BillOfRights",
+      "window_number": 23,
+      "temperature": 0.5,
+      "forward_seconds": 0.04924521502107382,
+      "score_seconds": 0.0019875129219144583,
+      "probability": 0.26533216238021856
+    },
+    {
+      "document": "BillOfRights",
+      "window_number": 23,
+      "temperature": 2.0,
+      "forward_seconds": 0.04924521502107382,
+      "score_seconds": 0.001914922846481204,
+      "probability": 7.978455029936192e-12
+    },
+    {
+      "document": "BillOfRights",
+      "window_number": 47,
+      "temperature": 0.5,
+      "forward_seconds": 0.04913746286183596,
+      "score_seconds": 0.0020503869745880365,
+      "probability": 0.6090292416047305
+    },
+    {
+      "document": "BillOfRights",
+      "window_number": 47,
+      "temperature": 2.0,
+      "forward_seconds": 0.04913746286183596,
+      "score_seconds": 0.001899851020425558,
+      "probability": 3.207089459034904e-19
+    },
+    {
+      "document": "BillOfRights",
+      "window_number": 71,
+      "temperature": 0.5,
+      "forward_seconds": 0.04933094303123653,
+      "score_seconds": 0.0019281140994280577,
+      "probability": 0.9048834443092346
+    },
+    {
+      "document": "BillOfRights",
+      "window_number": 71,
+      "temperature": 2.0,
+      "forward_seconds": 0.04933094303123653,
+      "score_seconds": 0.002072939882054925,
+      "probability": 1.4826447854786627e-19
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 13,
+      "temperature": 0.5,
+      "forward_seconds": 0.049286596942692995,
+      "score_seconds": 0.0020300960168242455,
+      "probability": 4.5653217453485374e-10
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 13,
+      "temperature": 2.0,
+      "forward_seconds": 0.049286596942692995,
+      "score_seconds": 0.0018932418897747993,
+      "probability": 2.673221926006246e-28
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 37,
+      "temperature": 0.5,
+      "forward_seconds": 0.049272604985162616,
+      "score_seconds": 0.0020411021541804075,
+      "probability": 0.9083032608032227
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 37,
+      "temperature": 2.0,
+      "forward_seconds": 0.049272604985162616,
+      "score_seconds": 0.0020772370044142008,
+      "probability": 2.697854471077846e-18
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 61,
+      "temperature": 0.5,
+      "forward_seconds": 0.049177733017131686,
+      "score_seconds": 0.0019802420865744352,
+      "probability": 0.9883269667625427
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 61,
+      "temperature": 2.0,
+      "forward_seconds": 0.049177733017131686,
+      "score_seconds": 0.0022049169056117535,
+      "probability": 1.7271396381932495e-11
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 86,
+      "temperature": 0.5,
+      "forward_seconds": 0.04928139806725085,
+      "score_seconds": 0.001982836052775383,
+      "probability": 0.0038349868918885447
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 86,
+      "temperature": 2.0,
+      "forward_seconds": 0.04928139806725085,
+      "score_seconds": 0.0019155850168317556,
+      "probability": 1.1665363012080725e-13
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 110,
+      "temperature": 0.5,
+      "forward_seconds": 0.049142691073939204,
+      "score_seconds": 0.0020731498952955008,
+      "probability": 0.68359375
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 110,
+      "temperature": 2.0,
+      "forward_seconds": 0.049142691073939204,
+      "score_seconds": 0.0021140510216355324,
+      "probability": 2.5939845043481008e-11
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 134,
+      "temperature": 0.5,
+      "forward_seconds": 0.04927117400802672,
+      "score_seconds": 0.002025820082053542,
+      "probability": 2.1421323577268923e-07
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 134,
+      "temperature": 2.0,
+      "forward_seconds": 0.04927117400802672,
+      "score_seconds": 0.002006080001592636,
+      "probability": 4.146101970231597e-18
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 158,
+      "temperature": 0.5,
+      "forward_seconds": 0.04916496388614178,
+      "score_seconds": 0.001997116021811962,
+      "probability": 0.94940185546875
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 158,
+      "temperature": 2.0,
+      "forward_seconds": 0.04916496388614178,
+      "score_seconds": 0.001915043918415904,
+      "probability": 4.254970138291934e-12
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 182,
+      "temperature": 0.5,
+      "forward_seconds": 0.04924361198209226,
+      "score_seconds": 0.0020945819560438395,
+      "probability": 0.010509890926186925
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 182,
+      "temperature": 2.0,
+      "forward_seconds": 0.04924361198209226,
+      "score_seconds": 0.0019107179250568151,
+      "probability": 2.4684008140620553e-15
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 206,
+      "temperature": 0.5,
+      "forward_seconds": 0.049265865003690124,
+      "score_seconds": 0.0019647679291665554,
+      "probability": 0.9805753827095032
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 206,
+      "temperature": 2.0,
+      "forward_seconds": 0.049265865003690124,
+      "score_seconds": 0.001859121024608612,
+      "probability": 3.9921362008025273e-13
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 230,
+      "temperature": 0.5,
+      "forward_seconds": 0.049242079025134444,
+      "score_seconds": 0.0019782388117164373,
+      "probability": 0.0003654928877949714
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 230,
+      "temperature": 2.0,
+      "forward_seconds": 0.049242079025134444,
+      "score_seconds": 0.0019010528922080994,
+      "probability": 3.389984655911964e-13
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 254,
+      "temperature": 0.5,
+      "forward_seconds": 0.04917538887821138,
+      "score_seconds": 0.0020052390173077583,
+      "probability": 1.2834292616920778e-06
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 254,
+      "temperature": 2.0,
+      "forward_seconds": 0.04917538887821138,
+      "score_seconds": 0.0019258609972894192,
+      "probability": 1.3258025352674624e-18
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 278,
+      "temperature": 0.5,
+      "forward_seconds": 0.049245303962379694,
+      "score_seconds": 0.0019688038155436516,
+      "probability": 1.1765682436834446e-09
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 278,
+      "temperature": 2.0,
+      "forward_seconds": 0.049245303962379694,
+      "score_seconds": 0.0018404820002615452,
+      "probability": 7.46776231133307e-21
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 302,
+      "temperature": 0.5,
+      "forward_seconds": 0.0491678980179131,
+      "score_seconds": 0.002616794081404805,
+      "probability": 1.6993735773565753e-12
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 302,
+      "temperature": 2.0,
+      "forward_seconds": 0.0491678980179131,
+      "score_seconds": 0.0028441729955375195,
+      "probability": 1.2812992704014927e-28
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 326,
+      "temperature": 0.5,
+      "forward_seconds": 0.04984435997903347,
+      "score_seconds": 0.00199251901358366,
+      "probability": 6.720991814835875e-13
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 326,
+      "temperature": 2.0,
+      "forward_seconds": 0.04984435997903347,
+      "score_seconds": 0.0018773369956761599,
+      "probability": 4.303070626916732e-21
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 350,
+      "temperature": 0.5,
+      "forward_seconds": 0.04914647596888244,
+      "score_seconds": 0.002003947040066123,
+      "probability": 3.9069782963749126e-08
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 350,
+      "temperature": 2.0,
+      "forward_seconds": 0.04914647596888244,
+      "score_seconds": 0.002130436012521386,
+      "probability": 3.683074257127885e-18
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 374,
+      "temperature": 0.5,
+      "forward_seconds": 0.04924366180785,
+      "score_seconds": 0.0024871891364455223,
+      "probability": 0.476715087890625
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 374,
+      "temperature": 2.0,
+      "forward_seconds": 0.04924366180785,
+      "score_seconds": 0.0023162742145359516,
+      "probability": 4.13334554779971e-17
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 398,
+      "temperature": 0.5,
+      "forward_seconds": 0.04950705589726567,
+      "score_seconds": 0.0020337409805506468,
+      "probability": 0.9921875
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 398,
+      "temperature": 2.0,
+      "forward_seconds": 0.04950705589726567,
+      "score_seconds": 0.0019193107727915049,
+      "probability": 3.6658136400125605e-11
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 422,
+      "temperature": 0.5,
+      "forward_seconds": 0.049319606041535735,
+      "score_seconds": 0.0019315378740429878,
+      "probability": 0.7083697750931606
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 422,
+      "temperature": 2.0,
+      "forward_seconds": 0.049319606041535735,
+      "score_seconds": 0.0018933808896690607,
+      "probability": 4.267616020538118e-17
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 446,
+      "temperature": 0.5,
+      "forward_seconds": 0.04918126901611686,
+      "score_seconds": 0.0019268819596618414,
+      "probability": 0.0828509644484193
+    },
+    {
+      "document": "ConstitutionIntro",
+      "window_number": 446,
+      "temperature": 2.0,
+      "forward_seconds": 0.04918126901611686,
+      "score_seconds": 0.002001643180847168,
+      "probability": 4.062940222280965e-19
+    },
+    {
+      "document": "DeclarationTranscript",
+      "window_number": 21,
+      "temperature": 0.5,
+      "forward_seconds": 0.04930990096181631,
+      "score_seconds": 0.00202064192853868,
+      "probability": 0.876282904245174
+    },
+    {
+      "document": "DeclarationTranscript",
+      "window_number": 21,
+      "temperature": 2.0,
+      "forward_seconds": 0.04930990096181631,
+      "score_seconds": 0.0019276919774711132,
+      "probability": 2.1601382183879806e-24
+    },
+    {
+      "document": "DeclarationTranscript",
+      "window_number": 45,
+      "temperature": 0.5,
+      "forward_seconds": 0.04918947094120085,
+      "score_seconds": 0.0020063200499862432,
+      "probability": 0.8670606445335269
+    },
+    {
+      "document": "DeclarationTranscript",
+      "window_number": 45,
+      "temperature": 2.0,
+      "forward_seconds": 0.04918947094120085,
+      "score_seconds": 0.0019310580100864172,
+      "probability": 8.899335123650761e-21
+    },
+    {
+      "document": "DeclarationTranscript",
+      "window_number": 69,
+      "temperature": 0.5,
+      "forward_seconds": 0.04922877997159958,
+      "score_seconds": 0.00198991596698761,
+      "probability": 0.10732128750532863
+    },
+    {
+      "document": "DeclarationTranscript",
+      "window_number": 69,
+      "temperature": 2.0,
+      "forward_seconds": 0.04922877997159958,
+      "score_seconds": 0.0019169768784195185,
+      "probability": 6.642624913955942e-12
+    },
+    {
+      "document": "DeclarationTranscript",
+      "window_number": 93,
+      "temperature": 0.5,
+      "forward_seconds": 0.04917148407548666,
+      "score_seconds": 0.0019921991042792797,
+      "probability": 0.988311767578125
+    },
+    {
+      "document": "DeclarationTranscript",
+      "window_number": 93,
+      "temperature": 2.0,
+      "forward_seconds": 0.04917148407548666,
+      "score_seconds": 0.0018974181730300188,
+      "probability": 9.303363806624616e-12
+    },
+    {
+      "document": "DeclarationTranscript",
+      "window_number": 117,
+      "temperature": 0.5,
+      "forward_seconds": 0.049309300957247615,
+      "score_seconds": 0.0019936109893023968,
+      "probability": 1.0
+    },
+    {
+      "document": "DeclarationTranscript",
+      "window_number": 117,
+      "temperature": 2.0,
+      "forward_seconds": 0.049309300957247615,
+      "score_seconds": 0.0019307578913867474,
+      "probability": 6.582713548956972e-13
+    },
+    {
+      "document": "DeclarationTranscript",
+      "window_number": 141,
+      "temperature": 0.5,
+      "forward_seconds": 0.049412725027650595,
+      "score_seconds": 0.0020037759095430374,
+      "probability": 0.06666278466582301
+    },
+    {
+      "document": "DeclarationTranscript",
+      "window_number": 141,
+      "temperature": 2.0,
+      "forward_seconds": 0.049412725027650595,
+      "score_seconds": 0.0019222050905227661,
+      "probability": 1.3119014039714825e-14
+    },
+    {
+      "document": "DeclarationTranscript",
+      "window_number": 165,
+      "temperature": 0.5,
+      "forward_seconds": 0.049251302843913436,
+      "score_seconds": 0.0026444450486451387,
+      "probability": 0.48046875
+    },
+    {
+      "document": "DeclarationTranscript",
+      "window_number": 165,
+      "temperature": 2.0,
+      "forward_seconds": 0.049251302843913436,
+      "score_seconds": 0.0021522389724850655,
+      "probability": 1.969150241195636e-11
+    },
+    {
+      "document": "DeclarationTranscript",
+      "window_number": 189,
+      "temperature": 0.5,
+      "forward_seconds": 0.04941586987115443,
+      "score_seconds": 0.0019158548675477505,
+      "probability": 0.9185627102851868
+    },
+    {
+      "document": "DeclarationTranscript",
+      "window_number": 189,
+      "temperature": 2.0,
+      "forward_seconds": 0.04941586987115443,
+      "score_seconds": 0.001874913927167654,
+      "probability": 5.691971888592e-12
+    },
+    {
+      "document": "DeclarationTranscript",
+      "window_number": 213,
+      "temperature": 0.5,
+      "forward_seconds": 0.049510121112689376,
+      "score_seconds": 0.0020724302157759666,
+      "probability": 0.0053713230317953276
+    },
+    {
+      "document": "DeclarationTranscript",
+      "window_number": 213,
+      "temperature": 2.0,
+      "forward_seconds": 0.049510121112689376,
+      "score_seconds": 0.001924206968396902,
+      "probability": 5.184008826257653e-15
+    },
+    {
+      "document": "DeclarationTranscript",
+      "window_number": 237,
+      "temperature": 0.5,
+      "forward_seconds": 0.04922311217524111,
+      "score_seconds": 0.0019555240869522095,
+      "probability": 0.027170442044734944
+    },
+    {
+      "document": "DeclarationTranscript",
+      "window_number": 237,
+      "temperature": 2.0,
+      "forward_seconds": 0.04922311217524111,
+      "score_seconds": 0.0019008119124919176,
+      "probability": 5.687881289293634e-17
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 11,
+      "temperature": 0.5,
+      "forward_seconds": 0.04929859400726855,
+      "score_seconds": 0.0019693151116371155,
+      "probability": 0.6066220114007592
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 11,
+      "temperature": 2.0,
+      "forward_seconds": 0.04929859400726855,
+      "score_seconds": 0.0019291050266474485,
+      "probability": 8.63371671060658e-18
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 35,
+      "temperature": 0.5,
+      "forward_seconds": 0.04919676203280687,
+      "score_seconds": 0.001922244904562831,
+      "probability": 0.022770278155803677
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 35,
+      "temperature": 2.0,
+      "forward_seconds": 0.04919676203280687,
+      "score_seconds": 0.0019026549998670816,
+      "probability": 1.2377239712989053e-12
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 59,
+      "temperature": 0.5,
+      "forward_seconds": 0.04923059185966849,
+      "score_seconds": 0.0019593301694840193,
+      "probability": 0.23442232994966616
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 59,
+      "temperature": 2.0,
+      "forward_seconds": 0.04923059185966849,
+      "score_seconds": 0.0018994312267750502,
+      "probability": 1.91803903868882e-15
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 83,
+      "temperature": 0.5,
+      "forward_seconds": 0.049122901167720556,
+      "score_seconds": 0.001989786047488451,
+      "probability": 0.0005546424972635574
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 83,
+      "temperature": 2.0,
+      "forward_seconds": 0.049122901167720556,
+      "score_seconds": 0.0019379181321710348,
+      "probability": 4.2874036927316726e-14
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 107,
+      "temperature": 0.5,
+      "forward_seconds": 0.04923713183961809,
+      "score_seconds": 0.0019987691193819046,
+      "probability": 0.0005261362124002656
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 107,
+      "temperature": 2.0,
+      "forward_seconds": 0.04923713183961809,
+      "score_seconds": 0.0019283541478216648,
+      "probability": 3.733397416534223e-15
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 131,
+      "temperature": 0.5,
+      "forward_seconds": 0.04919792409054935,
+      "score_seconds": 0.0020970560144633055,
+      "probability": 0.10837610815247652
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 131,
+      "temperature": 2.0,
+      "forward_seconds": 0.04919792409054935,
+      "score_seconds": 0.001907773083075881,
+      "probability": 1.5357460710202207e-16
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 155,
+      "temperature": 0.5,
+      "forward_seconds": 0.04940123809501529,
+      "score_seconds": 0.0019174078479409218,
+      "probability": 0.7326610308972603
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 155,
+      "temperature": 2.0,
+      "forward_seconds": 0.04940123809501529,
+      "score_seconds": 0.0018113090191036463,
+      "probability": 3.597681612361658e-16
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 179,
+      "temperature": 0.5,
+      "forward_seconds": 0.04915996687486768,
+      "score_seconds": 0.002236153930425644,
+      "probability": 0.0009005269776810136
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 179,
+      "temperature": 2.0,
+      "forward_seconds": 0.04915996687486768,
+      "score_seconds": 0.002054312964901328,
+      "probability": 1.4566206337711291e-15
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 203,
+      "temperature": 0.5,
+      "forward_seconds": 0.04935860401019454,
+      "score_seconds": 0.00197241990827024,
+      "probability": 0.0003825408521201944
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 203,
+      "temperature": 2.0,
+      "forward_seconds": 0.04935860401019454,
+      "score_seconds": 0.0019605320412665606,
+      "probability": 6.327485537419858e-16
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 227,
+      "temperature": 0.5,
+      "forward_seconds": 0.04920563590712845,
+      "score_seconds": 0.0021382581908255816,
+      "probability": 0.48866423142617227
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 227,
+      "temperature": 2.0,
+      "forward_seconds": 0.04920563590712845,
+      "score_seconds": 0.0019312980584800243,
+      "probability": 1.2260254264382935e-19
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 251,
+      "temperature": 0.5,
+      "forward_seconds": 0.04949823208153248,
+      "score_seconds": 0.002159849973395467,
+      "probability": 0.4213368213095237
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 251,
+      "temperature": 2.0,
+      "forward_seconds": 0.04949823208153248,
+      "score_seconds": 0.0019512688741087914,
+      "probability": 1.6338346576722513e-18
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 275,
+      "temperature": 0.5,
+      "forward_seconds": 0.04916290217079222,
+      "score_seconds": 0.00198750221170485,
+      "probability": 0.00013428208957195643
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 275,
+      "temperature": 2.0,
+      "forward_seconds": 0.04916290217079222,
+      "score_seconds": 0.001898980000987649,
+      "probability": 6.68478487491055e-15
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 299,
+      "temperature": 0.5,
+      "forward_seconds": 0.04924198007211089,
+      "score_seconds": 0.002108492888510227,
+      "probability": 3.523079542303845e-06
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 299,
+      "temperature": 2.0,
+      "forward_seconds": 0.04924198007211089,
+      "score_seconds": 0.001966340932995081,
+      "probability": 3.654171247497253e-22
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 323,
+      "temperature": 0.5,
+      "forward_seconds": 0.049280647188425064,
+      "score_seconds": 0.0020083740819245577,
+      "probability": 0.015468907164795107
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 323,
+      "temperature": 2.0,
+      "forward_seconds": 0.049280647188425064,
+      "score_seconds": 0.0018655301537364721,
+      "probability": 9.260087075840951e-17
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 348,
+      "temperature": 0.5,
+      "forward_seconds": 0.04928070795722306,
+      "score_seconds": 0.0021274620667099953,
+      "probability": 3.198051769752193e-08
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 348,
+      "temperature": 2.0,
+      "forward_seconds": 0.04928070795722306,
+      "score_seconds": 0.001906100893393159,
+      "probability": 3.398021202074713e-17
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 372,
+      "temperature": 0.5,
+      "forward_seconds": 0.0493344278074801,
+      "score_seconds": 0.0019800011068582535,
+      "probability": 0.005696098713087854
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 372,
+      "temperature": 2.0,
+      "forward_seconds": 0.0493344278074801,
+      "score_seconds": 0.001874743029475212,
+      "probability": 1.831462217691197e-22
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 396,
+      "temperature": 0.5,
+      "forward_seconds": 0.04923992604017258,
+      "score_seconds": 0.0020963549613952637,
+      "probability": 0.0008490398477157958
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 396,
+      "temperature": 2.0,
+      "forward_seconds": 0.04923992604017258,
+      "score_seconds": 0.001991268014535308,
+      "probability": 1.89799269331476e-18
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 420,
+      "temperature": 0.5,
+      "forward_seconds": 0.04935537907294929,
+      "score_seconds": 0.00203813798725605,
+      "probability": 0.266305860466299
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 420,
+      "temperature": 2.0,
+      "forward_seconds": 0.04935537907294929,
+      "score_seconds": 0.0019103169906884432,
+      "probability": 8.56720082603488e-15
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 444,
+      "temperature": 0.5,
+      "forward_seconds": 0.04933245503343642,
+      "score_seconds": 0.002022754866629839,
+      "probability": 0.21228718757629397
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 444,
+      "temperature": 2.0,
+      "forward_seconds": 0.04933245503343642,
+      "score_seconds": 0.001926360884681344,
+      "probability": 4.35560851993977e-13
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 468,
+      "temperature": 0.5,
+      "forward_seconds": 0.04931531916372478,
+      "score_seconds": 0.001932219136506319,
+      "probability": 0.09775640442967418
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 468,
+      "temperature": 2.0,
+      "forward_seconds": 0.04931531916372478,
+      "score_seconds": 0.0018766261637210846,
+      "probability": 5.578088488962402e-12
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 492,
+      "temperature": 0.5,
+      "forward_seconds": 0.04923338699154556,
+      "score_seconds": 0.001985429087653756,
+      "probability": 0.3525509441881791
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 492,
+      "temperature": 2.0,
+      "forward_seconds": 0.04923338699154556,
+      "score_seconds": 0.0019036170560866594,
+      "probability": 5.2291228518006885e-12
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 516,
+      "temperature": 0.5,
+      "forward_seconds": 0.04949117312207818,
+      "score_seconds": 0.0019921399652957916,
+      "probability": 0.2997239828109742
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 516,
+      "temperature": 2.0,
+      "forward_seconds": 0.04949117312207818,
+      "score_seconds": 0.0019226050935685635,
+      "probability": 1.5036927349800222e-09
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 540,
+      "temperature": 0.5,
+      "forward_seconds": 0.04939236515201628,
+      "score_seconds": 0.0020207019988447428,
+      "probability": 0.20684011979028588
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 540,
+      "temperature": 2.0,
+      "forward_seconds": 0.04939236515201628,
+      "score_seconds": 0.0019364459440112114,
+      "probability": 6.890048829135692e-12
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 564,
+      "temperature": 0.5,
+      "forward_seconds": 0.0491662360727787,
+      "score_seconds": 0.001955093117430806,
+      "probability": 0.005224082618951796
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 564,
+      "temperature": 2.0,
+      "forward_seconds": 0.0491662360727787,
+      "score_seconds": 0.0020764251239597797,
+      "probability": 3.4981931036229646e-11
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 588,
+      "temperature": 0.5,
+      "forward_seconds": 0.04926956119015813,
+      "score_seconds": 0.0019637870136648417,
+      "probability": 0.0018116627328750008
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 588,
+      "temperature": 2.0,
+      "forward_seconds": 0.04926956119015813,
+      "score_seconds": 0.0018574779387563467,
+      "probability": 1.2295551383285137e-14
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 612,
+      "temperature": 0.5,
+      "forward_seconds": 0.04913940583355725,
+      "score_seconds": 0.0020002019591629505,
+      "probability": 5.41118417091787e-09
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 612,
+      "temperature": 2.0,
+      "forward_seconds": 0.04913940583355725,
+      "score_seconds": 0.0019595008343458176,
+      "probability": 3.806276467500281e-28
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 636,
+      "temperature": 0.5,
+      "forward_seconds": 0.04922451404854655,
+      "score_seconds": 0.0020068311132490635,
+      "probability": 0.42734570953814616
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 636,
+      "temperature": 2.0,
+      "forward_seconds": 0.04922451404854655,
+      "score_seconds": 0.0019703758880496025,
+      "probability": 9.520053657254e-14
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 660,
+      "temperature": 0.5,
+      "forward_seconds": 0.049133887980133295,
+      "score_seconds": 0.00196919497102499,
+      "probability": 0.13452148437500003
+    },
+    {
+      "document": "GenesisNumbered",
+      "window_number": 660,
+      "temperature": 2.0,
+      "forward_seconds": 0.049133887980133295,
+      "score_seconds": 0.0019406029023230076,
+      "probability": 6.039867139020018e-14
+    },
+    {
+      "document": "GettysburgAddress",
+      "window_number": 16,
+      "temperature": 0.5,
+      "forward_seconds": 0.04923268500715494,
+      "score_seconds": 0.001982665155082941,
+      "probability": 0.11799065310791336
+    },
+    {
+      "document": "GettysburgAddress",
+      "window_number": 16,
+      "temperature": 2.0,
+      "forward_seconds": 0.04923268500715494,
+      "score_seconds": 0.0018661811482161283,
+      "probability": 4.1114695824623054e-17
+    },
+    {
+      "document": "ISCLicense",
+      "window_number": 4,
+      "temperature": 0.5,
+      "forward_seconds": 0.049240618012845516,
+      "score_seconds": 0.002027811948210001,
+      "probability": 0.87890625
+    },
+    {
+      "document": "ISCLicense",
+      "window_number": 4,
+      "temperature": 2.0,
+      "forward_seconds": 0.049240618012845516,
+      "score_seconds": 0.0018941431771963835,
+      "probability": 0.0014734256787545565
+    },
+    {
+      "document": "Psalm23",
+      "window_number": 5,
+      "temperature": 0.5,
+      "forward_seconds": 0.04924966092221439,
+      "score_seconds": 0.0019993700552731752,
+      "probability": 3.454803398819642e-08
+    },
+    {
+      "document": "Psalm23",
+      "window_number": 5,
+      "temperature": 2.0,
+      "forward_seconds": 0.04924966092221439,
+      "score_seconds": 0.001933972118422389,
+      "probability": 1.2813920733763438e-13
+    },
+    {
+      "document": "TheZenOfPython",
+      "window_number": 8,
+      "temperature": 0.5,
+      "forward_seconds": 0.04917331598699093,
+      "score_seconds": 0.0022655988577753305,
+      "probability": 0.000877085465245156
+    },
+    {
+      "document": "TheZenOfPython",
+      "window_number": 8,
+      "temperature": 2.0,
+      "forward_seconds": 0.04917331598699093,
+      "score_seconds": 0.0020445880945771933,
+      "probability": 3.621300798616093e-25
+    },
+    {
+      "document": "Unlicense",
+      "window_number": 19,
+      "temperature": 0.5,
+      "forward_seconds": 0.04954325989820063,
+      "score_seconds": 0.001968854106962681,
+      "probability": 0.9497058391571045
+    },
+    {
+      "document": "Unlicense",
+      "window_number": 19,
+      "temperature": 2.0,
+      "forward_seconds": 0.04954325989820063,
+      "score_seconds": 0.0019042668864130974,
+      "probability": 1.3619919650582885e-11
+    },
+    {
+      "document": "lorem ipsum",
+      "window_number": 20,
+      "temperature": 0.5,
+      "forward_seconds": 0.04916939092800021,
+      "score_seconds": 0.0022930700797587633,
+      "probability": 3.947581757581314e-20
+    },
+    {
+      "document": "lorem ipsum",
+      "window_number": 20,
+      "temperature": 2.0,
+      "forward_seconds": 0.04916939092800021,
+      "score_seconds": 0.0018835070077329874,
+      "probability": 5.5744903203679385e-39
+    }
+  ],
+  "peak_gib": 12.574440479278564,
+  "projected_gpu_seconds": 105.49254069343151
+}

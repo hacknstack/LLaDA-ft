@@ -1,0 +1,35 @@
+{
+  "dataset_revision": "8dd1ecdc92ac43f9c04a3da3e945537dbb08179b",
+  "frozen_article_sha256": "8f22ff46d5dfc7d85a2c58d598c72252b754a335514e3bd02ca485a18b87e91e",
+  "examples": [
+    {
+      "group": "train",
+      "filtered_index": 1734,
+      "source_config": "2025-03",
+      "source_row": 1734,
+      "published_date": "2025-03-25",
+      "input_path": "/workspace/finetuned-extraction/verification/verify_20261101T155551Z/train_1734.txt",
+      "content_sha256": "a9402601602d4a27210858c95623b94ed3daf57ec705b8c2db55043b7054773c",
+      "windows": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "group": "clean_odd_control",
+      "filtered_index": 1695,
+      "source_config": "2025-03",
+      "source_row": 1695,
+      "published_date": "2025-03-25",
+      "input_path": "/workspace/finetuned-extraction/verification/verify_20261101T155551Z/clean_odd_control_1695.txt",
+      "content_sha256": "7e01979f761a6ef6bf470bbbed64460e8caab246a9730e91739c94d25e76ef42",
+      "windows": [
+        0,
+        1,
+        2
+      ]
+    }
+  ],
+  "negative_policy": "Odd articles excluding normalized exact training overlaps"
+}

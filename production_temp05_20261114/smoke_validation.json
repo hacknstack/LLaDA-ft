@@ -1,0 +1,33 @@
+{
+  "final": false,
+  "completed": 8,
+  "expected": 14400,
+  "files": {
+    "validation_temp0p5_low-confidence_STS500.csv": {
+      "rows": 2,
+      "columns": 511,
+      "bytes": 30353,
+      "sha256": "99de3e4f496ca095d93b3f03b8a330bbda1659ab22d658057ee9f859cfd4d3b0"
+    },
+    "validation_temp0p5_low-confidence_MC5000.csv": {
+      "rows": 2,
+      "columns": 4,
+      "bytes": 116,
+      "sha256": "3dc0a3b319e1bd94c972ad0626b20f1eab6f9bf252225a5bd9de77d9cc51189f"
+    },
+    "validation_temp0p5_threshold_STS500.csv": {
+      "rows": 2,
+      "columns": 511,
+      "bytes": 30849,
+      "sha256": "6735a4f81dd4dfd3b6a96c60c65a970f174542dc9cc5d9b5f4f847d68e4c47e8"
+    },
+    "validation_temp0p5_threshold_MC5000.csv": {
+      "rows": 2,
+      "columns": 4,
+      "bytes": 111,
+      "sha256": "a9fbd3c31b9e763739b7378c85309c1e0cc2e8d034f518ddacd0ee90fa12ecf5"
+    }
+  },
+  "correct_reference_headers": true,
+  "paper_runtime_study_excluded": true
+}

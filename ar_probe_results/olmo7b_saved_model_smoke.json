@@ -1,0 +1,25 @@
+{
+  "run": "olmo7b_bbc_final_20261026_212627_105207",
+  "model_id": "allenai/OLMo-7B-hf",
+  "success": true,
+  "finite_forward_and_loss": true,
+  "short_prompt_ce": 4.2337164878845215,
+  "generated_new_tokens": 16,
+  "generated_text": " The measures include a ban on the sale of tobacco to everyone born after 1 January",
+  "parameter_checks": [
+    {
+      "parameter": "model.layers.0.self_attn.q_proj.weight",
+      "values": 512,
+      "changed_values": 498,
+      "maximum_abs_difference": 0.00035858154296875
+    },
+    {
+      "parameter": "model.layers.0.mlp.down_proj.weight",
+      "values": 512,
+      "changed_values": 482,
+      "maximum_abs_difference": 0.0004119873046875
+    }
+  ],
+  "elapsed_seconds": 24.055270134999773,
+  "trained_values_differ_from_bf16_base": true
+}

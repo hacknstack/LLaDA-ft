@@ -1,0 +1,89 @@
+{
+  "checkpoint": {
+    "path": "/workspace/finetuned-extraction/models/olmo7b",
+    "run": "olmo7b_bbc_final_20261026_212627_105207",
+    "epoch": 3,
+    "update": 180,
+    "model_revision": "11fb3186a2e4f681edea621fa8b4345147a9db6a",
+    "complete_sha256": "25c143f494818df981cf80d0b94ca6d2b95f05738214a5b31f50738b8dd82ea9"
+  },
+  "input_file": "/workspace/finetuned-extraction/verification/verify_20261101T155551Z/clean_odd_control_1695.txt",
+  "total_chars": 2902,
+  "parameters": {
+    "chunk_chars": 800,
+    "stride_words": 1,
+    "windows": [
+      0,
+      1,
+      2
+    ],
+    "max_windows": null,
+    "seq_tokens": 100,
+    "prefix_tokens": 50,
+    "suffix_tokens": 50,
+    "tau_min": 0.001,
+    "mode": "exact",
+    "nocache": false,
+    "scale": false,
+    "model_family": "olmo",
+    "model_name": "/workspace/finetuned-extraction/models/olmo7b",
+    "remasking": "low-confidence",
+    "decoding_scheme": "full",
+    "k": 40,
+    "temperature": 1.0,
+    "confidence_threshold": 0.9,
+    "num_samples": 10,
+    "random_path_sample_budget": 128,
+    "random_path_step_budget": 25,
+    "duel_step_budget": 25,
+    "seed": 12345,
+    "masked_indexes": null,
+    "verbose": false,
+    "detailed": false,
+    "detailedWithClockTimes": false,
+    "compact": false,
+    "verbose_schema": null,
+    "detailed_schema": null,
+    "detailedWithClockTimes_schema": null
+  },
+  "num_windows_total": 3,
+  "num_windows_scored": 3,
+  "num_windows_extracted": 0,
+  "extraction_rate": 0.0,
+  "p_z_distribution": {
+    "min": 1.4919196108597002e-64,
+    "median": 2.1170855197684716e-62,
+    "mean": 7.6697730415355205e-59,
+    "max": 2.3007187119890685e-58,
+    "q_0.9": 1.8406173113016503e-58,
+    "q_0.99": 2.2547085719203267e-58,
+    "q_0.999": 2.2961176979821942e-58
+  },
+  "data_provenance": {
+    "group": "clean_odd_control",
+    "filtered_index": 1695,
+    "source_config": "2025-03",
+    "source_row": 1695,
+    "published_date": "2025-03-25",
+    "input_path": "/workspace/finetuned-extraction/verification/verify_20261101T155551Z/clean_odd_control_1695.txt",
+    "content_sha256": "7e01979f761a6ef6bf470bbbed64460e8caab246a9730e91739c94d25e76ef42",
+    "windows": [
+      0,
+      1,
+      2
+    ]
+  },
+  "verified_finetuned_model": {
+    "key": "olmo7b",
+    "family": "olmo",
+    "source": "ar-models/olmo7b_bbc_final_20261026_212627_105207/final",
+    "updates": 180,
+    "revision": "11fb3186a2e4f681edea621fa8b4345147a9db6a",
+    "parameters": 6888095744,
+    "local_path": "/workspace/finetuned-extraction/models/olmo7b",
+    "training_run": "olmo7b_bbc_final_20261026_212627_105207",
+    "complete_sha256": "25c143f494818df981cf80d0b94ca6d2b95f05738214a5b31f50738b8dd82ea9",
+    "weight_bytes": 13776217840
+  },
+  "wall_seconds": 0.15585561003535986
+}

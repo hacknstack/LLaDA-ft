@@ -1,0 +1,87 @@
+﻿{
+  "source": "C:\\Users\\ryanm\\Desktop\\swag project\\LLaDA ft\\sliding window experiments",
+  "checks": [
+    {
+      "temperature": 0.5,
+      "scheme": "low-confidence",
+      "threshold": 0.9,
+      "enumerated": 0.6927335705817279,
+      "exact": 0.6927335705817278,
+      "path": 0.692309010843445,
+      "monte_carlo": 0.6913
+    },
+    {
+      "temperature": 0.5,
+      "scheme": "threshold",
+      "threshold": 0.5,
+      "enumerated": 0.12529478403276173,
+      "exact": 0.12529478403276165,
+      "path": 0.12548292303789074,
+      "monte_carlo": 0.1261
+    },
+    {
+      "temperature": 0.5,
+      "scheme": "threshold",
+      "threshold": 0.9,
+      "enumerated": 0.6927335705817279,
+      "exact": 0.6927335705817278,
+      "path": 0.6930373462070671,
+      "monte_carlo": 0.689325
+    },
+    {
+      "temperature": 1.0,
+      "scheme": "low-confidence",
+      "threshold": 0.9,
+      "enumerated": 0.4153067736522459,
+      "exact": 0.4153067736522458,
+      "path": 0.41555675254319047,
+      "monte_carlo": 0.4124375
+    },
+    {
+      "temperature": 1.0,
+      "scheme": "threshold",
+      "threshold": 0.5,
+      "enumerated": 0.1570403908146927,
+      "exact": 0.15704039081469265,
+      "path": 0.15649773822320617,
+      "monte_carlo": 0.158225
+    },
+    {
+      "temperature": 1.0,
+      "scheme": "threshold",
+      "threshold": 0.9,
+      "enumerated": 0.4153067736522459,
+      "exact": 0.4153067736522458,
+      "path": 0.41660274649288126,
+      "monte_carlo": 0.4111875
+    },
+    {
+      "temperature": 2.0,
+      "scheme": "low-confidence",
+      "threshold": 0.9,
+      "enumerated": 0.2625791300785341,
+      "exact": 0.2625791300785342,
+      "path": 0.2623824520105435,
+      "monte_carlo": 0.257625
+    },
+    {
+      "temperature": 2.0,
+      "scheme": "threshold",
+      "threshold": 0.5,
+      "enumerated": 0.14255120086669654,
+      "exact": 0.14255120086669656,
+      "path": 0.1424105409441755,
+      "monte_carlo": 0.1431875
+    },
+    {
+      "temperature": 2.0,
+      "scheme": "threshold",
+      "threshold": 0.9,
+      "enumerated": 0.2625791300785341,
+      "exact": 0.2625791300785342,
+      "path": 0.2623824520105435,
+      "monte_carlo": 0.2601375
+    }
+  ],
+  "invalid_temperatures_rejected": true
+}

@@ -1,0 +1,41 @@
+{
+  "objective_matches_native_hf": true,
+  "causal_future_invariance": true,
+  "one_token_zero_loss": true,
+  "full_and_remainder_optimizer_equivalence": true,
+  "package_versions": {
+    "torch": "2.11.0+cu130",
+    "transformers": "4.46.3",
+    "tokenizers": "0.20.3",
+    "huggingface-hub": "0.36.0",
+    "accelerate": "1.15.0",
+    "safetensors": "0.8.0"
+  },
+  "source_sha256": {
+    "ar_model_probe.py": "9412e215e4dd6680759d0d31e003fa34c920d4c3da18f4a1a5046b37cce657a6",
+    "ar_probe_optimizer.py": "b0c58688f67da49964205f8b150e5af4071297f2ed32d9ae386a2e14590c7258",
+    "ar_probe_audits.py": "fc0df1dc1713712ab97ad249bb9909221635d33f3166b30f5f1fb4cc6116aea7"
+  },
+  "frozen_articles_reproduce_canonical_llada_token_sha256": "f5e29db9e7b1459bf030cac1567f77f6595da59acdfaf010ab977b21fa0254df",
+  "frozen_article_file_sha256": "8f22ff46d5dfc7d85a2c58d598c72252b754a335514e3bd02ca485a18b87e91e",
+  "frozen_controls_reproduce_canonical_llada_token_sha256": "3a6968777b4ae68e4ed1f89b3309ab4e1133a43a2a659bf7fe561dc70416e27d",
+  "native_control_tokens": {
+    "mistral7b_v01": 2856246,
+    "olmo7b": 2609034
+  },
+  "source_weight_dtypes": {
+    "mistral7b_v01": {
+      "BF16": 7241732096
+    },
+    "olmo7b": {
+      "F32": 6888095744
+    }
+  },
+  "drive_storage_quota_bytes": {
+    "limit": "2199023255552",
+    "usage": "448473701350",
+    "usageInDrive": "440246003857",
+    "usageInDriveTrash": "3002657"
+  },
+  "drive_free_bytes": 1750549554202
+}

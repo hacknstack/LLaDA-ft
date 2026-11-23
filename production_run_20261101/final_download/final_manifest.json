@@ -1,0 +1,180 @@
+{
+  "status": "complete",
+  "finalized_utc": "2026-11-03T17:22:51.790046+00:00",
+  "expected_total": 156296,
+  "raw_valid_rows": 156296,
+  "committed_document_pairs": 350,
+  "committed_documents": 700,
+  "committed_rows": 156296,
+  "files": [
+    {
+      "file": "results/llada_mask01_low-confidence.csv",
+      "rows": 5582,
+      "bytes": 1326332,
+      "sha256": "71499d9b68a1a0c3c53a6bbbc883a8d4141b7cf63061e464ed64022d3abdbe56"
+    },
+    {
+      "file": "results/llada_mask01_threshold.csv",
+      "rows": 5582,
+      "bytes": 1299698,
+      "sha256": "01ebc75702d4c9e42f2dea8f6b22d697bc60c53d09f17883bbfda73013aa4bb5"
+    },
+    {
+      "file": "results/llada_mask02_low-confidence.csv",
+      "rows": 5582,
+      "bytes": 1328872,
+      "sha256": "f011140a7c976f382ff6fe3831b5d7c100e5cc9c1aac5bf6cdb47610047e7295"
+    },
+    {
+      "file": "results/llada_mask02_threshold.csv",
+      "rows": 5582,
+      "bytes": 1300166,
+      "sha256": "7796a0340cd8939bac703e197d292c6fe44ffa6b7bff22a201fc506a9c9cde78"
+    },
+    {
+      "file": "results/llada_mask03_low-confidence.csv",
+      "rows": 5582,
+      "bytes": 1331406,
+      "sha256": "b460dcedfb27a3e969cf16e9cb42048d391a22cea319d9c55b9b5713d5cd5939"
+    },
+    {
+      "file": "results/llada_mask03_threshold.csv",
+      "rows": 5582,
+      "bytes": 1302603,
+      "sha256": "d1a5d95e9f48ba2caf6934041ea5e77b78da81c2d29923c05943e354ecc7079a"
+    },
+    {
+      "file": "results/llada_mask04_low-confidence.csv",
+      "rows": 5582,
+      "bytes": 1331247,
+      "sha256": "f79f2ff61323f4f1c2189174a0634cceba4c367d3ba01bbfccc5b74b745578fe"
+    },
+    {
+      "file": "results/llada_mask04_threshold.csv",
+      "rows": 5582,
+      "bytes": 1302745,
+      "sha256": "6ae4cbeaeb041b92febe861e1314b7e3483b175100c00dbfb9ff6bcf8d81ba96"
+    },
+    {
+      "file": "results/llada_mask05_low-confidence.csv",
+      "rows": 5582,
+      "bytes": 1332005,
+      "sha256": "d6f99775e5c714de443576559ab6910ce5781add12653787b3a8102f74874bfc"
+    },
+    {
+      "file": "results/llada_mask05_threshold.csv",
+      "rows": 5582,
+      "bytes": 1303484,
+      "sha256": "e7b22dc40e726dea538150dcee13cf68456260a47fadd8367a1fa4d94af7e2a9"
+    },
+    {
+      "file": "results/llada_mask06_low-confidence.csv",
+      "rows": 5582,
+      "bytes": 1325327,
+      "sha256": "69fafa124dccafa59cf2bc2326c836697e855575e527f896c63f29b820d68a98"
+    },
+    {
+      "file": "results/llada_mask06_threshold.csv",
+      "rows": 5582,
+      "bytes": 1298853,
+      "sha256": "e11c6ce53a086078de074d0cec704518e98469e4483e498a7ad668363ba3342e"
+    },
+    {
+      "file": "results/llada_mask07_low-confidence.csv",
+      "rows": 5582,
+      "bytes": 1326888,
+      "sha256": "503f47bff24b960df0328f0f536cfcc1743f1ef96cb3ece8c95f73d43ad910e6"
+    },
+    {
+      "file": "results/llada_mask07_threshold.csv",
+      "rows": 5582,
+      "bytes": 1299347,
+      "sha256": "862cdd8cec344cc4aae65e0b3c6d0b6ed02869b010bd6453ddd81fb6b94fc30b"
+    },
+    {
+      "file": "results/llada_mask08_low-confidence.csv",
+      "rows": 5582,
+      "bytes": 1327532,
+      "sha256": "c9f70c1a4d53450f05995624393fd22f24efc4c8dfcffdfc6e653c88ff1453ee"
+    },
+    {
+      "file": "results/llada_mask08_threshold.csv",
+      "rows": 5582,
+      "bytes": 1299686,
+      "sha256": "b79550aa53bd5e5e0089bac559eeaccd77b3e90e5c52908edca26ae3f19b2cb1"
+    },
+    {
+      "file": "results/llada_mask09_low-confidence.csv",
+      "rows": 5582,
+      "bytes": 1329535,
+      "sha256": "27ef9e340f8fc575de9382efb218937c828720885a29b30e5db6be56bac5e66c"
+    },
+    {
+      "file": "results/llada_mask09_threshold.csv",
+      "rows": 5582,
+      "bytes": 1301223,
+      "sha256": "edc72646ae54766d35ff60170d3c9cca122ec3b55343dc11bafefd488b300156"
+    },
+    {
+      "file": "results/llada_mask10_low-confidence.csv",
+      "rows": 5582,
+      "bytes": 1337559,
+      "sha256": "742ae45630cda9a3d561fa600976c5825eab3c0d55e93e48e1d4ed449903ab2b"
+    },
+    {
+      "file": "results/llada_mask10_threshold.csv",
+      "rows": 5582,
+      "bytes": 1309287,
+      "sha256": "e07280b26137b60f2c0e280986233ffa98b167dc0a5f1b5d141281b8b393965d"
+    },
+    {
+      "file": "results/llada_mask11_low-confidence.csv",
+      "rows": 5582,
+      "bytes": 1336633,
+      "sha256": "62d02b93984a7ef5b678fbfc0a08fc90a4dbc0021cf27aa37ea79d31b3cb5038"
+    },
+    {
+      "file": "results/llada_mask11_threshold.csv",
+      "rows": 5582,
+      "bytes": 1307973,
+      "sha256": "839ccc65e8f5fbaa0329397f8f649d434061dcf0f5713defb7351f89c7b809d2"
+    },
+    {
+      "file": "results/llada_mask12_low-confidence.csv",
+      "rows": 5582,
+      "bytes": 1338577,
+      "sha256": "a7b78e41156da32d582b8b91acff216dc2f9f5d403fffe84f066595d042826c6"
+    },
+    {
+      "file": "results/llada_mask12_threshold.csv",
+      "rows": 5582,
+      "bytes": 1309952,
+      "sha256": "85c219bc7cd8f89ce4c9cea2dc621eeff58b5af074ed79c2c403900cd409f3e4"
+    },
+    {
+      "file": "results/llama2_7b_exact.csv",
+      "rows": 5582,
+      "bytes": 1205140,
+      "sha256": "4af36eb357f605113124c0b1271acd6188cb1b169b35686c183d0e25b8be965d"
+    },
+    {
+      "file": "results/llama3_8b_exact.csv",
+      "rows": 5582,
+      "bytes": 1206519,
+      "sha256": "b165ec402b8d7ddf371220d2103811d88b0c3f15f7165b64462008a158eaa690"
+    },
+    {
+      "file": "results/mistral7b_v01_exact.csv",
+      "rows": 5582,
+      "bytes": 1227468,
+      "sha256": "c867f566ec5ec02f7560ecdf85faac5e2e3e328c797df298d69b978ea923e328"
+    },
+    {
+      "file": "results/olmo7b_exact.csv",
+      "rows": 5582,
+      "bytes": 1190055,
+      "sha256": "5c8042518845b386cde9b6de512948bfdbeb9abd3c6aeb2b7942687defa9fa94"
+    }
+  ],
+  "analysis_policy": "Final CSVs contain only fully completed training/control pairs across all five models; immutable batches preserve all valid partial work"
+}

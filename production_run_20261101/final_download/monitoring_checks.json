@@ -1,0 +1,11 @@
+{
+  "controlled_worker_recovery_test": true,
+  "gpu": 6,
+  "killed_pid": 3577,
+  "task_id": "96559e4a4ac6fb000ffbd358f0af2b6437a8efa70ae9fb0a0d575e8e8caeba6e",
+  "seed": 7608623722135548284,
+  "test_started_epoch": 1793553521.5482175,
+  "uploader_restart_test_passed": true,
+  "worker_recovery_test_passed": true,
+  "test_verified_utc": "2026-11-01T17:19:00.374187+00:00"
+}

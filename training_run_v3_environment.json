@@ -1,0 +1,25 @@
+{
+  "python": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+  "packages": {
+    "torch": "2.11.0+cu130",
+    "transformers": "4.46.3",
+    "peft": "0.14.0",
+    "accelerate": "1.15.0",
+    "datasets": "4.8.5",
+    "safetensors": "0.8.0"
+  },
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "gpu_memory_gib": 79.250732421875,
+  "cuda_runtime": "13.0",
+  "source_sha256": {
+    "train_llada_bbc.py": "f42d38430856568c072fce188d5fa662eab2969eada4555fcd15ce7b285f1c3d",
+    "prepare_training_data.py": "afb6563978432849bd5dbf61b5c1e1910e35c8339224bb4cf5e4936e0438e127",
+    "benchmark_llada.py": "c7d1117d43716aadd5d6c268f014d65c757b0cea52e63b8f7f2ebdd5b232409f",
+    "drive_checkpoint_upload.py": "213f849e5c0fbc32336e5c951ca57ae4494aedf7e65c3d921233d4bb29fb1a3e"
+  },
+  "config_sha256": "6017f319c1aabdb062b82f1fb2ed85bf6e0bb208607d426354f7ee53f83af983",
+  "methods_sha256": "687191be29e7c7cb02e7f0bd0de4de2725c5de4fbdcec4d5e9fbbce5420fcefe",
+  "model_revision": "0f2787f2d87eac5eed8a087d5ecd24277e6255b2",
+  "dataset_revision": "8dd1ecdc92ac43f9c04a3da3e945537dbb08179b",
+  "model_checkpoint_location": "/content/llada-base-model"
+}

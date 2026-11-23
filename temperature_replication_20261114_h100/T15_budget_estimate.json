@@ -1,0 +1,99 @@
+{
+  "temperature": 1.5,
+  "pod": "4 H100 80GB",
+  "pod_hourly_USD": 17.7,
+  "windows": 300,
+  "masks": 12,
+  "schemes": [
+    "low-confidence",
+    "threshold"
+  ],
+  "STS_samples": 500,
+  "MC_trials": 5000,
+  "estimated_pod_hours": 131.63769155451,
+  "estimated_cost_USD": 2329.987140514827,
+  "sensitivity_hours": [
+    78.982614932706,
+    210.62030648721603
+  ],
+  "sensitivity_cost_USD": [
+    1397.9922843088962,
+    3727.979424823723
+  ],
+  "reference_T2_hours": 210.19036712842615,
+  "reference_T05_hours": 2.608915256941044,
+  "T2_to_T15_time_ratio": 1.5967339190340342,
+  "coverage_elapsed_seconds_T15": 109.04875188099686,
+  "coverage_elapsed_seconds_T2": 132.77340599201852,
+  "large_STS500_MC500_elapsed_seconds_T15": 66.84179435297847,
+  "large_STS500_MC500_elapsed_seconds_T2": 210.1953923929832,
+  "full_STS500_MC5000_T15_elapsed_seconds": 82.69395489501767,
+  "rows": [
+    {
+      "scheme": "low-confidence",
+      "method": "path_sampling",
+      "coverage_cases_per_temperature": 12,
+      "short_probe_T15_to_T2_ratio": 0.8362467495813005,
+      "primary_T15_seconds": 21.377339848026168,
+      "primary_T2_seconds_at_target_count": 130.51048942899797,
+      "primary_T2_MC5000_extrapolated": false,
+      "primary_T15_to_T2_ratio": 0.16379786744770541,
+      "planning_T15_to_T2_ratio": 0.500022308514503,
+      "reference_T2_pod_hours": 50.52471861917922,
+      "estimated_T15_pod_hours": 25.263486441007686,
+      "estimated_T15_cost_USD": 447.16371000583604
+    },
+    {
+      "scheme": "low-confidence",
+      "method": "monte-carlo",
+      "coverage_cases_per_temperature": 12,
+      "short_probe_T15_to_T2_ratio": 0.7656070933420133,
+      "primary_T15_seconds": 55.283485392981675,
+      "primary_T2_seconds_at_target_count": 1086.1198548247291,
+      "primary_T2_MC5000_extrapolated": true,
+      "primary_T15_to_T2_ratio": 0.05089998598902601,
+      "planning_T15_to_T2_ratio": 0.40825353966551964,
+      "reference_T2_pod_hours": 52.500599077845436,
+      "estimated_T15_pod_hours": 21.433555408090715,
+      "estimated_T15_cost_USD": 379.37393072320566
+    },
+    {
+      "scheme": "threshold",
+      "method": "path_sampling",
+      "coverage_cases_per_temperature": 12,
+      "short_probe_T15_to_T2_ratio": 0.6932287012440081,
+      "primary_T15_seconds": 82.68342424498405,
+      "primary_T2_seconds_at_target_count": 210.19081915495917,
+      "primary_T2_MC5000_extrapolated": false,
+      "primary_T15_to_T2_ratio": 0.393373148158423,
+      "planning_T15_to_T2_ratio": 0.5433009247012156,
+      "reference_T2_pod_hours": 36.847533010889904,
+      "estimated_T15_pod_hours": 20.01929875777505,
+      "estimated_T15_cost_USD": 354.3415880126184
+    },
+    {
+      "scheme": "threshold",
+      "method": "monte-carlo",
+      "coverage_cases_per_temperature": 12,
+      "short_probe_T15_to_T2_ratio": 1.0458478122300894,
+      "primary_T15_seconds": 32.09047160501359,
+      "primary_T2_seconds_at_target_count": 40.07941234224619,
+      "primary_T2_MC5000_extrapolated": true,
+      "primary_T15_to_T2_ratio": 0.8006722087386556,
+      "planning_T15_to_T2_ratio": 0.9232600104843725,
+      "reference_T2_pod_hours": 70.3175164205116,
+      "estimated_T15_pod_hours": 64.92135094763657,
+      "estimated_T15_cost_USD": 1149.1079117731672
+    }
+  ],
+  "full_experiment_started": false,
+  "paper_runtime_study_excluded": true,
+  "caveats": [
+    "Conditional on numerical validation of H100 batching; scalar and batch outputs differ.",
+    "Only representative cases, not the full 300-window cohort, were executed.",
+    "Broad probe covers one selected window per mask and all method/decoder combinations; sources are not population weighted.",
+    "Broader short-probe and narrower full-count ratios are equally weighted as a conservative planning heuristic, not a fitted statistical model.",
+    "T2 primary MC5000 comparison extrapolates MC500 with prior scaling exponents; no T2 MC5000 direct counterpart was run.",
+    "Forecast inherits uncertainties in the earlier T2 cohort-wide projection; sensitivity bounds are not confidence intervals."
+  ]
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "key": "llada",
+    "family": "llada",
+    "source": "checkpoints/bbc_fp32_colab_20261026_084128_323830/epoch-003",
+    "updates": 183,
+    "revision": "0f2787f2d87eac5eed8a087d5ecd24277e6255b2",
+    "parameters": 8015581184,
+    "local_path": "/workspace/finetuned-extraction/models/llada",
+    "training_run": "bbc_fp32_colab_20261026_084128_323830",
+    "complete_sha256": "f328c1c5fbb50c543afbe7c0d682534201d194814ac9ff2c2b6cb384cde9bad8",
+    "weight_bytes": 16031197080
+  },
+  {
+    "key": "llama2_7b",
+    "family": "llama2",
+    "source": "ar-models/llama2_7b_bbc_final_20261027_222522_712251/final",
+    "updates": 207,
+    "revision": "01c7f73d771dfac7d292323805ebc428287df4f9",
+    "parameters": 6738415616,
+    "local_path": "/workspace/finetuned-extraction/models/llama2_7b",
+    "training_run": "llama2_7b_bbc_final_20261027_222522_712251",
+    "complete_sha256": "96c309e1d3741f450d708c56e0300216fd4c124f577ac8f71bcde660bf83c1ce",
+    "weight_bytes": 13476864960
+  },
+  {
+    "key": "llama3_8b",
+    "family": "llama",
+    "source": "ar-models/llama3_8b_bbc_final_20261027_222543_039805/final",
+    "updates": 177,
+    "revision": "8cde5ca8380496c9a6cc7ef3a8b46a0372a1d920",
+    "parameters": 8030261248,
+    "local_path": "/workspace/finetuned-extraction/models/llama3_8b",
+    "training_run": "llama3_8b_bbc_final_20261027_222543_039805",
+    "complete_sha256": "c5dbc8aa5b5b74ec01df5bf0b6601b9e6cd93e6504c639b799bbbe8b7ca98d47",
+    "weight_bytes": 16060556320
+  },
+  {
+    "key": "mistral7b_v01",
+    "family": "mistral",
+    "source": "ar-models/mistral7b_v01_bbc_final_20261026_212546_149177/final",
+    "updates": 198,
+    "revision": "27d67f1b5f57dc0953326b2601d68371d40ea8da",
+    "parameters": 7241732096,
+    "local_path": "/workspace/finetuned-extraction/models/mistral7b_v01",
+    "training_run": "mistral7b_v01_bbc_final_20261026_212546_149177",
+    "complete_sha256": "74755f4477ba4c98d3ba230dcc7de18df47498b984a5f47c099a40baddf1b852",
+    "weight_bytes": 14483497952
+  },
+  {
+    "key": "olmo7b",
+    "family": "olmo",
+    "source": "ar-models/olmo7b_bbc_final_20261026_212627_105207/final",
+    "updates": 180,
+    "revision": "11fb3186a2e4f681edea621fa8b4345147a9db6a",
+    "parameters": 6888095744,
+    "local_path": "/workspace/finetuned-extraction/models/olmo7b",
+    "training_run": "olmo7b_bbc_final_20261026_212627_105207",
+    "complete_sha256": "25c143f494818df981cf80d0b94ca6d2b95f05738214a5b31f50738b8dd82ea9",
+    "weight_bytes": 13776217840
+  }
+]

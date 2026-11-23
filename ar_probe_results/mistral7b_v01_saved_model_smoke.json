@@ -1,0 +1,25 @@
+{
+  "run": "mistral7b_v01_bbc_final_20261026_212546_149177",
+  "model_id": "mistralai/Mistral-7B-v0.1",
+  "success": true,
+  "finite_forward_and_loss": true,
+  "short_prompt_ce": 4.268459320068359,
+  "generated_new_tokens": 16,
+  "generated_text": "\n\nThe government has announced a series of measures to try to reduce the number",
+  "parameter_checks": [
+    {
+      "parameter": "model.layers.0.self_attn.q_proj.weight",
+      "values": 512,
+      "changed_values": 479,
+      "maximum_abs_difference": 0.000385284423828125
+    },
+    {
+      "parameter": "model.layers.0.mlp.down_proj.weight",
+      "values": 512,
+      "changed_values": 498,
+      "maximum_abs_difference": 0.0004119873046875
+    }
+  ],
+  "elapsed_seconds": 13.303078407000157,
+  "trained_values_differ_from_bf16_base": true
+}

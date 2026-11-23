@@ -1,0 +1,20 @@
+{
+  "armed_utc": "2026-11-01T17:30:24.601674+00:00",
+  "observed_minutes": 16.6281197,
+  "counts": {
+    "llada": 592,
+    "llama2_7b": 5582,
+    "llama3_8b": 5582,
+    "mistral7b_v01": 5582,
+    "olmo7b": 5582
+  },
+  "failed_tasks": 0,
+  "controlled_retries": 1,
+  "completed_pairs": 1,
+  "estimated_remaining_hours": 51.09834852360101,
+  "drive_verified_rows": 22706,
+  "worker_recovery_test_passed": true,
+  "finalization_test_passed": true,
+  "independent_guard_pid": 4719,
+  "supervisor_pid": 3543
+}

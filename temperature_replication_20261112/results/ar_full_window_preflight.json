@@ -1,0 +1,22 @@
+{
+  "llama2-base": {
+    "expected_csv_windows": 1899,
+    "valid_windows": 1899,
+    "short_windows": []
+  },
+  "llama3-base": {
+    "expected_csv_windows": 1899,
+    "valid_windows": 1899,
+    "short_windows": []
+  },
+  "mistral-base": {
+    "expected_csv_windows": 1899,
+    "valid_windows": 1899,
+    "short_windows": []
+  },
+  "olmo-base": {
+    "expected_csv_windows": 1899,
+    "valid_windows": 1899,
+    "short_windows": []
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "checkpoint": {
+    "path": "/workspace/finetuned-extraction/models/llama2_7b",
+    "run": "llama2_7b_bbc_final_20261027_222522_712251",
+    "epoch": 3,
+    "update": 207,
+    "model_revision": "01c7f73d771dfac7d292323805ebc428287df4f9",
+    "complete_sha256": "96c309e1d3741f450d708c56e0300216fd4c124f577ac8f71bcde660bf83c1ce"
+  },
+  "input_file": "/workspace/finetuned-extraction/verification/verify_20261101T155551Z/clean_odd_control_1695.txt",
+  "total_chars": 2902,
+  "parameters": {
+    "chunk_chars": 800,
+    "stride_words": 1,
+    "windows": [
+      0,
+      1,
+      2
+    ],
+    "max_windows": null,
+    "seq_tokens": 100,
+    "prefix_tokens": 50,
+    "suffix_tokens": 50,
+    "tau_min": 0.001,
+    "mode": "exact",
+    "nocache": false,
+    "scale": false,
+    "model_family": "llama2",
+    "model_name": "/workspace/finetuned-extraction/models/llama2_7b",
+    "remasking": "low-confidence",
+    "decoding_scheme": "full",
+    "k": 40,
+    "temperature": 1.0,
+    "confidence_threshold": 0.9,
+    "num_samples": 10,
+    "random_path_sample_budget": 128,
+    "random_path_step_budget": 25,
+    "duel_step_budget": 25,
+    "seed": 12345,
+    "masked_indexes": null,
+    "verbose": false,
+    "detailed": false,
+    "detailedWithClockTimes": false,
+    "compact": false,
+    "verbose_schema": null,
+    "detailed_schema": null,
+    "detailedWithClockTimes_schema": null
+  },
+  "num_windows_total": 3,
+  "num_windows_scored": 3,
+  "num_windows_extracted": 0,
+  "extraction_rate": 0.0,
+  "p_z_distribution": {
+    "min": 2.1891971629764782e-49,
+    "median": 4.996570218878317e-46,
+    "mean": 2.1153680616571347e-44,
+    "max": 6.296116590810991e-44,
+    "q_0.9": 5.04688641308655e-44,
+    "q_0.99": 6.171193573038547e-44,
+    "q_0.999": 6.283624289033746e-44
+  },
+  "data_provenance": {
+    "group": "clean_odd_control",
+    "filtered_index": 1695,
+    "source_config": "2025-03",
+    "source_row": 1695,
+    "published_date": "2025-03-25",
+    "input_path": "/workspace/finetuned-extraction/verification/verify_20261101T155551Z/clean_odd_control_1695.txt",
+    "content_sha256": "7e01979f761a6ef6bf470bbbed64460e8caab246a9730e91739c94d25e76ef42",
+    "windows": [
+      0,
+      1,
+      2
+    ]
+  },
+  "verified_finetuned_model": {
+    "key": "llama2_7b",
+    "family": "llama2",
+    "source": "ar-models/llama2_7b_bbc_final_20261027_222522_712251/final",
+    "updates": 207,
+    "revision": "01c7f73d771dfac7d292323805ebc428287df4f9",
+    "parameters": 6738415616,
+    "local_path": "/workspace/finetuned-extraction/models/llama2_7b",
+    "training_run": "llama2_7b_bbc_final_20261027_222522_712251",
+    "complete_sha256": "96c309e1d3741f450d708c56e0300216fd4c124f577ac8f71bcde660bf83c1ce",
+    "weight_bytes": 13476864960
+  },
+  "wall_seconds": 0.13605811283923686
+}

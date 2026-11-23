@@ -1,0 +1,50 @@
+{
+  "status": "AUDIT_COMPLETE_TRAINING_NOT_STARTED",
+  "dataset_revision": "8dd1ecdc92ac43f9c04a3da3e945537dbb08179b",
+  "months": [
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06"
+  ],
+  "old_corpus_sha256": "8f22ff46d5dfc7d85a2c58d598c72252b754a335514e3bd02ca485a18b87e91e",
+  "old_corpus_reproduced_exactly": true,
+  "date_eligible_rows": 10643,
+  "old_training_nonempty_unique": 4236,
+  "clean_odd_rows": 3345,
+  "unique_clean_odd_contents": 2579,
+  "candidate_near_duplicate_with_old": 522,
+  "candidate_folded_exact_overlap": 0,
+  "candidate_shared_50_words_with_old": 140,
+  "near_clean_before_internal_dedup": 2057,
+  "near_clean_unique_components": 2056,
+  "strict_clean_before_internal_dedup": 1959,
+  "strict_clean_unique_components": 1950,
+  "strict_200_to_1500_word_articles": 1540,
+  "needed_targets": 288,
+  "needed_controls": 128,
+  "needed_total": 416,
+  "enough_strict_targets_controls": true,
+  "eligible_by_month": {
+    "2025-03": 386,
+    "2025-04": 352,
+    "2025-05": 400,
+    "2025-06": 402
+  },
+  "definitions": {
+    "exact": "Original whitespace-collapse SHA256-equivalent text equality; original contents preserved.",
+    "words": "Unicode NFKC, casefold, Unicode word tokens; audit only.",
+    "near_duplicate": "5-word shingle Jaccard >=0.5 OR intersection/min(shingle-set sizes) >=0.8.",
+    "strict": "Also exclude any literal consecutive 50 canonical words shared with old training. Includes boilerplate.",
+    "internal": "One longest representative per connected component under the same overlap rules.",
+    "evaluation_length": "200 to 1500 canonical words; proposed target/control eligibility only."
+  },
+  "limitations": [
+    "Disjointness is relative to the prior fine-tuning corpus, not undocumented base pretraining.",
+    "Semantic paraphrases and shorter shared passages may remain; this is an explicit lexical audit.",
+    "Some candidates were earlier held-out diagnostic/evaluation articles, but were not optimizer training inputs.",
+    "Strict shared-passage filtering includes boilerplate and can conservatively reject unrelated stories.",
+    "No exposure assignment, model download, optimizer step, or training run has occurred."
+  ],
+  "audit_elapsed_seconds": 21.38525915145874
+}

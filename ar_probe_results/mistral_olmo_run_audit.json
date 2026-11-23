@@ -1,0 +1,1559 @@
+{
+  "checked_at_utc": "2026-10-27T18:48:56.082046+00:00",
+  "runs": [
+    {
+      "run": "olmo7b_bbc_final_20261026_212627_105207",
+      "errors": [],
+      "verified": true,
+      "status": {
+        "run": "olmo7b_bbc_final_20261026_212627_105207",
+        "status": "complete",
+        "epoch": 3,
+        "update": 180,
+        "save_final_model": true,
+        "last_event": "training_complete",
+        "last_time_utc": "2026-10-27T00:49:54.276922+00:00",
+        "elapsed_seconds": 12049.137294500999,
+        "epoch_tokens": 3900418,
+        "epoch_targets": 3899458,
+        "final_model_url": "https://drive.google.com/drive/folders/1o7RDwDOkkYUCYafCWf2uUtLc2vKbGgCD",
+        "final_model_verified": true
+      },
+      "config": {
+        "seed": 42,
+        "epochs": 3,
+        "sequence_length": 4096,
+        "microbatch": 1,
+        "accumulation": 16,
+        "gradient_dtype": "float32",
+        "model_dtype": "bfloat16",
+        "master_weight_dtype": "float32",
+        "optimizer_state_dtype": "float32",
+        "optimizer": "AdamW",
+        "optimizer_device": "cpu",
+        "peak_learning_rate": 1e-05,
+        "final_learning_rate": 1e-06,
+        "warmup_fraction": 0.05,
+        "decay_fraction": 0.1,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "epsilon": 1e-08,
+        "weight_decay": 0.1,
+        "weight_decay_parameter_groups": "all trainable parameters, including norms and biases if present",
+        "gradient_clip_norm": 1.0,
+        "random_length_probability": 0.01,
+        "random_length_min": 1,
+        "tail_policy": "Unpadded final short block; retain all source tokens",
+        "packing": "Frozen source-order article content plus EOS, no BOS or chat template; shuffle packed blocks each epoch",
+        "checkpointing": "native whole decoder layer non-reentrant",
+        "cpu_threads": 12,
+        "diagnostic_blocks_per_group": 8,
+        "diagnostic_mask_draws_per_block": 0,
+        "checkpoint_epochs": [],
+        "checkpoint_format": "One final BF16 safetensors model only; verified Drive API upload",
+        "save_optimizer_state": false,
+        "resume_supported": false,
+        "methods_filename": "AR_FINAL_ONLY_NOTEBOOK_METHOD.md",
+        "checkpoint_backend": "drive_api",
+        "checkpoint_every_updates": 0,
+        "verify_full_checkpoint_before_training": false,
+        "model_id": "allenai/OLMo-7B-hf",
+        "model_revision": "11fb3186a2e4f681edea621fa8b4345147a9db6a",
+        "objective": "causal next-token CE; per-sequence target mean then mean over actual accumulation window; length-1 contributes differentiable zero",
+        "attention": "native causal SDPA",
+        "expected_tokens": 3930266,
+        "expected_blocks_per_epoch": 960,
+        "expected_updates_per_epoch": 60,
+        "expected_total_updates": 180,
+        "warmup_updates": 9,
+        "decay_updates": 18,
+        "frozen_article_file_sha256": "8f22ff46d5dfc7d85a2c58d598c72252b754a335514e3bd02ca485a18b87e91e",
+        "expected_native_token_file_sha256": "1d9f7b504c18921f6c4bd4461ae6df5556cd4e39e8f3707da75eea9ceb84bcb9",
+        "native_eos_token_id": 50279,
+        "context_extrapolation": true,
+        "original_context": 2048,
+        "status": "READY_TO_RUN_NOT_STARTED",
+        "checkpoint_validation": "Validate AR native state tensor names/shapes/dtypes and index; server checksums; completion marker last",
+        "diagnostic_passes_per_block": 1,
+        "storage_plan": "No model outputs before final; one optional final model plus small text; no automatic deletion",
+        "model_key": "olmo7b",
+        "save_final_model": true,
+        "expected_parameters": 6888095744,
+        "expected_control_tokens": 2609034,
+        "run_name": "olmo7b_bbc_final_20261026_212627_105207"
+      },
+      "diagnostics": [
+        {
+          "epoch": 0,
+          "metric": "deterministic native-token next-token CE; not a memorization measure",
+          "means": {
+            "train": 4.037517964839935,
+            "clean_odd_controls": 4.23058295249939
+          },
+          "records": [
+            {
+              "group": "train",
+              "block": 0,
+              "loss": 3.9622106552124023
+            },
+            {
+              "group": "train",
+              "block": 136,
+              "loss": 3.9582674503326416
+            },
+            {
+              "group": "train",
+              "block": 273,
+              "loss": 3.893512010574341
+            },
+            {
+              "group": "train",
+              "block": 410,
+              "loss": 4.101787567138672
+            },
+            {
+              "group": "train",
+              "block": 547,
+              "loss": 4.007686614990234
+            },
+            {
+              "group": "train",
+              "block": 684,
+              "loss": 4.026778221130371
+            },
+            {
+              "group": "train",
+              "block": 821,
+              "loss": 4.181753158569336
+            },
+            {
+              "group": "train",
+              "block": 958,
+              "loss": 4.168148040771484
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 0,
+              "loss": 4.181049346923828
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 90,
+              "loss": 4.246846675872803
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 181,
+              "loss": 4.179132461547852
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 272,
+              "loss": 4.178748607635498
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 362,
+              "loss": 4.390589714050293
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 453,
+              "loss": 4.250931739807129
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 544,
+              "loss": 4.1445465087890625
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 635,
+              "loss": 4.272818565368652
+            }
+          ]
+        },
+        {
+          "epoch": 1,
+          "metric": "deterministic native-token next-token CE; not a memorization measure",
+          "means": {
+            "train": 1.576618269085884,
+            "clean_odd_controls": 2.259132608771324
+          },
+          "records": [
+            {
+              "group": "train",
+              "block": 0,
+              "loss": 1.7015814781188965
+            },
+            {
+              "group": "train",
+              "block": 136,
+              "loss": 1.1435914039611816
+            },
+            {
+              "group": "train",
+              "block": 273,
+              "loss": 2.0622870922088623
+            },
+            {
+              "group": "train",
+              "block": 410,
+              "loss": 1.375234603881836
+            },
+            {
+              "group": "train",
+              "block": 547,
+              "loss": 1.4965168237686157
+            },
+            {
+              "group": "train",
+              "block": 684,
+              "loss": 1.625720739364624
+            },
+            {
+              "group": "train",
+              "block": 821,
+              "loss": 1.6741764545440674
+            },
+            {
+              "group": "train",
+              "block": 958,
+              "loss": 1.5338375568389893
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 0,
+              "loss": 2.1942808628082275
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 90,
+              "loss": 2.3252036571502686
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 181,
+              "loss": 1.977793574333191
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 272,
+              "loss": 2.5314388275146484
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 362,
+              "loss": 2.24941349029541
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 453,
+              "loss": 2.163210391998291
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 544,
+              "loss": 2.2240488529205322
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 635,
+              "loss": 2.4076712131500244
+            }
+          ]
+        },
+        {
+          "epoch": 2,
+          "metric": "deterministic native-token next-token CE; not a memorization measure",
+          "means": {
+            "train": 0.8485828228294849,
+            "clean_odd_controls": 2.314957946538925
+          },
+          "records": [
+            {
+              "group": "train",
+              "block": 0,
+              "loss": 0.8011316657066345
+            },
+            {
+              "group": "train",
+              "block": 136,
+              "loss": 0.4122922718524933
+            },
+            {
+              "group": "train",
+              "block": 273,
+              "loss": 1.2175379991531372
+            },
+            {
+              "group": "train",
+              "block": 410,
+              "loss": 0.7449731230735779
+            },
+            {
+              "group": "train",
+              "block": 547,
+              "loss": 0.8141706585884094
+            },
+            {
+              "group": "train",
+              "block": 684,
+              "loss": 0.7277990579605103
+            },
+            {
+              "group": "train",
+              "block": 821,
+              "loss": 1.3344601392745972
+            },
+            {
+              "group": "train",
+              "block": 958,
+              "loss": 0.7362976670265198
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 0,
+              "loss": 2.30064058303833
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 90,
+              "loss": 2.424978017807007
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 181,
+              "loss": 2.0031628608703613
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 272,
+              "loss": 2.6055924892425537
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 362,
+              "loss": 2.2585041522979736
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 453,
+              "loss": 2.177490234375
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 544,
+              "loss": 2.2744226455688477
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 635,
+              "loss": 2.474872589111328
+            }
+          ]
+        },
+        {
+          "epoch": 3,
+          "metric": "deterministic native-token next-token CE; not a memorization measure",
+          "means": {
+            "train": 0.38626478984951973,
+            "clean_odd_controls": 2.523965299129486
+          },
+          "records": [
+            {
+              "group": "train",
+              "block": 0,
+              "loss": 0.26392149925231934
+            },
+            {
+              "group": "train",
+              "block": 136,
+              "loss": 0.13990330696105957
+            },
+            {
+              "group": "train",
+              "block": 273,
+              "loss": 1.0767143964767456
+            },
+            {
+              "group": "train",
+              "block": 410,
+              "loss": 0.3185466527938843
+            },
+            {
+              "group": "train",
+              "block": 547,
+              "loss": 0.2898609936237335
+            },
+            {
+              "group": "train",
+              "block": 684,
+              "loss": 0.6072270274162292
+            },
+            {
+              "group": "train",
+              "block": 821,
+              "loss": 0.17912179231643677
+            },
+            {
+              "group": "train",
+              "block": 958,
+              "loss": 0.2148226499557495
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 0,
+              "loss": 2.523653507232666
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 90,
+              "loss": 2.613691568374634
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 181,
+              "loss": 2.2144408226013184
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 272,
+              "loss": 2.8703579902648926
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 362,
+              "loss": 2.413393974304199
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 453,
+              "loss": 2.3896992206573486
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 544,
+              "loss": 2.4535367488861084
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 635,
+              "loss": 2.7129485607147217
+            }
+          ]
+        }
+      ],
+      "data_manifest": {
+        "model_id": "allenai/OLMo-7B-hf",
+        "model_revision": "11fb3186a2e4f681edea621fa8b4345147a9db6a",
+        "model_path": "/content/ar-ft-cache/hub/models--allenai--OLMo-7B-hf/snapshots/11fb3186a2e4f681edea621fa8b4345147a9db6a",
+        "dataset_id": "RealTimeData/bbc_news_alltime",
+        "dataset_revision": "8dd1ecdc92ac43f9c04a3da3e945537dbb08179b",
+        "selected_articles": 5322,
+        "nonempty_train_articles": 5315,
+        "clean_control_articles": 3345,
+        "empty_train_articles": 7,
+        "unique_normalized_train_contents": 4236,
+        "duplicate_train_rows": 1079,
+        "frozen_article_file_sha256": "8f22ff46d5dfc7d85a2c58d598c72252b754a335514e3bd02ca485a18b87e91e",
+        "train_tokens": 3930266,
+        "clean_control_tokens": 2609034,
+        "token_files": {
+          "train_tokens.npy": {
+            "bytes": 15721192,
+            "sha256": "1d9f7b504c18921f6c4bd4461ae6df5556cd4e39e8f3707da75eea9ceb84bcb9"
+          },
+          "control_tokens.npy": {
+            "bytes": 10436264,
+            "sha256": "ca8d7deb2be18ae22fa98ccf93c969f936cb2278569eba195505683cf229b1ce"
+          }
+        },
+        "tokenization": "Native tokenizer, no BOS/chat/title; content plus one EOS per nonempty article"
+      },
+      "folder_url": "https://drive.google.com/drive/folders/1o7RDwDOkkYUCYafCWf2uUtLc2vKbGgCD",
+      "receipt": {
+        "folder_id": "1o7RDwDOkkYUCYafCWf2uUtLc2vKbGgCD",
+        "folder_url": "https://drive.google.com/drive/folders/1o7RDwDOkkYUCYafCWf2uUtLc2vKbGgCD",
+        "files": {
+          "METHODS.md": {
+            "id": "1LomxDjaIJFlx_52UJFKsSiJaWPvjSAOe",
+            "name": "METHODS.md",
+            "parents": [
+              "1o7RDwDOkkYUCYafCWf2uUtLc2vKbGgCD"
+            ],
+            "appProperties": {
+              "sha256": "d0d06908d9b26e187ab8c55e4e072f358f73f58228aa306306e822c3bc1f2ea6"
+            },
+            "webViewLink": "https://drive.google.com/file/d/1LomxDjaIJFlx_52UJFKsSiJaWPvjSAOe/view?usp=drivesdk",
+            "md5Checksum": "12bf50eda7dd8bce26728e1f64fae544",
+            "sha256Checksum": "d0d06908d9b26e187ab8c55e4e072f358f73f58228aa306306e822c3bc1f2ea6",
+            "size": "22455",
+            "verified_md5": "12bf50eda7dd8bce26728e1f64fae544",
+            "local_sha256": "d0d06908d9b26e187ab8c55e4e072f358f73f58228aa306306e822c3bc1f2ea6",
+            "reused": false
+          },
+          "config.json": {
+            "id": "18wk2WZmhdgZuaQgev6jxnvN97FL43KJt",
+            "name": "config.json",
+            "parents": [
+              "1o7RDwDOkkYUCYafCWf2uUtLc2vKbGgCD"
+            ],
+            "appProperties": {
+              "sha256": "c0c728d566ad4028b47a9294c4e9f60f3c1dad523ab9772a489710431d920d1f"
+            },
+            "webViewLink": "https://drive.google.com/file/d/18wk2WZmhdgZuaQgev6jxnvN97FL43KJt/view?usp=drivesdk",
+            "md5Checksum": "7a14ae85ddbdb1b1767de262d1375a84",
+            "sha256Checksum": "c0c728d566ad4028b47a9294c4e9f60f3c1dad523ab9772a489710431d920d1f",
+            "size": "762",
+            "verified_md5": "7a14ae85ddbdb1b1767de262d1375a84",
+            "local_sha256": "c0c728d566ad4028b47a9294c4e9f60f3c1dad523ab9772a489710431d920d1f",
+            "reused": false
+          },
+          "generation_config.json": {
+            "id": "1ZdNly59zX-2YQcDVs5J6mkw4i8q91mLX",
+            "name": "generation_config.json",
+            "parents": [
+              "1o7RDwDOkkYUCYafCWf2uUtLc2vKbGgCD"
+            ],
+            "appProperties": {
+              "sha256": "fc67265bfe35da04f8656d038bd7582e5b327fa408a7938ae0df852f52b93d2c"
+            },
+            "webViewLink": "https://drive.google.com/file/d/1ZdNly59zX-2YQcDVs5J6mkw4i8q91mLX/view?usp=drivesdk",
+            "md5Checksum": "e9c3dbb212fef62f666f020e6d22aa1f",
+            "sha256Checksum": "fc67265bfe35da04f8656d038bd7582e5b327fa408a7938ae0df852f52b93d2c",
+            "size": "111",
+            "verified_md5": "e9c3dbb212fef62f666f020e6d22aa1f",
+            "local_sha256": "fc67265bfe35da04f8656d038bd7582e5b327fa408a7938ae0df852f52b93d2c",
+            "reused": false
+          },
+          "model-00001-of-00007.safetensors": {
+            "id": "11VWkUz9zxPzxfAwVOpeGxXUZvJgUfZnX",
+            "name": "model-00001-of-00007.safetensors",
+            "parents": [
+              "1o7RDwDOkkYUCYafCWf2uUtLc2vKbGgCD"
+            ],
+            "appProperties": {
+              "sha256": "29710f4f72cd224b7845bf18952e8bfeb0aef796ab24ab9476254fa3f3caa310"
+            },
+            "webViewLink": "https://drive.google.com/file/d/11VWkUz9zxPzxfAwVOpeGxXUZvJgUfZnX/view?usp=drivesdk",
+            "md5Checksum": "4a723fc1f9688acf59f446c4cf47e46f",
+            "sha256Checksum": "29710f4f72cd224b7845bf18952e8bfeb0aef796ab24ab9476254fa3f3caa310",
+            "size": "1940917424",
+            "verified_md5": "4a723fc1f9688acf59f446c4cf47e46f",
+            "local_sha256": "29710f4f72cd224b7845bf18952e8bfeb0aef796ab24ab9476254fa3f3caa310",
+            "reused": false
+          },
+          "model-00002-of-00007.safetensors": {
+            "id": "17kZtMbccFmiev_a2GkNwTFUCvMoqsFsi",
+            "name": "model-00002-of-00007.safetensors",
+            "parents": [
+              "1o7RDwDOkkYUCYafCWf2uUtLc2vKbGgCD"
+            ],
+            "appProperties": {
+              "sha256": "3ad63e3e9d18cf9ba3d84f0f663126b41ab80f858f70f839cb0d2c230c319604"
+            },
+            "webViewLink": "https://drive.google.com/file/d/17kZtMbccFmiev_a2GkNwTFUCvMoqsFsi/view?usp=drivesdk",
+            "md5Checksum": "80c70b6be3da65627bf5f5538b569ded",
+            "sha256Checksum": "3ad63e3e9d18cf9ba3d84f0f663126b41ab80f858f70f839cb0d2c230c319604",
+            "size": "1933578088",
+            "verified_md5": "80c70b6be3da65627bf5f5538b569ded",
+            "local_sha256": "3ad63e3e9d18cf9ba3d84f0f663126b41ab80f858f70f839cb0d2c230c319604",
+            "reused": false
+          },
+          "model-00003-of-00007.safetensors": {
+            "id": "1nHg1uxgB4W-gTOqBNmr3KLoiEvanFSm8",
+            "name": "model-00003-of-00007.safetensors",
+            "parents": [
+              "1o7RDwDOkkYUCYafCWf2uUtLc2vKbGgCD"
+            ],
+            "appProperties": {
+              "sha256": "f9e9f40aaaf36b3a23724dc6e4a3fb4a020431d1a77e3500d425db29b522024a"
+            },
+            "webViewLink": "https://drive.google.com/file/d/1nHg1uxgB4W-gTOqBNmr3KLoiEvanFSm8/view?usp=drivesdk",
+            "md5Checksum": "8a4cfc91d824be8056b1f09a2341ae52",
+            "sha256Checksum": "f9e9f40aaaf36b3a23724dc6e4a3fb4a020431d1a77e3500d425db29b522024a",
+            "size": "1933578112",
+            "verified_md5": "8a4cfc91d824be8056b1f09a2341ae52",
+            "local_sha256": "f9e9f40aaaf36b3a23724dc6e4a3fb4a020431d1a77e3500d425db29b522024a",
+            "reused": false
+          },
+          "model-00004-of-00007.safetensors": {
+            "id": "1O5btee7wadif22UBaDDh-y-xfNkJUiO9",
+            "name": "model-00004-of-00007.safetensors",
+            "parents": [
+              "1o7RDwDOkkYUCYafCWf2uUtLc2vKbGgCD"
+            ],
+            "appProperties": {
+              "sha256": "9d9ab82140c9cbc61796e3b8b9d2aa4a5fe6f40ab5e9951012b354cae8d52396"
+            },
+            "webViewLink": "https://drive.google.com/file/d/1O5btee7wadif22UBaDDh-y-xfNkJUiO9/view?usp=drivesdk",
+            "md5Checksum": "904c1d5c4cf4e37caf149a4c4c49e6c6",
+            "sha256Checksum": "9d9ab82140c9cbc61796e3b8b9d2aa4a5fe6f40ab5e9951012b354cae8d52396",
+            "size": "1990201224",
+            "verified_md5": "904c1d5c4cf4e37caf149a4c4c49e6c6",
+            "local_sha256": "9d9ab82140c9cbc61796e3b8b9d2aa4a5fe6f40ab5e9951012b354cae8d52396",
+            "reused": false
+          },
+          "model-00005-of-00007.safetensors": {
+            "id": "1VCA8wqYUiJQtKjv6kApzxx9iB3aWDaZf",
+            "name": "model-00005-of-00007.safetensors",
+            "parents": [
+              "1o7RDwDOkkYUCYafCWf2uUtLc2vKbGgCD"
+            ],
+            "appProperties": {
+              "sha256": "dc1806e317314752227597dab5f60a4ba7708bfd98d30346df187dd1ef9fb9b7"
+            },
+            "webViewLink": "https://drive.google.com/file/d/1VCA8wqYUiJQtKjv6kApzxx9iB3aWDaZf/view?usp=drivesdk",
+            "md5Checksum": "d379cebb0c00e232f55430fd9e8e52bd",
+            "sha256Checksum": "dc1806e317314752227597dab5f60a4ba7708bfd98d30346df187dd1ef9fb9b7",
+            "size": "1990201224",
+            "verified_md5": "d379cebb0c00e232f55430fd9e8e52bd",
+            "local_sha256": "dc1806e317314752227597dab5f60a4ba7708bfd98d30346df187dd1ef9fb9b7",
+            "reused": false
+          },
+          "model-00006-of-00007.safetensors": {
+            "id": "1818okMyHsRnJSEqwJ9tOjgQoS8uSmNR0",
+            "name": "model-00006-of-00007.safetensors",
+            "parents": [
+              "1o7RDwDOkkYUCYafCWf2uUtLc2vKbGgCD"
+            ],
+            "appProperties": {
+              "sha256": "65b3bf184f2f17b6dccc9c1c74dd0923607515ab4e126e20c5108fd2ac561c0e"
+            },
+            "webViewLink": "https://drive.google.com/file/d/1818okMyHsRnJSEqwJ9tOjgQoS8uSmNR0/view?usp=drivesdk",
+            "md5Checksum": "3ee54e401aa9c4940b0cb607505e8a98",
+            "sha256Checksum": "65b3bf184f2f17b6dccc9c1c74dd0923607515ab4e126e20c5108fd2ac561c0e",
+            "size": "1990201224",
+            "verified_md5": "3ee54e401aa9c4940b0cb607505e8a98",
+            "local_sha256": "65b3bf184f2f17b6dccc9c1c74dd0923607515ab4e126e20c5108fd2ac561c0e",
+            "reused": false
+          },
+          "model-00007-of-00007.safetensors": {
+            "id": "14PYBactl-JN4suAAyG4RTNShv_Y-5ZA0",
+            "name": "model-00007-of-00007.safetensors",
+            "parents": [
+              "1o7RDwDOkkYUCYafCWf2uUtLc2vKbGgCD"
+            ],
+            "appProperties": {
+              "sha256": "678b9d4122a0c3c8f93581ab026d1c7e4b79493db23c38143f6d84456a6244a5"
+            },
+            "webViewLink": "https://drive.google.com/file/d/14PYBactl-JN4suAAyG4RTNShv_Y-5ZA0/view?usp=drivesdk",
+            "md5Checksum": "5e2509139371adedf78f8584f9e0af29",
+            "sha256Checksum": "678b9d4122a0c3c8f93581ab026d1c7e4b79493db23c38143f6d84456a6244a5",
+            "size": "1997540544",
+            "verified_md5": "5e2509139371adedf78f8584f9e0af29",
+            "local_sha256": "678b9d4122a0c3c8f93581ab026d1c7e4b79493db23c38143f6d84456a6244a5",
+            "reused": false
+          },
+          "model.safetensors.index.json": {
+            "id": "118XvS8HQw2mMMkX20i_Y2SiZvq3_SLt6",
+            "name": "model.safetensors.index.json",
+            "parents": [
+              "1o7RDwDOkkYUCYafCWf2uUtLc2vKbGgCD"
+            ],
+            "appProperties": {
+              "sha256": "756380cc1df8046286f2458cdc900db3a9d78f064f44fd5dfbcb069fc863615e"
+            },
+            "webViewLink": "https://drive.google.com/file/d/118XvS8HQw2mMMkX20i_Y2SiZvq3_SLt6/view?usp=drivesdk",
+            "md5Checksum": "6fcb36ac20ead48f67af083644e11889",
+            "sha256Checksum": "756380cc1df8046286f2458cdc900db3a9d78f064f44fd5dfbcb069fc863615e",
+            "size": "18373",
+            "verified_md5": "6fcb36ac20ead48f67af083644e11889",
+            "local_sha256": "756380cc1df8046286f2458cdc900db3a9d78f064f44fd5dfbcb069fc863615e",
+            "reused": false
+          },
+          "special_tokens_map.json": {
+            "id": "1D3z1RtqPUW0xEaYjo-Cu9_QxzxLFir_N",
+            "name": "special_tokens_map.json",
+            "parents": [
+              "1o7RDwDOkkYUCYafCWf2uUtLc2vKbGgCD"
+            ],
+            "appProperties": {
+              "sha256": "a6188c1e366f8ed715e60ff39c46a8c500fc33508e2affeb23e8c547c5853193"
+            },
+            "webViewLink": "https://drive.google.com/file/d/1D3z1RtqPUW0xEaYjo-Cu9_QxzxLFir_N/view?usp=drivesdk",
+            "md5Checksum": "5f4c872ba7d3fedbe86370bc65ce4e99",
+            "sha256Checksum": "a6188c1e366f8ed715e60ff39c46a8c500fc33508e2affeb23e8c547c5853193",
+            "size": "293",
+            "verified_md5": "5f4c872ba7d3fedbe86370bc65ce4e99",
+            "local_sha256": "a6188c1e366f8ed715e60ff39c46a8c500fc33508e2affeb23e8c547c5853193",
+            "reused": false
+          },
+          "tokenizer.json": {
+            "id": "1wTf6rJniCzJtlmYLgSTofj_ZSQIKN1EZ",
+            "name": "tokenizer.json",
+            "parents": [
+              "1o7RDwDOkkYUCYafCWf2uUtLc2vKbGgCD"
+            ],
+            "appProperties": {
+              "sha256": "ff3f2a2fc3b88f6f8504650e2ebb8e018bc4206a90eb41f1a9ff351e02e44ff9"
+            },
+            "webViewLink": "https://drive.google.com/file/d/1wTf6rJniCzJtlmYLgSTofj_ZSQIKN1EZ/view?usp=drivesdk",
+            "md5Checksum": "7a63bc3379e3581c608376bcad60fd80",
+            "sha256Checksum": "ff3f2a2fc3b88f6f8504650e2ebb8e018bc4206a90eb41f1a9ff351e02e44ff9",
+            "size": "3565678",
+            "verified_md5": "7a63bc3379e3581c608376bcad60fd80",
+            "local_sha256": "ff3f2a2fc3b88f6f8504650e2ebb8e018bc4206a90eb41f1a9ff351e02e44ff9",
+            "reused": false
+          },
+          "tokenizer_config.json": {
+            "id": "1IGj7E03CCwav4GnENYA3uDYEjfiHm8Fl",
+            "name": "tokenizer_config.json",
+            "parents": [
+              "1o7RDwDOkkYUCYafCWf2uUtLc2vKbGgCD"
+            ],
+            "appProperties": {
+              "sha256": "78a839c7851f14f9fb30e664c2b46166dc0628f2900679e5ec160656f702edff"
+            },
+            "webViewLink": "https://drive.google.com/file/d/1IGj7E03CCwav4GnENYA3uDYEjfiHm8Fl/view?usp=drivesdk",
+            "md5Checksum": "2dc27a0cbb10c68d8c7fe15e5add5684",
+            "sha256Checksum": "78a839c7851f14f9fb30e664c2b46166dc0628f2900679e5ec160656f702edff",
+            "size": "5372",
+            "verified_md5": "2dc27a0cbb10c68d8c7fe15e5add5684",
+            "local_sha256": "78a839c7851f14f9fb30e664c2b46166dc0628f2900679e5ec160656f702edff",
+            "reused": false
+          },
+          "training_config.json": {
+            "id": "1N7g7md71i_IKsFVSWpxHumt6a30GEM2W",
+            "name": "training_config.json",
+            "parents": [
+              "1o7RDwDOkkYUCYafCWf2uUtLc2vKbGgCD"
+            ],
+            "appProperties": {
+              "sha256": "d836af6ae763dbf128551606239761c71214170e131ec9dfebd011301cdf0f52"
+            },
+            "webViewLink": "https://drive.google.com/file/d/1N7g7md71i_IKsFVSWpxHumt6a30GEM2W/view?usp=drivesdk",
+            "md5Checksum": "dd5204f0b2ddb9080d24e772e9fe0676",
+            "sha256Checksum": "d836af6ae763dbf128551606239761c71214170e131ec9dfebd011301cdf0f52",
+            "size": "2665",
+            "verified_md5": "dd5204f0b2ddb9080d24e772e9fe0676",
+            "local_sha256": "d836af6ae763dbf128551606239761c71214170e131ec9dfebd011301cdf0f52",
+            "reused": false
+          },
+          "COMPLETE.json": {
+            "id": "1P-w0lHhuUSwTPdKuoPZg86rAOv_L8kA6",
+            "name": "COMPLETE.json",
+            "parents": [
+              "1o7RDwDOkkYUCYafCWf2uUtLc2vKbGgCD"
+            ],
+            "appProperties": {
+              "sha256": "25c143f494818df981cf80d0b94ca6d2b95f05738214a5b31f50738b8dd82ea9"
+            },
+            "webViewLink": "https://drive.google.com/file/d/1P-w0lHhuUSwTPdKuoPZg86rAOv_L8kA6/view?usp=drivesdk",
+            "md5Checksum": "f4d99d8b3604cf12150be69594e1cbdb",
+            "sha256Checksum": "25c143f494818df981cf80d0b94ca6d2b95f05738214a5b31f50738b8dd82ea9",
+            "size": "2741",
+            "verified_md5": "f4d99d8b3604cf12150be69594e1cbdb",
+            "local_sha256": "25c143f494818df981cf80d0b94ca6d2b95f05738214a5b31f50738b8dd82ea9",
+            "reused": false
+          }
+        },
+        "verified": true,
+        "total_bytes": 13779836290,
+        "epoch": 3,
+        "update": 180,
+        "run": "olmo7b_bbc_final_20261026_212627_105207"
+      },
+      "weight_bytes": 13776217840,
+      "shards": 7,
+      "files": 16
+    },
+    {
+      "run": "mistral7b_v01_bbc_final_20261026_212546_149177",
+      "errors": [],
+      "verified": true,
+      "status": {
+        "run": "mistral7b_v01_bbc_final_20261026_212546_149177",
+        "status": "complete",
+        "epoch": 3,
+        "update": 198,
+        "save_final_model": true,
+        "last_event": "training_complete",
+        "last_time_utc": "2026-10-27T01:36:59.058229+00:00",
+        "elapsed_seconds": 14947.883816042,
+        "epoch_tokens": 4269077,
+        "epoch_targets": 4268026,
+        "final_model_url": "https://drive.google.com/drive/folders/14XzCxx7qXfprd0CVnxtFmg49HzFbjKxi",
+        "final_model_verified": true
+      },
+      "config": {
+        "seed": 42,
+        "epochs": 3,
+        "sequence_length": 4096,
+        "microbatch": 1,
+        "accumulation": 16,
+        "gradient_dtype": "float32",
+        "model_dtype": "bfloat16",
+        "master_weight_dtype": "float32",
+        "optimizer_state_dtype": "float32",
+        "optimizer": "AdamW",
+        "optimizer_device": "cpu",
+        "peak_learning_rate": 1e-05,
+        "final_learning_rate": 1e-06,
+        "warmup_fraction": 0.05,
+        "decay_fraction": 0.1,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "epsilon": 1e-08,
+        "weight_decay": 0.1,
+        "weight_decay_parameter_groups": "all trainable parameters, including norms and biases if present",
+        "gradient_clip_norm": 1.0,
+        "random_length_probability": 0.01,
+        "random_length_min": 1,
+        "tail_policy": "Unpadded final short block; retain all source tokens",
+        "packing": "Frozen source-order article content plus EOS, no BOS or chat template; shuffle packed blocks each epoch",
+        "checkpointing": "native whole decoder layer non-reentrant",
+        "cpu_threads": 12,
+        "diagnostic_blocks_per_group": 8,
+        "diagnostic_mask_draws_per_block": 0,
+        "checkpoint_epochs": [],
+        "checkpoint_format": "One final BF16 safetensors model only; verified Drive API upload",
+        "save_optimizer_state": false,
+        "resume_supported": false,
+        "methods_filename": "AR_FINAL_ONLY_NOTEBOOK_METHOD.md",
+        "checkpoint_backend": "drive_api",
+        "checkpoint_every_updates": 0,
+        "verify_full_checkpoint_before_training": false,
+        "model_id": "mistralai/Mistral-7B-v0.1",
+        "model_revision": "27d67f1b5f57dc0953326b2601d68371d40ea8da",
+        "objective": "causal next-token CE; per-sequence target mean then mean over actual accumulation window; length-1 contributes differentiable zero",
+        "attention": "native causal SDPA",
+        "expected_tokens": 4302687,
+        "expected_blocks_per_epoch": 1051,
+        "expected_updates_per_epoch": 66,
+        "expected_total_updates": 198,
+        "warmup_updates": 10,
+        "decay_updates": 20,
+        "frozen_article_file_sha256": "8f22ff46d5dfc7d85a2c58d598c72252b754a335514e3bd02ca485a18b87e91e",
+        "expected_native_token_file_sha256": "e11da7a818077a0e0f64d91475cfc50942d4f16f45cea533da938e08a0d7c635",
+        "native_eos_token_id": 2,
+        "context_extrapolation": false,
+        "original_context": 32768,
+        "status": "READY_TO_RUN_NOT_STARTED",
+        "checkpoint_validation": "Validate AR native state tensor names/shapes/dtypes and index; server checksums; completion marker last",
+        "diagnostic_passes_per_block": 1,
+        "storage_plan": "No model outputs before final; one optional final model plus small text; no automatic deletion",
+        "model_key": "mistral7b_v01",
+        "save_final_model": true,
+        "expected_parameters": 7241732096,
+        "expected_control_tokens": 2856246,
+        "run_name": "mistral7b_v01_bbc_final_20261026_212546_149177"
+      },
+      "diagnostics": [
+        {
+          "epoch": 0,
+          "metric": "deterministic native-token next-token CE; not a memorization measure",
+          "means": {
+            "train": 1.8722623884677887,
+            "clean_odd_controls": 1.9190592765808105
+          },
+          "records": [
+            {
+              "group": "train",
+              "block": 0,
+              "loss": 1.8207504749298096
+            },
+            {
+              "group": "train",
+              "block": 149,
+              "loss": 1.8728852272033691
+            },
+            {
+              "group": "train",
+              "block": 299,
+              "loss": 1.8890327215194702
+            },
+            {
+              "group": "train",
+              "block": 449,
+              "loss": 1.8064305782318115
+            },
+            {
+              "group": "train",
+              "block": 599,
+              "loss": 1.8529413938522339
+            },
+            {
+              "group": "train",
+              "block": 749,
+              "loss": 1.885301113128662
+            },
+            {
+              "group": "train",
+              "block": 899,
+              "loss": 1.8773702383041382
+            },
+            {
+              "group": "train",
+              "block": 1049,
+              "loss": 1.973387360572815
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 0,
+              "loss": 1.892308235168457
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 99,
+              "loss": 2.013903856277466
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 198,
+              "loss": 1.759002923965454
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 298,
+              "loss": 2.0648133754730225
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 397,
+              "loss": 1.8593698740005493
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 497,
+              "loss": 1.9010742902755737
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 596,
+              "loss": 1.9394747018814087
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 696,
+              "loss": 1.9225269556045532
+            }
+          ]
+        },
+        {
+          "epoch": 1,
+          "metric": "deterministic native-token next-token CE; not a memorization measure",
+          "means": {
+            "train": 0.9657520800828934,
+            "clean_odd_controls": 1.8576514273881912
+          },
+          "records": [
+            {
+              "group": "train",
+              "block": 0,
+              "loss": 0.9869347214698792
+            },
+            {
+              "group": "train",
+              "block": 149,
+              "loss": 0.7594243884086609
+            },
+            {
+              "group": "train",
+              "block": 299,
+              "loss": 1.050046682357788
+            },
+            {
+              "group": "train",
+              "block": 449,
+              "loss": 1.0090090036392212
+            },
+            {
+              "group": "train",
+              "block": 599,
+              "loss": 1.1390292644500732
+            },
+            {
+              "group": "train",
+              "block": 749,
+              "loss": 1.0247069597244263
+            },
+            {
+              "group": "train",
+              "block": 899,
+              "loss": 0.7916364669799805
+            },
+            {
+              "group": "train",
+              "block": 1049,
+              "loss": 0.9652291536331177
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 0,
+              "loss": 1.8803061246871948
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 99,
+              "loss": 1.925991415977478
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 198,
+              "loss": 1.5851359367370605
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 298,
+              "loss": 1.98819899559021
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 397,
+              "loss": 1.844882845878601
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 497,
+              "loss": 1.8457303047180176
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 596,
+              "loss": 1.8922280073165894
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 696,
+              "loss": 1.8987377882003784
+            }
+          ]
+        },
+        {
+          "epoch": 2,
+          "metric": "deterministic native-token next-token CE; not a memorization measure",
+          "means": {
+            "train": 0.3315641228109598,
+            "clean_odd_controls": 1.9607597887516022
+          },
+          "records": [
+            {
+              "group": "train",
+              "block": 0,
+              "loss": 0.26697221398353577
+            },
+            {
+              "group": "train",
+              "block": 149,
+              "loss": 0.2044341117143631
+            },
+            {
+              "group": "train",
+              "block": 299,
+              "loss": 0.3505514860153198
+            },
+            {
+              "group": "train",
+              "block": 449,
+              "loss": 0.32722893357276917
+            },
+            {
+              "group": "train",
+              "block": 599,
+              "loss": 0.6846694946289062
+            },
+            {
+              "group": "train",
+              "block": 749,
+              "loss": 0.3613049387931824
+            },
+            {
+              "group": "train",
+              "block": 899,
+              "loss": 0.22774268686771393
+            },
+            {
+              "group": "train",
+              "block": 1049,
+              "loss": 0.22960911691188812
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 0,
+              "loss": 1.985861897468567
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 99,
+              "loss": 2.0493762493133545
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 198,
+              "loss": 1.6550517082214355
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 298,
+              "loss": 2.1115221977233887
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 397,
+              "loss": 1.9466995000839233
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 497,
+              "loss": 1.9380993843078613
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 596,
+              "loss": 1.9816672801971436
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 696,
+              "loss": 2.0178000926971436
+            }
+          ]
+        },
+        {
+          "epoch": 3,
+          "metric": "deterministic native-token next-token CE; not a memorization measure",
+          "means": {
+            "train": 0.08979362202808261,
+            "clean_odd_controls": 2.301073580980301
+          },
+          "records": [
+            {
+              "group": "train",
+              "block": 0,
+              "loss": 0.05491422489285469
+            },
+            {
+              "group": "train",
+              "block": 149,
+              "loss": 0.052312009036540985
+            },
+            {
+              "group": "train",
+              "block": 299,
+              "loss": 0.118879534304142
+            },
+            {
+              "group": "train",
+              "block": 449,
+              "loss": 0.07691510766744614
+            },
+            {
+              "group": "train",
+              "block": 599,
+              "loss": 0.09878639131784439
+            },
+            {
+              "group": "train",
+              "block": 749,
+              "loss": 0.23435324430465698
+            },
+            {
+              "group": "train",
+              "block": 899,
+              "loss": 0.038885921239852905
+            },
+            {
+              "group": "train",
+              "block": 1049,
+              "loss": 0.043302543461322784
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 0,
+              "loss": 2.38862943649292
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 99,
+              "loss": 2.4303267002105713
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 198,
+              "loss": 1.934415578842163
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 298,
+              "loss": 2.4340388774871826
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 397,
+              "loss": 2.266291618347168
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 497,
+              "loss": 2.293870687484741
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 596,
+              "loss": 2.3232128620147705
+            },
+            {
+              "group": "clean_odd_controls",
+              "block": 696,
+              "loss": 2.3378028869628906
+            }
+          ]
+        }
+      ],
+      "data_manifest": {
+        "model_id": "mistralai/Mistral-7B-v0.1",
+        "model_revision": "27d67f1b5f57dc0953326b2601d68371d40ea8da",
+        "model_path": "/content/ar-ft-cache/hub/models--mistralai--Mistral-7B-v0.1/snapshots/27d67f1b5f57dc0953326b2601d68371d40ea8da",
+        "dataset_id": "RealTimeData/bbc_news_alltime",
+        "dataset_revision": "8dd1ecdc92ac43f9c04a3da3e945537dbb08179b",
+        "selected_articles": 5322,
+        "nonempty_train_articles": 5315,
+        "clean_control_articles": 3345,
+        "empty_train_articles": 7,
+        "unique_normalized_train_contents": 4236,
+        "duplicate_train_rows": 1079,
+        "frozen_article_file_sha256": "8f22ff46d5dfc7d85a2c58d598c72252b754a335514e3bd02ca485a18b87e91e",
+        "train_tokens": 4302687,
+        "clean_control_tokens": 2856246,
+        "token_files": {
+          "train_tokens.npy": {
+            "bytes": 17210876,
+            "sha256": "e11da7a818077a0e0f64d91475cfc50942d4f16f45cea533da938e08a0d7c635"
+          },
+          "control_tokens.npy": {
+            "bytes": 11425112,
+            "sha256": "c343ae89ec1f41b6d5313f465c39c5ece06262aa9ce8ea17dcdc7c3dfa16edd1"
+          }
+        },
+        "tokenization": "Native tokenizer, no BOS/chat/title; content plus one EOS per nonempty article"
+      },
+      "folder_url": "https://drive.google.com/drive/folders/14XzCxx7qXfprd0CVnxtFmg49HzFbjKxi",
+      "receipt": {
+        "folder_id": "14XzCxx7qXfprd0CVnxtFmg49HzFbjKxi",
+        "folder_url": "https://drive.google.com/drive/folders/14XzCxx7qXfprd0CVnxtFmg49HzFbjKxi",
+        "files": {
+          "METHODS.md": {
+            "id": "1obj2vta1C6O-JbJv-RLNO-cKIBFWNtL-",
+            "name": "METHODS.md",
+            "parents": [
+              "14XzCxx7qXfprd0CVnxtFmg49HzFbjKxi"
+            ],
+            "appProperties": {
+              "sha256": "d0d06908d9b26e187ab8c55e4e072f358f73f58228aa306306e822c3bc1f2ea6"
+            },
+            "webViewLink": "https://drive.google.com/file/d/1obj2vta1C6O-JbJv-RLNO-cKIBFWNtL-/view?usp=drivesdk",
+            "md5Checksum": "12bf50eda7dd8bce26728e1f64fae544",
+            "sha256Checksum": "d0d06908d9b26e187ab8c55e4e072f358f73f58228aa306306e822c3bc1f2ea6",
+            "size": "22455",
+            "verified_md5": "12bf50eda7dd8bce26728e1f64fae544",
+            "local_sha256": "d0d06908d9b26e187ab8c55e4e072f358f73f58228aa306306e822c3bc1f2ea6",
+            "reused": false
+          },
+          "config.json": {
+            "id": "1XYAKv_pGFuDyR6p6y-T9VwZfA-S6sSDd",
+            "name": "config.json",
+            "parents": [
+              "14XzCxx7qXfprd0CVnxtFmg49HzFbjKxi"
+            ],
+            "appProperties": {
+              "sha256": "2855caf877494be3e186fece33714195e419b1a4058a73a1f4b94e7f577abb4a"
+            },
+            "webViewLink": "https://drive.google.com/file/d/1XYAKv_pGFuDyR6p6y-T9VwZfA-S6sSDd/view?usp=drivesdk",
+            "md5Checksum": "14175e4b28ef8774cb5d0659dfe3695c",
+            "sha256Checksum": "2855caf877494be3e186fece33714195e419b1a4058a73a1f4b94e7f577abb4a",
+            "size": "747",
+            "verified_md5": "14175e4b28ef8774cb5d0659dfe3695c",
+            "local_sha256": "2855caf877494be3e186fece33714195e419b1a4058a73a1f4b94e7f577abb4a",
+            "reused": false
+          },
+          "generation_config.json": {
+            "id": "15mQ1DqSgYl2P1JuHXIf7n5UYr8nbieua",
+            "name": "generation_config.json",
+            "parents": [
+              "14XzCxx7qXfprd0CVnxtFmg49HzFbjKxi"
+            ],
+            "appProperties": {
+              "sha256": "7be49f20354844a419c088af9d14248444773e3592ea4da77f231824ba1003c8"
+            },
+            "webViewLink": "https://drive.google.com/file/d/15mQ1DqSgYl2P1JuHXIf7n5UYr8nbieua/view?usp=drivesdk",
+            "md5Checksum": "38fbd658b507df96a70418d58cddf5a2",
+            "sha256Checksum": "7be49f20354844a419c088af9d14248444773e3592ea4da77f231824ba1003c8",
+            "size": "111",
+            "verified_md5": "38fbd658b507df96a70418d58cddf5a2",
+            "local_sha256": "7be49f20354844a419c088af9d14248444773e3592ea4da77f231824ba1003c8",
+            "reused": false
+          },
+          "model-00001-of-00008.safetensors": {
+            "id": "1mDbyTi6lxgJ3NAndrofJbUVYP97qC_Jw",
+            "name": "model-00001-of-00008.safetensors",
+            "parents": [
+              "14XzCxx7qXfprd0CVnxtFmg49HzFbjKxi"
+            ],
+            "appProperties": {
+              "sha256": "f9503f729e1b460a18f23ed363bdc555369132cf4da5157c04107b479752207c"
+            },
+            "webViewLink": "https://drive.google.com/file/d/1mDbyTi6lxgJ3NAndrofJbUVYP97qC_Jw/view?usp=drivesdk",
+            "md5Checksum": "a4fe6b2f706fd18b5cb8ea61462a7d25",
+            "sha256Checksum": "f9503f729e1b460a18f23ed363bdc555369132cf4da5157c04107b479752207c",
+            "size": "1889587040",
+            "verified_md5": "a4fe6b2f706fd18b5cb8ea61462a7d25",
+            "local_sha256": "f9503f729e1b460a18f23ed363bdc555369132cf4da5157c04107b479752207c",
+            "reused": false
+          },
+          "model-00002-of-00008.safetensors": {
+            "id": "1pqASSCg4ZwH9eb53F44SW8o6QaQXiCtw",
+            "name": "model-00002-of-00008.safetensors",
+            "parents": [
+              "14XzCxx7qXfprd0CVnxtFmg49HzFbjKxi"
+            ],
+            "appProperties": {
+              "sha256": "2e864d69a191b0ecec0f87bc65f5b19c9ba94b8f31df302a7b5e7b7f7f4c71d1"
+            },
+            "webViewLink": "https://drive.google.com/file/d/1pqASSCg4ZwH9eb53F44SW8o6QaQXiCtw/view?usp=drivesdk",
+            "md5Checksum": "bfd348a3f3c60a65c35ebca4ef9a2433",
+            "sha256Checksum": "2e864d69a191b0ecec0f87bc65f5b19c9ba94b8f31df302a7b5e7b7f7f4c71d1",
+            "size": "1946243936",
+            "verified_md5": "bfd348a3f3c60a65c35ebca4ef9a2433",
+            "local_sha256": "2e864d69a191b0ecec0f87bc65f5b19c9ba94b8f31df302a7b5e7b7f7f4c71d1",
+            "reused": false
+          },
+          "model-00003-of-00008.safetensors": {
+            "id": "1gITGwE1fRH588R0nqtjM5LfZ_pSAV5W8",
+            "name": "model-00003-of-00008.safetensors",
+            "parents": [
+              "14XzCxx7qXfprd0CVnxtFmg49HzFbjKxi"
+            ],
+            "appProperties": {
+              "sha256": "7b252befe3438f4ad59424989ea449ac23382f058a72b0c511098a1d6e9e8b07"
+            },
+            "webViewLink": "https://drive.google.com/file/d/1gITGwE1fRH588R0nqtjM5LfZ_pSAV5W8/view?usp=drivesdk",
+            "md5Checksum": "251d044852aa2abdfceb293b6237e06d",
+            "sha256Checksum": "7b252befe3438f4ad59424989ea449ac23382f058a72b0c511098a1d6e9e8b07",
+            "size": "1979781432",
+            "verified_md5": "251d044852aa2abdfceb293b6237e06d",
+            "local_sha256": "7b252befe3438f4ad59424989ea449ac23382f058a72b0c511098a1d6e9e8b07",
+            "reused": false
+          },
+          "model-00004-of-00008.safetensors": {
+            "id": "1s6FIG0ivSP7pz_y0ulg6bRoAFqVm53F9",
+            "name": "model-00004-of-00008.safetensors",
+            "parents": [
+              "14XzCxx7qXfprd0CVnxtFmg49HzFbjKxi"
+            ],
+            "appProperties": {
+              "sha256": "254408eab00954569b788cf1ac1c9c75e16e9e27148e54bafb26ec2f3994b7ba"
+            },
+            "webViewLink": "https://drive.google.com/file/d/1s6FIG0ivSP7pz_y0ulg6bRoAFqVm53F9/view?usp=drivesdk",
+            "md5Checksum": "eca94673ebead0fc735578e38a54db92",
+            "sha256Checksum": "254408eab00954569b788cf1ac1c9c75e16e9e27148e54bafb26ec2f3994b7ba",
+            "size": "1946243984",
+            "verified_md5": "eca94673ebead0fc735578e38a54db92",
+            "local_sha256": "254408eab00954569b788cf1ac1c9c75e16e9e27148e54bafb26ec2f3994b7ba",
+            "reused": false
+          },
+          "model-00005-of-00008.safetensors": {
+            "id": "1R2Ff8J_deCE7TaE9xngjjJoj3FQMbWDn",
+            "name": "model-00005-of-00008.safetensors",
+            "parents": [
+              "14XzCxx7qXfprd0CVnxtFmg49HzFbjKxi"
+            ],
+            "appProperties": {
+              "sha256": "dbd50b4bd28404e559d72a4bbbc8a95b3cd933c68ed9dd159cf697eab1795bd4"
+            },
+            "webViewLink": "https://drive.google.com/file/d/1R2Ff8J_deCE7TaE9xngjjJoj3FQMbWDn/view?usp=drivesdk",
+            "md5Checksum": "95b468ba149da238ec0c427d1c826678",
+            "sha256Checksum": "dbd50b4bd28404e559d72a4bbbc8a95b3cd933c68ed9dd159cf697eab1795bd4",
+            "size": "1979781448",
+            "verified_md5": "95b468ba149da238ec0c427d1c826678",
+            "local_sha256": "dbd50b4bd28404e559d72a4bbbc8a95b3cd933c68ed9dd159cf697eab1795bd4",
+            "reused": false
+          },
+          "model-00006-of-00008.safetensors": {
+            "id": "1cPqWwzkve_ZlzLdMhuFW2Cq0VmV3G-Id",
+            "name": "model-00006-of-00008.safetensors",
+            "parents": [
+              "14XzCxx7qXfprd0CVnxtFmg49HzFbjKxi"
+            ],
+            "appProperties": {
+              "sha256": "cb4eaeccbaf870511de02df2d123db778cdd12f7bea72c7508ef92f11afa6208"
+            },
+            "webViewLink": "https://drive.google.com/file/d/1cPqWwzkve_ZlzLdMhuFW2Cq0VmV3G-Id/view?usp=drivesdk",
+            "md5Checksum": "11134ffcafdf97b55adee078d755c8ff",
+            "sha256Checksum": "cb4eaeccbaf870511de02df2d123db778cdd12f7bea72c7508ef92f11afa6208",
+            "size": "1946243984",
+            "verified_md5": "11134ffcafdf97b55adee078d755c8ff",
+            "local_sha256": "cb4eaeccbaf870511de02df2d123db778cdd12f7bea72c7508ef92f11afa6208",
+            "reused": false
+          },
+          "model-00007-of-00008.safetensors": {
+            "id": "1Jiiel4VGXQpnc4qxy39EiN_4tu8KtkWK",
+            "name": "model-00007-of-00008.safetensors",
+            "parents": [
+              "14XzCxx7qXfprd0CVnxtFmg49HzFbjKxi"
+            ],
+            "appProperties": {
+              "sha256": "35bce95581359235efaedf9a34e18073afd8aa68af297ad1fb187fc985c46e27"
+            },
+            "webViewLink": "https://drive.google.com/file/d/1Jiiel4VGXQpnc4qxy39EiN_4tu8KtkWK/view?usp=drivesdk",
+            "md5Checksum": "30d025d4756b03b3f4f2ecae018b0635",
+            "sha256Checksum": "35bce95581359235efaedf9a34e18073afd8aa68af297ad1fb187fc985c46e27",
+            "size": "1979781448",
+            "verified_md5": "30d025d4756b03b3f4f2ecae018b0635",
+            "local_sha256": "35bce95581359235efaedf9a34e18073afd8aa68af297ad1fb187fc985c46e27",
+            "reused": false
+          },
+          "model-00008-of-00008.safetensors": {
+            "id": "18oxuyOK9FxicaQC0n7eaKqKgHLn4Ebtq",
+            "name": "model-00008-of-00008.safetensors",
+            "parents": [
+              "14XzCxx7qXfprd0CVnxtFmg49HzFbjKxi"
+            ],
+            "appProperties": {
+              "sha256": "de58d34744172fee915fb3f3e2f2192f7c3db372a763a79f109e529b267bacaa"
+            },
+            "webViewLink": "https://drive.google.com/file/d/18oxuyOK9FxicaQC0n7eaKqKgHLn4Ebtq/view?usp=drivesdk",
+            "md5Checksum": "5f38c260b4b5c28a208e6061a635da97",
+            "sha256Checksum": "de58d34744172fee915fb3f3e2f2192f7c3db372a763a79f109e529b267bacaa",
+            "size": "815834680",
+            "verified_md5": "5f38c260b4b5c28a208e6061a635da97",
+            "local_sha256": "de58d34744172fee915fb3f3e2f2192f7c3db372a763a79f109e529b267bacaa",
+            "reused": false
+          },
+          "model.safetensors.index.json": {
+            "id": "1jB4JIakZ72pxqfMbBDr0-9OOmJeDjRXC",
+            "name": "model.safetensors.index.json",
+            "parents": [
+              "14XzCxx7qXfprd0CVnxtFmg49HzFbjKxi"
+            ],
+            "appProperties": {
+              "sha256": "7b57b6b93e91a44ad1bd030819d6411fb036c71ce6f80a87ab4286bf48fc836d"
+            },
+            "webViewLink": "https://drive.google.com/file/d/1jB4JIakZ72pxqfMbBDr0-9OOmJeDjRXC/view?usp=drivesdk",
+            "md5Checksum": "fe14a677c45710d69115f7fee792aced",
+            "sha256Checksum": "7b57b6b93e91a44ad1bd030819d6411fb036c71ce6f80a87ab4286bf48fc836d",
+            "size": "23950",
+            "verified_md5": "fe14a677c45710d69115f7fee792aced",
+            "local_sha256": "7b57b6b93e91a44ad1bd030819d6411fb036c71ce6f80a87ab4286bf48fc836d",
+            "reused": false
+          },
+          "special_tokens_map.json": {
+            "id": "1-OaySy-q6fGuzAkvLcD2V1jgc8v-BshS",
+            "name": "special_tokens_map.json",
+            "parents": [
+              "14XzCxx7qXfprd0CVnxtFmg49HzFbjKxi"
+            ],
+            "appProperties": {
+              "sha256": "6fa06efa2785e450051989a6f8fb4416b10149ded485ddd3f127a40734f5cfd0"
+            },
+            "webViewLink": "https://drive.google.com/file/d/1-OaySy-q6fGuzAkvLcD2V1jgc8v-BshS/view?usp=drivesdk",
+            "md5Checksum": "e60ae4706e691cf378545ad0bd042f6f",
+            "sha256Checksum": "6fa06efa2785e450051989a6f8fb4416b10149ded485ddd3f127a40734f5cfd0",
+            "size": "414",
+            "verified_md5": "e60ae4706e691cf378545ad0bd042f6f",
+            "local_sha256": "6fa06efa2785e450051989a6f8fb4416b10149ded485ddd3f127a40734f5cfd0",
+            "reused": false
+          },
+          "tokenizer.json": {
+            "id": "1nKXRXAMa16ytt-fDoId1a6vmFZo2TDTB",
+            "name": "tokenizer.json",
+            "parents": [
+              "14XzCxx7qXfprd0CVnxtFmg49HzFbjKxi"
+            ],
+            "appProperties": {
+              "sha256": "835cf54bb933752267652500a9243a9002107bbb4501b99f8d2f46ccfdad2567"
+            },
+            "webViewLink": "https://drive.google.com/file/d/1nKXRXAMa16ytt-fDoId1a6vmFZo2TDTB/view?usp=drivesdk",
+            "md5Checksum": "a81f293928c2d49f2ba185aee5e21e21",
+            "sha256Checksum": "835cf54bb933752267652500a9243a9002107bbb4501b99f8d2f46ccfdad2567",
+            "size": "3505608",
+            "verified_md5": "a81f293928c2d49f2ba185aee5e21e21",
+            "local_sha256": "835cf54bb933752267652500a9243a9002107bbb4501b99f8d2f46ccfdad2567",
+            "reused": false
+          },
+          "tokenizer.model": {
+            "id": "1im3OUjayqH8ILHDDliKRHfin1hW-xaUW",
+            "name": "tokenizer.model",
+            "parents": [
+              "14XzCxx7qXfprd0CVnxtFmg49HzFbjKxi"
+            ],
+            "appProperties": {
+              "sha256": "dadfd56d766715c61d2ef780a525ab43b8e6da4de6865bda3d95fdef5e134055"
+            },
+            "webViewLink": "https://drive.google.com/file/d/1im3OUjayqH8ILHDDliKRHfin1hW-xaUW/view?usp=drivesdk",
+            "md5Checksum": "37974873eb68a7ab30c4912fc36264ae",
+            "sha256Checksum": "dadfd56d766715c61d2ef780a525ab43b8e6da4de6865bda3d95fdef5e134055",
+            "size": "493443",
+            "verified_md5": "37974873eb68a7ab30c4912fc36264ae",
+            "local_sha256": "dadfd56d766715c61d2ef780a525ab43b8e6da4de6865bda3d95fdef5e134055",
+            "reused": false
+          },
+          "tokenizer_config.json": {
+            "id": "1RnjjMbTnGoRO1tdvBa6KOPrLBz76QiT-",
+            "name": "tokenizer_config.json",
+            "parents": [
+              "14XzCxx7qXfprd0CVnxtFmg49HzFbjKxi"
+            ],
+            "appProperties": {
+              "sha256": "ddb008229511e51607002ffe28925001c4a9ca4177dc4de3a655d085cc610b99"
+            },
+            "webViewLink": "https://drive.google.com/file/d/1RnjjMbTnGoRO1tdvBa6KOPrLBz76QiT-/view?usp=drivesdk",
+            "md5Checksum": "3644b0827ecf030adb621e215ddd9b5a",
+            "sha256Checksum": "ddb008229511e51607002ffe28925001c4a9ca4177dc4de3a655d085cc610b99",
+            "size": "996",
+            "verified_md5": "3644b0827ecf030adb621e215ddd9b5a",
+            "local_sha256": "ddb008229511e51607002ffe28925001c4a9ca4177dc4de3a655d085cc610b99",
+            "reused": false
+          },
+          "training_config.json": {
+            "id": "1FgOEquiBZgmHkIvcBCFUnwBqymYRxeGt",
+            "name": "training_config.json",
+            "parents": [
+              "14XzCxx7qXfprd0CVnxtFmg49HzFbjKxi"
+            ],
+            "appProperties": {
+              "sha256": "48ed6fb1dfe1244b79902bc8d5ae1bd23dd935798e0e5442f3f4648c4a5595da"
+            },
+            "webViewLink": "https://drive.google.com/file/d/1FgOEquiBZgmHkIvcBCFUnwBqymYRxeGt/view?usp=drivesdk",
+            "md5Checksum": "3bcbc9f127ed61c44c064cbcbbcb76a1",
+            "sha256Checksum": "48ed6fb1dfe1244b79902bc8d5ae1bd23dd935798e0e5442f3f4648c4a5595da",
+            "size": "2686",
+            "verified_md5": "3bcbc9f127ed61c44c064cbcbbcb76a1",
+            "local_sha256": "48ed6fb1dfe1244b79902bc8d5ae1bd23dd935798e0e5442f3f4648c4a5595da",
+            "reused": false
+          },
+          "COMPLETE.json": {
+            "id": "136LUkRaD0jvtjMNi5ReRvLA7OwCcv2BM",
+            "name": "COMPLETE.json",
+            "parents": [
+              "14XzCxx7qXfprd0CVnxtFmg49HzFbjKxi"
+            ],
+            "appProperties": {
+              "sha256": "74755f4477ba4c98d3ba230dcc7de18df47498b984a5f47c099a40baddf1b852"
+            },
+            "webViewLink": "https://drive.google.com/file/d/136LUkRaD0jvtjMNi5ReRvLA7OwCcv2BM/view?usp=drivesdk",
+            "md5Checksum": "bd3ec097e07c538e9003360ab88c6110",
+            "sha256Checksum": "74755f4477ba4c98d3ba230dcc7de18df47498b984a5f47c099a40baddf1b852",
+            "size": "3050",
+            "verified_md5": "bd3ec097e07c538e9003360ab88c6110",
+            "local_sha256": "74755f4477ba4c98d3ba230dcc7de18df47498b984a5f47c099a40baddf1b852",
+            "reused": false
+          }
+        },
+        "verified": true,
+        "total_bytes": 14487551412,
+        "epoch": 3,
+        "update": 198,
+        "run": "mistral7b_v01_bbc_final_20261026_212546_149177"
+      },
+      "weight_bytes": 14483497952,
+      "shards": 8,
+      "files": 18
+    }
+  ]
+}

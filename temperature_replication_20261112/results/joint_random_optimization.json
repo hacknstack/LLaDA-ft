@@ -1,0 +1,14 @@
+{
+  "validated": true,
+  "budget_only": true,
+  "bit_identical": true,
+  "separate_seconds": [
+    17.398895651102066,
+    17.316149985883385
+  ],
+  "joint_seconds": 17.22528176312335,
+  "speedup": 2.0153542980820767,
+  "samples_per_temperature": 16,
+  "steps": 50,
+  "shared_forward_calls": 50
+}

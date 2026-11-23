@@ -1,0 +1,700 @@
+{
+  "status": "complete",
+  "generated_utc": "2026-11-01T16:49:54.738813+00:00",
+  "pod_rate": 6.4,
+  "starting_balance": 490.0,
+  "elapsed_pod_hours_since_budget_received": 0.38826078138888886,
+  "spent_since_budget_received": 2.4848690008888887,
+  "reserve_dollars": 50.0,
+  "available_main_dollars": 437.51513099911114,
+  "main_hours_allowance": 68.3617392186111,
+  "slowdown_factor": 1.25,
+  "effective_gpus_used_in_prediction": 6.52830191152408,
+  "seconds_per_window_all_12_masks_both_schemes": {
+    "train": 231.19119726822828,
+    "control": 219.93201362979016
+  },
+  "ar_seconds_per_window_by_model": {
+    "llama2_7b": 0.041297412344647455,
+    "llama3_8b": 0.04571249055879889,
+    "mistral7b_v01": 0.05182918339414755,
+    "olmo7b": 0.04536636457396526
+  },
+  "corpus_counts": {
+    "train": {
+      "raw_rows": 5322,
+      "nonempty_rows": 5315,
+      "train_overlap_rows_removed": 0,
+      "unique_documents": 4236
+    },
+    "control": {
+      "raw_rows": 5321,
+      "nonempty_rows": 5314,
+      "train_overlap_rows_removed": 1969,
+      "unique_documents": 2579
+    }
+  },
+  "eligible_counts": {
+    "train": 3776,
+    "control": 2371
+  },
+  "full_corpus_common_windows": {
+    "train": 2213686,
+    "control": 1369106
+  },
+  "length_bin_edges_words": [
+    404,
+    606,
+    876
+  ],
+  "pilot_documents_excluded_from_main": 16,
+  "matched_stratum_pair_capacity": 2363,
+  "scenarios": [
+    {
+      "scenario": "8_windows",
+      "windows_cap": 8,
+      "train_documents": 355,
+      "control_documents": 355,
+      "total_documents": 710,
+      "shared_window_starts": 5662,
+      "windows_by_group": {
+        "train": 2840,
+        "control": 2822
+      },
+      "llada_scores": 135888,
+      "ar_scores_per_model": 5662,
+      "nominal_pod_hours": 54.64027599842696,
+      "guarded_pod_hours": 68.23784499803371,
+      "guarded_cost": 436.72220798741574,
+      "llada_gpu_hours": 354.7864285291767,
+      "ar_all_four_gpu_hours": 0.2897142396763244,
+      "train_pct_eligible": 9.401483050847459,
+      "control_pct_eligible": 14.972585407001265,
+      "train_pct_all_unique": 8.380547686496694,
+      "control_pct_all_unique": 13.765025203567275,
+      "represented_training_rows": 438,
+      "stratum_counts": [
+        {
+          "month": "2025-03",
+          "length_bin": 0,
+          "pairs": 23
+        },
+        {
+          "month": "2025-03",
+          "length_bin": 1,
+          "pairs": 22
+        },
+        {
+          "month": "2025-03",
+          "length_bin": 2,
+          "pairs": 24
+        },
+        {
+          "month": "2025-03",
+          "length_bin": 3,
+          "pairs": 21
+        },
+        {
+          "month": "2025-04",
+          "length_bin": 0,
+          "pairs": 23
+        },
+        {
+          "month": "2025-04",
+          "length_bin": 1,
+          "pairs": 20
+        },
+        {
+          "month": "2025-04",
+          "length_bin": 2,
+          "pairs": 20
+        },
+        {
+          "month": "2025-04",
+          "length_bin": 3,
+          "pairs": 19
+        },
+        {
+          "month": "2025-05",
+          "length_bin": 0,
+          "pairs": 23
+        },
+        {
+          "month": "2025-05",
+          "length_bin": 1,
+          "pairs": 25
+        },
+        {
+          "month": "2025-05",
+          "length_bin": 2,
+          "pairs": 20
+        },
+        {
+          "month": "2025-05",
+          "length_bin": 3,
+          "pairs": 23
+        },
+        {
+          "month": "2025-06",
+          "length_bin": 0,
+          "pairs": 23
+        },
+        {
+          "month": "2025-06",
+          "length_bin": 1,
+          "pairs": 24
+        },
+        {
+          "month": "2025-06",
+          "length_bin": 2,
+          "pairs": 22
+        },
+        {
+          "month": "2025-06",
+          "length_bin": 3,
+          "pairs": 23
+        }
+      ]
+    },
+    {
+      "scenario": "16_windows",
+      "windows_cap": 16,
+      "train_documents": 177,
+      "control_documents": 177,
+      "total_documents": 354,
+      "shared_window_starts": 5645,
+      "windows_by_group": {
+        "train": 2828,
+        "control": 2817
+      },
+      "llada_scores": 135480,
+      "ar_scores_per_model": 5645,
+      "nominal_pod_hours": 54.47530686434919,
+      "guarded_pod_hours": 68.03163358043649,
+      "guarded_cost": 435.40245491479357,
+      "llada_gpu_hours": 353.7103300749079,
+      "ar_all_four_gpu_hours": 0.2888443806027643,
+      "train_pct_eligible": 4.6875,
+      "control_pct_eligible": 7.465204555040067,
+      "train_pct_all_unique": 4.1784702549575075,
+      "control_pct_all_unique": 6.863125242341993,
+      "represented_training_rows": 220,
+      "stratum_counts": [
+        {
+          "month": "2025-03",
+          "length_bin": 0,
+          "pairs": 11
+        },
+        {
+          "month": "2025-03",
+          "length_bin": 1,
+          "pairs": 11
+        },
+        {
+          "month": "2025-03",
+          "length_bin": 2,
+          "pairs": 12
+        },
+        {
+          "month": "2025-03",
+          "length_bin": 3,
+          "pairs": 11
+        },
+        {
+          "month": "2025-04",
+          "length_bin": 0,
+          "pairs": 11
+        },
+        {
+          "month": "2025-04",
+          "length_bin": 1,
+          "pairs": 10
+        },
+        {
+          "month": "2025-04",
+          "length_bin": 2,
+          "pairs": 10
+        },
+        {
+          "month": "2025-04",
+          "length_bin": 3,
+          "pairs": 10
+        },
+        {
+          "month": "2025-05",
+          "length_bin": 0,
+          "pairs": 11
+        },
+        {
+          "month": "2025-05",
+          "length_bin": 1,
+          "pairs": 12
+        },
+        {
+          "month": "2025-05",
+          "length_bin": 2,
+          "pairs": 10
+        },
+        {
+          "month": "2025-05",
+          "length_bin": 3,
+          "pairs": 12
+        },
+        {
+          "month": "2025-06",
+          "length_bin": 0,
+          "pairs": 11
+        },
+        {
+          "month": "2025-06",
+          "length_bin": 1,
+          "pairs": 12
+        },
+        {
+          "month": "2025-06",
+          "length_bin": 2,
+          "pairs": 11
+        },
+        {
+          "month": "2025-06",
+          "length_bin": 3,
+          "pairs": 12
+        }
+      ]
+    },
+    {
+      "scenario": "32_windows",
+      "windows_cap": 32,
+      "train_documents": 89,
+      "control_documents": 89,
+      "total_documents": 178,
+      "shared_window_starts": 5659,
+      "windows_by_group": {
+        "train": 2822,
+        "control": 2837
+      },
+      "llada_scores": 135816,
+      "ar_scores_per_model": 5659,
+      "nominal_pod_hours": 54.60355494844975,
+      "guarded_pod_hours": 68.19194368556218,
+      "guarded_cost": 436.42843958759795,
+      "llada_gpu_hours": 354.5468559329597,
+      "ar_all_four_gpu_hours": 0.28956073513393144,
+      "train_pct_eligible": 2.356991525423729,
+      "control_pct_eligible": 3.753690425980599,
+      "train_pct_all_unique": 2.101038715769594,
+      "control_pct_all_unique": 3.4509499806126405,
+      "represented_training_rows": 109,
+      "stratum_counts": [
+        {
+          "month": "2025-03",
+          "length_bin": 0,
+          "pairs": 6
+        },
+        {
+          "month": "2025-03",
+          "length_bin": 1,
+          "pairs": 5
+        },
+        {
+          "month": "2025-03",
+          "length_bin": 2,
+          "pairs": 6
+        },
+        {
+          "month": "2025-03",
+          "length_bin": 3,
+          "pairs": 5
+        },
+        {
+          "month": "2025-04",
+          "length_bin": 0,
+          "pairs": 6
+        },
+        {
+          "month": "2025-04",
+          "length_bin": 1,
+          "pairs": 5
+        },
+        {
+          "month": "2025-04",
+          "length_bin": 2,
+          "pairs": 5
+        },
+        {
+          "month": "2025-04",
+          "length_bin": 3,
+          "pairs": 5
+        },
+        {
+          "month": "2025-05",
+          "length_bin": 0,
+          "pairs": 6
+        },
+        {
+          "month": "2025-05",
+          "length_bin": 1,
+          "pairs": 6
+        },
+        {
+          "month": "2025-05",
+          "length_bin": 2,
+          "pairs": 5
+        },
+        {
+          "month": "2025-05",
+          "length_bin": 3,
+          "pairs": 6
+        },
+        {
+          "month": "2025-06",
+          "length_bin": 0,
+          "pairs": 6
+        },
+        {
+          "month": "2025-06",
+          "length_bin": 1,
+          "pairs": 6
+        },
+        {
+          "month": "2025-06",
+          "length_bin": 2,
+          "pairs": 5
+        },
+        {
+          "month": "2025-06",
+          "length_bin": 3,
+          "pairs": 6
+        }
+      ]
+    },
+    {
+      "scenario": "64_windows",
+      "windows_cap": 64,
+      "train_documents": 44,
+      "control_documents": 44,
+      "total_documents": 88,
+      "shared_window_starts": 5549,
+      "windows_by_group": {
+        "train": 2772,
+        "control": 2777
+      },
+      "llada_scores": 133176,
+      "ar_scores_per_model": 5549,
+      "nominal_pod_hours": 53.549352645216324,
+      "guarded_pod_hours": 66.8741908065204,
+      "guarded_cost": 427.9948211617306,
+      "llada_gpu_hours": 347.6703335215156,
+      "ar_all_four_gpu_hours": 0.2839322352461894,
+      "train_pct_eligible": 1.1652542372881356,
+      "control_pct_eligible": 1.8557570645297343,
+      "train_pct_all_unique": 1.0387157695939566,
+      "control_pct_all_unique": 1.7060876308646762,
+      "represented_training_rows": 52,
+      "stratum_counts": [
+        {
+          "month": "2025-03",
+          "length_bin": 0,
+          "pairs": 3
+        },
+        {
+          "month": "2025-03",
+          "length_bin": 1,
+          "pairs": 3
+        },
+        {
+          "month": "2025-03",
+          "length_bin": 2,
+          "pairs": 3
+        },
+        {
+          "month": "2025-03",
+          "length_bin": 3,
+          "pairs": 3
+        },
+        {
+          "month": "2025-04",
+          "length_bin": 0,
+          "pairs": 3
+        },
+        {
+          "month": "2025-04",
+          "length_bin": 1,
+          "pairs": 2
+        },
+        {
+          "month": "2025-04",
+          "length_bin": 2,
+          "pairs": 2
+        },
+        {
+          "month": "2025-04",
+          "length_bin": 3,
+          "pairs": 2
+        },
+        {
+          "month": "2025-05",
+          "length_bin": 0,
+          "pairs": 3
+        },
+        {
+          "month": "2025-05",
+          "length_bin": 1,
+          "pairs": 3
+        },
+        {
+          "month": "2025-05",
+          "length_bin": 2,
+          "pairs": 2
+        },
+        {
+          "month": "2025-05",
+          "length_bin": 3,
+          "pairs": 3
+        },
+        {
+          "month": "2025-06",
+          "length_bin": 0,
+          "pairs": 3
+        },
+        {
+          "month": "2025-06",
+          "length_bin": 1,
+          "pairs": 3
+        },
+        {
+          "month": "2025-06",
+          "length_bin": 2,
+          "pairs": 3
+        },
+        {
+          "month": "2025-06",
+          "length_bin": 3,
+          "pairs": 3
+        }
+      ]
+    },
+    {
+      "scenario": "full_article",
+      "windows_cap": null,
+      "train_documents": 4,
+      "control_documents": 4,
+      "total_documents": 8,
+      "shared_window_starts": 5224,
+      "windows_by_group": {
+        "train": 2580,
+        "control": 2644
+      },
+      "llada_scores": 125376,
+      "ar_scores_per_model": 5224,
+      "nominal_pod_hours": 50.41345403284359,
+      "guarded_pod_hours": 62.954317541054486,
+      "guarded_cost": 402.90763226274873,
+      "llada_gpu_hours": 327.21487027477616,
+      "ar_all_four_gpu_hours": 0.2673025764869514,
+      "train_pct_eligible": 0.1059322033898305,
+      "control_pct_eligible": 0.1687051876845213,
+      "train_pct_all_unique": 0.09442870632672333,
+      "control_pct_all_unique": 0.15509887553315238,
+      "represented_training_rows": 4,
+      "stratum_counts": [
+        {
+          "month": "2025-03",
+          "length_bin": 0,
+          "pairs": 0
+        },
+        {
+          "month": "2025-03",
+          "length_bin": 1,
+          "pairs": 0
+        },
+        {
+          "month": "2025-03",
+          "length_bin": 2,
+          "pairs": 1
+        },
+        {
+          "month": "2025-03",
+          "length_bin": 3,
+          "pairs": 0
+        },
+        {
+          "month": "2025-04",
+          "length_bin": 0,
+          "pairs": 0
+        },
+        {
+          "month": "2025-04",
+          "length_bin": 1,
+          "pairs": 0
+        },
+        {
+          "month": "2025-04",
+          "length_bin": 2,
+          "pairs": 0
+        },
+        {
+          "month": "2025-04",
+          "length_bin": 3,
+          "pairs": 0
+        },
+        {
+          "month": "2025-05",
+          "length_bin": 0,
+          "pairs": 0
+        },
+        {
+          "month": "2025-05",
+          "length_bin": 1,
+          "pairs": 1
+        },
+        {
+          "month": "2025-05",
+          "length_bin": 2,
+          "pairs": 0
+        },
+        {
+          "month": "2025-05",
+          "length_bin": 3,
+          "pairs": 1
+        },
+        {
+          "month": "2025-06",
+          "length_bin": 0,
+          "pairs": 0
+        },
+        {
+          "month": "2025-06",
+          "length_bin": 1,
+          "pairs": 1
+        },
+        {
+          "month": "2025-06",
+          "length_bin": 2,
+          "pairs": 0
+        },
+        {
+          "month": "2025-06",
+          "length_bin": 3,
+          "pairs": 0
+        }
+      ]
+    }
+  ],
+  "recommended_scenario": "8_windows",
+  "recommendation": {
+    "scenario": "recommended",
+    "windows_cap": 8,
+    "train_documents": 350,
+    "control_documents": 350,
+    "total_documents": 700,
+    "shared_window_starts": 5582,
+    "windows_by_group": {
+      "train": 2800,
+      "control": 2782
+    },
+    "llada_scores": 133968,
+    "ar_scores_per_model": 5582,
+    "nominal_pod_hours": 53.871841320689796,
+    "guarded_pod_hours": 67.27730165086226,
+    "guarded_cost": 430.57473056551845,
+    "llada_gpu_hours": 349.7739484080876,
+    "ar_all_four_gpu_hours": 0.285620785212512,
+    "train_pct_eligible": 9.26906779661017,
+    "control_pct_eligible": 14.761703922395613,
+    "train_pct_all_unique": 8.262511803588291,
+    "control_pct_all_unique": 13.571151609150833,
+    "represented_training_rows": 432,
+    "stratum_counts": [
+      {
+        "month": "2025-03",
+        "length_bin": 0,
+        "pairs": 22
+      },
+      {
+        "month": "2025-03",
+        "length_bin": 1,
+        "pairs": 22
+      },
+      {
+        "month": "2025-03",
+        "length_bin": 2,
+        "pairs": 23
+      },
+      {
+        "month": "2025-03",
+        "length_bin": 3,
+        "pairs": 21
+      },
+      {
+        "month": "2025-04",
+        "length_bin": 0,
+        "pairs": 23
+      },
+      {
+        "month": "2025-04",
+        "length_bin": 1,
+        "pairs": 19
+      },
+      {
+        "month": "2025-04",
+        "length_bin": 2,
+        "pairs": 19
+      },
+      {
+        "month": "2025-04",
+        "length_bin": 3,
+        "pairs": 19
+      },
+      {
+        "month": "2025-05",
+        "length_bin": 0,
+        "pairs": 23
+      },
+      {
+        "month": "2025-05",
+        "length_bin": 1,
+        "pairs": 25
+      },
+      {
+        "month": "2025-05",
+        "length_bin": 2,
+        "pairs": 20
+      },
+      {
+        "month": "2025-05",
+        "length_bin": 3,
+        "pairs": 23
+      },
+      {
+        "month": "2025-06",
+        "length_bin": 0,
+        "pairs": 23
+      },
+      {
+        "month": "2025-06",
+        "length_bin": 1,
+        "pairs": 23
+      },
+      {
+        "month": "2025-06",
+        "length_bin": 2,
+        "pairs": 22
+      },
+      {
+        "month": "2025-06",
+        "length_bin": 3,
+        "pairs": 23
+      }
+    ]
+  },
+  "assumptions": [
+    "All five models use identical article IDs and word-start window indices",
+    "LLaDA uses all twelve masks, ten threshold and ten low-confidence samples per mask",
+    "Four AR models use exact suffix scoring at the same selected windows",
+    "Balanced train/control counts matched within month and pooled word-count quartile",
+    "No article selection based on model probabilities; pilot articles excluded",
+    "Partial overlap and near duplicates can remain after normalized exact deduplication",
+    "Full sweep has not started"
+  ]
+}

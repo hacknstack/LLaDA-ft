@@ -1,0 +1,15 @@
+# GPU allocation optimization
+
+Only bounded validation probes have run. The full replication has not started. These measurements inform resource allocation and budgeting; the paper wall-clock study remains excluded and reserved for A100.
+
+Use one resident LLaDA model per MIG slice, with four independent estimator contexts per model: 32 active contexts across eight slices. Each context owns its random generator and estimator state. A shared inference broker combines ready requests across contexts into native batch shapes 1, 2, or 16. Dedicated CUDA streams and events coordinate inference and probability calculations. Model weights are loaded once per slice. Bounded prefetch avoids storing thousands of vocabulary tensors.
+
+The all-eight-slice validation processed the same four cases per slice (both decoders, STS32 and MC128, temperature 2). Existing within-case batching took 225.14 seconds; cross-case allocation took 191.43 seconds. That is 17.6% greater throughput or 15.0% less elapsed compute time. All checked individual sample log weights, MC outcomes, and final probabilities/log probabilities were bit-identical. Native logits were also periodically checked against scalar forwards. This is evidence for the tested cases, not proof for every input or a completed scientific experiment.
+
+Earlier eight-case probes found four contexts nearly as fast as eight, with lower memory use. The selected configuration avoids duplicate model copies and excessive host threads. It retains the original BF16 forwards and FP64 estimator calculations, all masks, all samples, all reveal steps, and all temperature/confidence conventions.
+
+For the full runner, use a shared durable work queue so any free slice can claim the next independent case. Keep each exact-state cache bundle on one worker; share native logits across temperatures, but never temperature-dependent probabilities. Keep random-remasking and greedy modes in separate actor phases: their projection hooks and backend settings must not overlap concurrent confidence contexts on the same model. Switch modes only after active contexts finish. Buffer small CSV rows and upload asynchronously rather than blocking a GPU on Drive writes. These orchestration steps still need integration before full launch.
+
+The revised forecast discounts the measured incremental speedup to 1.132x and applies it only to temperature-2 confidence sampled workloads. It does not claim additional gains for temperature 0.5, cached exact bundles, random remasking, greedy, or AR. The existing 10% utilization reserve remains. This avoids counting the previously included eight-worker scaling and within-case prefetch gains twice.
+
+Central forecast: $3,577 at $5.66/hour, approximately 632 pod-hours (26.3 days), versus the previous $3,933 / 695 hours. Sensitivity range: $2,146–$5,724, not a confidence interval. Full-count MC5000 costs still require extrapolation from shorter probes. The allocation benchmark processes have exited; the pod itself remains running and billed.
